@@ -1,0 +1,47 @@
+{
+  "name": "tagged_isomorphic",
+  "version": "1.0.0",
+  "description": "Tagged is an image tagging SPA based on facebooks image galleries",
+  "main": "",
+  "scripts": {
+    "bundle": "webpack",
+    "start": "node src/config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaxCavalera/Tagged_Isomorphic.git"
+  },
+  "keywords": [
+    "Tagged",
+    "Isomorphic"
+  ],
+  "author": "Murray Smart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaxCavalera/Tagged_Isomorphic/issues"
+  },
+  "homepage": "https://github.com/JaxCavalera/Tagged_Isomorphic#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "history": "^1.16.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-router": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-async-to-generator": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.0",
+    "dotenv": "^1.2.0",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^3.11.3",
+    "npm-run-all": "^1.4.0",
+    "postcss-loader": "^0.8.0",
+    "precss": "^1.3.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
