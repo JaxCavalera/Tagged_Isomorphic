@@ -23,12 +23,13 @@
   "homepage": "https://github.com/JaxCavalera/Tagged_Isomorphic#readme",
   "dependencies": {
     "express": "^4.13.3",
-    "history": "^1.16.0",
+    "history": "1.13.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-router": "^1.0.2"
   },
   "devDependencies": {
+    "autoprefixer": "^6.2.0",
     "babel-core": "^6.3.15",
     "babel-loader": "^6.2.0",
     "babel-plugin-transform-async-to-generator": "^6.3.13",

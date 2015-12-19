@@ -5,7 +5,8 @@ const app = express();
 // import path from 'path';
 import React from 'react';
 import {renderToString} from 'react-dom/server';
-import {match, RouterContext} from 'react-router';
+import {match, RoutingContext} from 'react-router';
+import createLocation from 'history/lib/createLocation';
 
 //  =====  Import React Routes  =====
 import indexTemplate from './index-template.jsx';
@@ -13,8 +14,9 @@ import routes from './routes.jsx';
 
 //  =====  Express Route Configuration  =====
 app.get('*', (req, res) => {
+    const location = createLocation(req.url);
     //  Try to match the requested route with a React-Router path
-    match({routes, location: req.url}, (error, redirectLocation, props) => {
+    match({routes, location}, (error, redirectLocation, props) => {
         if (error) {
             //  Unexpected Condition Encountered
             res.status(500).send(error.message);
@@ -24,7 +26,7 @@ app.get('*', (req, res) => {
             res.redirect(302, redirectLocation.pathname + redirectLocation.search);
         } else if (props) {
             //  Props will be true if the component(s) assigned to a path are found
-            const newView = renderToString(<RouterContext {...props} />);
+            const newView = renderToString(<RoutingContext {...props} />);
             res.send(indexTemplate.replace('__REACT_APP__', newView));
         }
     });
