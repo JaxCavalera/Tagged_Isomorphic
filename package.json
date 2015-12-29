@@ -4,7 +4,7 @@
   "description": "Tagged is an image tagging SPA based on facebooks image galleries",
   "main": "",
   "scripts": {
-    "bundle": "webpack",
+    "bundle": "webpack --watch",
     "start": "node src/config.js"
   },
   "repository": {
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/JaxCavalera/Tagged_Isomorphic#readme",
   "dependencies": {
     "express": "^4.13.3",
-    "history": "^1.16.0",
+    "history": "^1.13.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-router": "^1.0.2"

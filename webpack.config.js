@@ -1,15 +1,15 @@
 require('dotenv').config();
 var path = require('path');
-var webpack = require('webpack');
+// var webpack = require('webpack');
 // var fs = require('fs');
-var autoprefixer = require('autoprefixer');
+// var autoprefixer = require('autoprefixer');
 
 var ROOT_PATH = path.resolve(__dirname, 'src');
 var APP_PATH = path.resolve(ROOT_PATH, 'client');
-var BUILD_PATH = path.resolve(ROOT_PATH, '../build');
+var BUILD_PATH = path.resolve(ROOT_PATH, '../public');
 
-var LOCAL_IP = process.env.TAGGED_LOCAL_IP;
-var MY_PORT = process.env.TAGGED_LOCAL_PORT;
+// var LOCAL_IP = process.env.TAGGED_LOCAL_IP;
+// var MY_PORT = process.env.TAGGED_LOCAL_PORT;
 
 /*
     ==================================================
@@ -36,7 +36,7 @@ var MY_PORT = process.env.TAGGED_LOCAL_PORT;
 if (process.env.NODE_ENV === 'developer') {
     module.exports =
     {
-        entry: (ROOT_PATH + '\\server.jsx'),
+        entry: (ROOT_PATH + '\\client-render.jsx'),
         // target: 'node',
         // externals: nodeModules,
         output:

@@ -1,10 +1,10 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 
 export default class HeadingView extends Component {
     render () {
         return (
             <div className='headingView'>
-                <p>Testing</p>
+                <p>{'Heading View'}</p>
             </div>
         );
     }

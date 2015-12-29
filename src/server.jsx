@@ -12,7 +12,8 @@ import createLocation from 'history/lib/createLocation';
 import indexTemplate from './index-template.jsx';   //type is string literal
 import routes from './routes.jsx';
 
-console.log(JSON.stringify(routes));
+//  =====  Express Use Bindings  =====
+app.use(express.static('public'));
 
 //  =====  Express Route Configuration  =====
 app.get('*', (req, res) => {
