@@ -73,8 +73,7 @@ Build a Display Component that toggles visibility of a Rectangle by clicking a b
 
 **Imperative TDD Approach**   
 - **Linear Step :** Map involved elements to complete the Task
->Work out how many properties and functions are needed for the test by working through the sub-tasks step-by-step.
-
+>Work out how many properties and functions are needed for the test by working through the sub-tasks step-by-step.   
 - Create a test for the toggle function
 - Build the toggle function to pass the test
 - Pass props to the display component
@@ -83,8 +82,7 @@ Build a Display Component that toggles visibility of a Rectangle by clicking a b
 
 **Declarative TDD Approach**
 - **Linear Step :** Create the display component with a button, container and child div elements.
->Props required are defined in this step for onClick and CSS Display values.
-
+>Props required are defined in this step for onClick and CSS Display values.   
 - Use CSS to shape the rectangle that will show/hide and style the button etc.
 - Create a test for the toggle function
 - Build the toggle function to pass the test
