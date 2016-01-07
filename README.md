@@ -9,6 +9,7 @@
 **[◄ Purpose ►](#purpose)**   
 
 **[◄ Project Overview ►](#project-overview)**   
+[Declarative TDD](#declarative-tdd)   
 [Primary Modules Used](#primary-modules-used)   
 [Release Backlog](#release-backlog)   
 [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ► Heading](#heading)   
@@ -39,6 +40,7 @@ Commenting within both the code and also describing the nature of commits will b
 [Back to Top](#contents)
 
 - - -
+
 # Project Overview    
 Tagged is a simple web application that allows a user to register / login and upload images from their device. Once uploaded, the user will be able to tag other registered users in their images using the editor provided.
 
@@ -57,33 +59,41 @@ The project will use Test Driven Development and testing will be carried out usi
 - The intent of code should be defined by what you are testing.
 - Spike Solutions (prototypes) should be basic representations of a problem and used to fill in knowledge gaps prior to starting the TDD process on a task.
 
-TDD is based on tests that are used to define the final product by testing **how a task should run**. This typically requires one or more additional steps that can be merged together if a Declarative approach is taken.
+[Back to Top](#contents)
 
-What I am calling **Declarative TDD** is best demonstrated in the following short case study.   
+- - -
+
+## Declarative TDD   
+Test Driven Development (TDD) is based on tests that are used to define the final product by testing **how a task should run**. This typically requires one or more additional steps that can be merged together if a Declarative approach is taken.
+
+Declarative TDD is best demonstrated in the following short case study.
 
 **Task**   
-Display Component that toggles visibility of a Rectangle by clicking a button.
+Build a Display Component that toggles visibility of a Rectangle by clicking a button.
 
-**Imperative TDD**   
-- **Linear Step** map involved elements to complete the Task
->work out how many properties and functions are needed for the test by working through the sub-tasks step-by-step.
+**Imperative TDD Approach**   
+- **Linear Step :** Map involved elements to complete the Task
+>Work out how many properties and functions are needed for the test by working through the sub-tasks step-by-step.
 
-- create a test for the toggle function
-- build the toggle function to pass the test
-- pass props to the visual component
-- create the visual component that has a button element and container div with child div element using the props names passed in from the functional code being tested.
-- use CSS to shape the rectangle that will show/hide and style the button etc.
+- Create a test for the toggle function
+- Build the toggle function to pass the test
+- Pass props to the display component
+- Create the display component with a button, container and child div elements using the props names passed in from the functional code being tested.
+- Use CSS to shape the rectangle that will show/hide and style the button etc.
 
-**Declarative TDD**
-- **Linear Step** create the visual component that has a button element and container div with child div element with {this.props.varNames} for onClick and CSS Display Property Values.
-- use CSS to shape the rectangle that will show/hide and style the button etc.
-- create a test for the toggle function
-- build the toggle function to pass the test
-- pass props to the visual component
+**Declarative TDD Approach**
+- **Linear Step :** Create the display component with a button, container and child div elements.
+>Props required are defined in this step for onClick and CSS Display values.
+
+- Use CSS to shape the rectangle that will show/hide and style the button etc.
+- Create a test for the toggle function
+- Build the toggle function to pass the test
+- Pass props to the display component
 
 **Summary**   
-Both forms of TDD require an initial linear step that all consecutive steps have a dependency on.  The benefits of the Declarative approach are :
+Both approaches require an initial linear step that all consecutive steps have a dependency on.  The benefits of the Declarative approach are :
 - A simplified development process, that combines the Imperative sub-task of producing a roadmap into the Declarative construction of the display component.
+>It is declarative because it is defining what the end result will look like before step-by-step tests are developed to reach this result.   
 
 - It is more robust to changes because the roadmap and display component are one in the same thing.
 >Any change made to the display component is the equivalent of re-working the entire roadmap to include a change with cascading effects automatically factored into the equation.
@@ -145,13 +155,13 @@ Completion of the following Sprint Backlogs will signify the finalisation of thi
 5. Configure session management
 6. Create view logic components (smart)
 
+The order of these Sprint Backlogs is subject to change depending on requirements of specific modules to ensure testing is complete.
+
 **Tests for Logic (smart) Components**   
 The following tests will be slightly different when working with Mobservable to Redux (they were initially designed for redux).
 - The rendering of a React component given a particular state
 - The behaviour of a React component and how it affects the state via dispatched actions.
 - The state or the application (the default values and how it changes with to subscribed actions)
-
-The order of these Sprint Backlogs is subject to change depending on requirements of specific modules to ensure testing is complete.
 
 Sprint Backlogs will be documented in the [Sprint Backlog Summaries](#sprint-backlog-summaries) which are divided into 2 stages; **Pre-Development** and **Post-Development**.
 
