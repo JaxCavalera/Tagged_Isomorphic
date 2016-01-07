@@ -72,8 +72,10 @@ Declarative TDD is best demonstrated in the following short case study.
 Build a Display Component that toggles visibility of a Rectangle by clicking a button.
 
 **Imperative TDD Approach**   
-- **Linear Step :** Map involved elements to complete the Task
+- **Linear Step :** Map involved elements to complete the Task   
+
 >Work out how many properties and functions are needed for the test by working through the sub-tasks step-by-step.   
+
 - Create a test for the toggle function
 - Build the toggle function to pass the test
 - Pass props to the display component
@@ -81,8 +83,10 @@ Build a Display Component that toggles visibility of a Rectangle by clicking a b
 - Use CSS to shape the rectangle that will show/hide and style the button etc.
 
 **Declarative TDD Approach**
-- **Linear Step :** Create the display component with a button, container and child div elements.
+- **Linear Step :** Create the display component with a button, container and child div elements.   
+
 >Props required are defined in this step for onClick and CSS Display values.   
+
 - Use CSS to shape the rectangle that will show/hide and style the button etc.
 - Create a test for the toggle function
 - Build the toggle function to pass the test
