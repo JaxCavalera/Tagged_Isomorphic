@@ -50,8 +50,9 @@ An Agile Scrum management method will be deployed using [Taiga](https://tree.tai
 
 The project will use Test Driven Development and testing will be carried out using [Tape](https://github.com/substack/tape) based on [this setup](http://12devsofxmas.co.uk/2015/12/day-2-testing-react-applications/). The testing process will adhere to the following guidelines.
 
-- All tests will be written before the code they are testing is developed.
->Each test will initially fail and then pass when the code it is testing has been completed successfully.
+- All tests will be written before the code they are testing is developed.   
+
+>Each test will initially fail and then pass when the code it is testing has been completed successfully.   
 
 - Code rot will be avoided by removing interdependencies between functions/features where possible.
 - Tests should be simple and fast to run.
@@ -94,10 +95,12 @@ Build a Display Component that toggles visibility of a Rectangle by clicking a b
 
 **Summary**   
 Both approaches require an initial linear step that all consecutive steps have a dependency on.  The benefits of the Declarative approach are :
-- A simplified development process, that combines the Imperative sub-task of producing a roadmap into the Declarative construction of the display component.
+- A simplified development process, that combines the Imperative sub-task of producing a roadmap into the Declarative construction of the display component.   
+
 >It is declarative because it is defining what the end result will look like before step-by-step tests are developed to reach this result.   
 
-- It is more robust to changes because the roadmap and display component are one in the same thing.
+- It is more robust to changes because the roadmap and display component are one in the same thing.   
+
 >Any change made to the display component is the equivalent of re-working the entire roadmap to include a change with cascading effects automatically factored into the equation.
 
 ## Primary Modules Used
