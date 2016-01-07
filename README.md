@@ -170,27 +170,27 @@ Display components are the React components that rely on inherited props to enab
 
 Declarative TDD will use each Display Component as the framework for reference purposes when developing the automatic tests in future Sprint Backlogs.
 
-###### Display Components Pre-Development
+##### Display Components Pre-Development
 Below is a list of User Stories broken down into Tasks and Sub-Tasks that will be completed during this Sprint.
 
-- **Heading Display Components**
+* **Heading Display Components**
   - Login Panel
   - Logout Panel
   - Nav Bar
   - Heading Wrapper
-- **Home Display Components**
+* **Home Display Components**
   - Logged Out Home Body
   - Logged In Home Body
-- **Gallery Display Components**
+* **Gallery Display Components**
   - Gallery Image Template
   - Gallery Body
   - Gallery Footer CP
-- **Editor Display Components**
+* **Editor Display Components**
   - Editor Sidebar CP
   - Editor Body
   - Editor Footer CP
 
-###### Display Components Post-Development
+##### Display Components Post-Development
 Post-Development notes regarding Display Components will be listed in this section of the document and describe changes that were made to the originally proposed layout.
 
 [Back to Top](#contents)
