@@ -9,9 +9,7 @@ let indexTemplate = `
         </head>
 
         <body>
-            <div class='container'>
-                __REACT_APP__
-            </div>
+            <div id='container'>__REACT_APP__</div>
             <script src='bundle.js'></script>
         </body>
     </html>

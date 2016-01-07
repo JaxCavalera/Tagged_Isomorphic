@@ -46,6 +46,8 @@ Tagged is a simple web application that allows a user to register / login and up
 
 All images will remain private exclusive to the user that uploaded them since the underlying functionality to include public and private galleries would not demand additional skills and therefore would not contribute anything substantial towards this project as a portfolio candidate.
 
+Development will begin by establishing a basic stack environment and producing a "Hello World" test component using server-side rendering.  Once this is running, test driven development can begin.
+
 An Agile Scrum management method will be deployed using [Taiga](https://tree.taiga.io/) with a new github branch being created at the completion of each Sprint Backlog.
 
 The project will use Test Driven Development and testing will be carried out using [Tape](https://github.com/substack/tape) based on [this setup](http://12devsofxmas.co.uk/2015/12/day-2-testing-react-applications/). The testing process will adhere to the following guidelines.

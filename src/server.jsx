@@ -9,7 +9,7 @@ import {match, RoutingContext} from 'react-router';
 import createLocation from 'history/lib/createLocation';
 
 //  =====  Import React Routes  =====
-import indexTemplate from './index-template.jsx';   //type is string literal
+import indexTemplate from './index-template.jsx';
 import routes from './routes.jsx';
 
 //  =====  Express Use Bindings  =====
