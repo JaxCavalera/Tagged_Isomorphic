@@ -1,0 +1,233 @@
+/*
+This styling is for the heading component of Tagged
+Colours are listed :
+logo blue = #007DF1
+Sky blue = rgb(180, 213, 242)
+Navy = #000C4D
+Ice Blue = rgba(236, 248, 255, 1)
+*/
+
+/*Controls styling of the heading*/
+.headingWrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 160px;
+}
+
+.heading
+{
+    display: flex;
+    flex-direction: row;
+    min-width: 285px;
+    width: 100%;
+    max-width: 980px;
+    background: rgb(180, 213, 242);
+    height: 110px;
+    padding: 5px 0px;
+}
+
+/*Controls Auto Scaling and placement of Tagged Logo*/
+.logoPanel
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(180, 213, 242);
+	flex-basis: 81%;
+	/*margin-right: 5px;*/
+    height: 110px;
+    min-width: 120px;
+}
+
+.tagLogo
+{
+	max-width: 178px;
+    max-height: 80px;
+	width: 80%;
+    min-width: 45px;
+    min-height: 20px;
+}
+
+/*Auth Panel Styling*/
+.authPanel
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    height: 100%;
+    flex-basis: 100%;
+    max-width: 185px;
+}
+
+.loginForm
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+    line-height: 100%;
+    height: 100%;
+    background: rgb(180, 213, 242);
+}
+
+.logoutForm
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+    height: 100%;
+    background: rgb(180, 213, 242);
+}
+
+.loginForm > input
+{
+    text-align: center;
+    line-height: 100%;
+    height: 20px;
+	width: 80%;
+}
+
+.loginFormTitle
+{
+	font-weight: bold;
+    font-size: 1em;
+	height: 1em;
+	line-height: 0.7em;
+	text-align: center;
+	width: 80%;
+}
+
+.logoutFormTitle
+{
+	font-weight: bold;
+    font-size: 1em;
+	height: auto;
+	line-height: 1.4em;
+	text-align: center;
+	width: 80%;
+    margin-top: 15px;
+}
+
+.logFormInput
+{
+    /*box-sizing is used to make the border sit inside*/
+	box-sizing: border-box;
+    font-size: 0.8em;
+    line-height: 1.1em;
+    height: 20px;
+	margin: 2px 0px;
+	color: rgba(0, 0, 0, 1);
+}
+
+.loginFormBtns
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+	width: 80%;
+}
+
+.logoutFormBtns
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+	width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.loginFormBtns > button, .logoutFormBtns > button
+{
+	background: rgba(236, 248, 255, 1);;
+	height: 20px;
+	line-height: 0.4em;
+	font-size: 0.8em;
+	width: 45%;
+	border: solid;
+	border-color: rgba(67, 138, 201, 0.5);
+	border-width: 1px;
+	border-radius: 0.25em;
+	cursor: pointer;
+}
+
+.loginFormBtns > button:hover, .logoutFormBtns > button:hover
+{
+	background: #007DF1;
+	color: rgba(255, 255, 255, 1);
+}
+
+.inputError
+{
+	color: rgba(255, 0, 0, 1);
+    font-size: 0.59em;
+    height: 1em;
+}
+
+/*Navigation Menu Styling*/
+.navPanel
+{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    max-width: 980px;
+}
+
+.navPanel > ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgb(180, 213, 242);
+    background: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+
+}
+
+.navPanel > ul > li
+{
+    display: flex;
+    height: 100%;
+    width: 32%;
+    background: #000C4D;
+}
+
+.navPanel > ul > li > a
+{
+    display: flex;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: rgb(180, 213, 242);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.navPanel > ul > li > a:hover
+{
+    display: flex;
+    font-weight: bold;
+    font-size: 1.25em;
+    background: #007DF1;
+	color: rgba(255, 255, 255, 1);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}

@@ -4,6 +4,10 @@ let indexTemplate = `
     <html>
         <head>
             <title>Tagged</title>
+            <!-- Add Favicons -->
+            <link rel="icon" sizes="192x192" href="images/androidicon.png">
+            <link rel="manifest" href="images/manifest.json">
+
             <!-- Check if viewed on a Mobile -->
             <meta name="viewport" content="width=device-width, initial-scale=1">
         </head>

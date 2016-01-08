@@ -1,0 +1,11 @@
+{
+ "name": "Tagged",
+ "icons": [
+  {
+   "src": "\/androidicon.png",
+   "sizes": "192x192",
+   "type": "image\/png"
+  }
+ ],
+ "display": "standalone"
+}

@@ -11,6 +11,9 @@
 **[◄ Project Overview ►](#project-overview)**   
 [Declarative TDD](#declarative-tdd)   
 [Primary Modules Used](#primary-modules-used)   
+[Wireframe Layout and Style Guide](#wireframe-layout-and-style-guide)   
+[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ► Wireframes](#wireframes)   
+[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ► Style Guide](#style-guide)   
 [Release Backlog](#release-backlog)   
 [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ► Heading](#heading)   
 [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ► Home](#home)   
@@ -123,6 +126,46 @@ The following list of modules is not exhaustive but will provide a quick overvie
 
 - - -
 
+## Wireframe Layout and Style Guide
+#### Wireframes
+Below are the wireframe mock-ups for the layout of application views.   
+
+<img src='public/images/home-view-wireframe.jpg'/>
+<br/><br/>
+
+- - -
+<br/>
+<img src='public/images/gallery-view-wireframe.jpg'/>
+<br/><br/>
+
+- - -
+<br/>
+<img src='public/images/editor-view-wireframe.jpg'/>
+<br/><br/>
+
+Include a toggle button in the Details area to Hide/Show Tags with Tags off by default.  This will be a universal toggle so it will remember the individual user setting and apply it to all images displayed in the Editor View.   
+
+[Back to Top](#contents)
+
+- - -
+
+#### Style Guide
+**Font Family**   
+Verdana, Arial, Helvetica, sans-serif   
+
+**Colours**   
+Logo Blue = rgba(0, 125, 241, 1)   
+Sky Blue = rgba(180, 213, 242, 1)   
+Navy = rgba(0, 12, 77, 1)   
+Ice Blue = rgba(236, 248, 255, 1)   
+
+**Other**
+A margin of 5px should be maintained between DOM elements where practicable.
+
+[Back to Top](#contents)
+
+- - -
+
 ## Release Backlog    
 Tagged will be constructed from the following key components and User Stories (features listed as dot-points).
 
@@ -131,6 +174,7 @@ Tagged will be constructed from the following key components and User Stories (f
 - Tagged logo
 - Authentication sub-components
 - Additional information shared by all views
+- Navigation bar when logged in
 
 #### Home
 - Basic information about Tagged
@@ -190,22 +234,28 @@ Declarative TDD will use each Display Component as the framework for reference p
 ##### Display Components Pre-Development
 Below is a list of User Stories broken down into Tasks and Sub-Tasks that will be completed during this Sprint.
 
+>Spike Solutions will need to be developed in order to complete the commented sub-tasks.
+
 * **Heading Display Components**
-  - Login Panel
-  - Logout Panel
-  - Nav Bar
-  - Heading Wrapper
+  - Login
+  - Logout
+  - Navigation Bar
+  - Logo
 * **Home Display Components**
-  - Logged Out Home Body
-  - Logged In Home Body
+  - Home Login Body
+  - Home Logout Body
 * **Gallery Display Components**
-  - Gallery Image Template
-  - Gallery Body
-  - Gallery Footer CP
+  - Gallery Image
+  >*Missing props to handle checkbox related functions & onClick function if the image is clicked on to go to the Editor View*   
+
+  - Gallery Body   
+  >*PropType for instances of the Image Component may need changing when the approach to handling this task is updated from using renderToString*   
+
+  - Gallery Footer
 * **Editor Display Components**
-  - Editor Sidebar CP
+  - Editor Sidebar
   - Editor Body
-  - Editor Footer CP
+  - Editor Footer
 
 ##### Display Components Post-Development
 Post-Development notes regarding Display Components will be listed in this section of the document and describe changes that were made to the originally proposed layout.
