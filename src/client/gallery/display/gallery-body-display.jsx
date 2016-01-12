@@ -12,5 +12,5 @@ export default class GalleryBodyDisplay extends Component {
 
 //  declare PropTypes here to lock variables into a specific type
 GalleryBodyDisplay.propTypes = {
-    galleryImageViewInstances: propTypes.string.isRequired,
+    galleryImageViewInstances: PropTypes.arrayOf(PropTypes.object),
 };

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import taglogo from '../../../images/taggedLogo.png';
+import taglogo from '../../../images/tagged-logo.png';
 
 export default class LogoDisplay extends Component {
     render() {

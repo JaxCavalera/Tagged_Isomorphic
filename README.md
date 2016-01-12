@@ -102,11 +102,17 @@ Build a Display Component that toggles visibility of a Rectangle by clicking a b
 Both approaches require an initial linear step that all consecutive steps have a dependency on.  The benefits of the Declarative approach are :
 - A simplified development process, that combines the Imperative sub-task of producing a roadmap into the Declarative construction of the display component.   
 
->It is declarative because it is defining what the end result will look like before step-by-step tests are developed to reach this result.   
+>It is declarative because it is defining what the end result will look like in a declarative manner instead of using a Step-by-Step process to explain what needs to happen to reach this result.   
 
 - It is more robust to changes because the roadmap and display component are one in the same thing.   
 
 >Any change made to the display component is the equivalent of re-working the entire roadmap to include a change with cascading effects automatically factored into the equation.
+
+Declarative TDD is still dynamic enough that additional, unknown props and content can be added to the "dumb" Display components any time and then tests can be produced.
+
+[Back to Top](#contents)
+
+- - -
 
 ## Primary Modules Used
 The following list of modules is not exhaustive but will provide a quick overview of notable API's used in the development of Tagged.
@@ -145,6 +151,8 @@ Below are the wireframe mock-ups for the layout of application views.
 
 Include a toggle button in the Details area to Hide/Show Tags with Tags off by default.  This will be a universal toggle so it will remember the individual user setting and apply it to all images displayed in the Editor View.   
 
+Footer and Sidebar panels should be collapsible or shrinkable by the end user with state being saved.
+
 [Back to Top](#contents)
 
 - - -
@@ -159,7 +167,7 @@ Sky Blue = rgba(180, 213, 242, 1)
 Navy = rgba(0, 12, 77, 1)   
 Ice Blue = rgba(236, 248, 255, 1)   
 
-**Other**
+**Other**   
 A margin of 5px should be maintained between DOM elements where practicable.
 
 [Back to Top](#contents)
@@ -200,11 +208,12 @@ Tagged will be constructed from the following key components and User Stories (f
 Completion of the following Sprint Backlogs will signify the finalisation of this project.
 
 1. Create display components (dumb)
-2. Establish routing and view components
-3. Configure passport for social login
-4. Configure postgreSQL database tables
-5. Configure session management
-6. Create view logic components (smart)
+2. Style display components (tweak DOM elements as needed)
+3. Establish routing and view components
+4. Configure passport for social login
+5. Configure postgreSQL database tables
+6. Configure session management
+7. Create view logic components (smart)
 
 The order of these Sprint Backlogs is subject to change depending on requirements of specific modules to ensure testing is complete.
 
@@ -249,7 +258,7 @@ Below is a list of User Stories broken down into Tasks and Sub-Tasks that will b
   >*Missing props to handle checkbox related functions & onClick function if the image is clicked on to go to the Editor View*   
 
   - Gallery Body   
-  >*PropType for instances of the Image Component may need changing when the approach to handling this task is updated from using renderToString*   
+  >*run galleryImgList.map() in the gallery-body-view.jsx render() function, and have the callback function passed to map() return a child component element.(edited)  will result in an array proptype*   
 
   - Gallery Footer
 * **Editor Display Components**
@@ -258,7 +267,16 @@ Below is a list of User Stories broken down into Tasks and Sub-Tasks that will b
   - Editor Footer
 
 ##### Display Components Post-Development
-Post-Development notes regarding Display Components will be listed in this section of the document and describe changes that were made to the originally proposed layout.
+Post-Development notes regarding Display Components will be listed in this section of the document and describe changes that were made to the originally proposed layout or Spike Solutions that were produced as part of the development process.   
+
+<svg height="12pt"><text fill="#007df1" font-size="12pt" font-weight="bold" x="0" y="12">Spike Solutions</text></svg>   
+The following Spike Solutions were produced in order to solve PropType and DOM Element Structure problems.
+
+**Problem**   
+Generate unique instances of a React component and insert them into another component programmatically.
+
+**Solution**   
+- Retrieve unique information as an array and use the map() function to cycle through each array element.
 
 [Back to Top](#contents)
 

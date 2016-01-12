@@ -24367,6 +24367,9 @@
 	    _createClass(HomeView, [{
 	        key: 'render',
 	        value: function render() {
+	            var heightValue = 200;
+	            var widthValue = 200;
+
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'homeView' },
@@ -24374,7 +24377,8 @@
 	                    'p',
 	                    null,
 	                    'Tagged Isomorphic Home View'
-	                )
+	                ),
+	                _react2.default.createElement('div', { className: 'resizable', style: { 'backgroundColor': 'rgba(0, 125, 241, 1)', height: heightValue + 'px', width: widthValue + 'px' } })
 	            );
 	        }
 	    }]);
