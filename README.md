@@ -269,7 +269,7 @@ Below is a list of User Stories broken down into Tasks and Sub-Tasks that will b
 ##### Display Components Post-Development
 Post-Development notes regarding Display Components will be listed in this section of the document and describe changes that were made to the originally proposed layout or Spike Solutions that were produced as part of the development process.   
 
-<img src="src/images/spike-solutions.svgs">   
+<img src="src/images/spike-solutions.svgz">   
 The following Spike Solutions were produced in order to solve PropType and DOM Element Structure problems.
 
 **Problem**   
