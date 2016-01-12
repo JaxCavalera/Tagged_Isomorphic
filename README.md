@@ -235,12 +235,13 @@ The Post-Development stage will review any obstacles or changes that occurred du
 
 ## Sprint Backlog Summaries
 
-#### Display Components
+> ### Display Components
+
 Display components are the React components that rely on inherited props to enable interactivity and have no knowledge of the store. These components define the CSS styling and DOM element structure.
 
 Declarative TDD will use each Display Component as the framework for reference purposes when developing the automatic tests in future Sprint Backlogs.
 
-##### Display Components Pre-Development
+### Display Components Pre-Development
 Below is a list of User Stories broken down into Tasks and Sub-Tasks that will be completed during this Sprint.
 
 >Spike Solutions will need to be developed in order to complete the commented sub-tasks.
@@ -266,17 +267,25 @@ Below is a list of User Stories broken down into Tasks and Sub-Tasks that will b
   - Editor Body
   - Editor Footer
 
-##### Display Components Post-Development
+### Display Components Post-Development
 Post-Development notes regarding Display Components will be listed in this section of the document and describe changes that were made to the originally proposed layout or Spike Solutions that were produced as part of the development process.   
 
-<mark>Spike Solutions</mark>   
+#### Spike Solutions   
 The following Spike Solutions were produced in order to solve PropType and DOM Element Structure problems.
 
-**Problem**   
+**Problem - Instancing React Components**   
 Generate unique instances of a React component and insert them into another component programmatically.
 
 **Solution**   
-- Retrieve unique information as an array and use the map() function to cycle through each array element.
+Retrieve unique information as an array and use the map() function to cycle through each array element. This will produce an Array and the array elements will be passed into the desired DOM Element with the following PropType definition : `PropTypes.arrayOf(PropTypes.object)`.
+
+**Problem - Using SVG**   
+Test SVG support as inline code and imported graphics, ensuring that style information can be manipulated programmatically.
+
+**Solution**   
+SVG graphics will need to be positioned in the top left corner of the canvas when being exported. Drawplus X8 provided the cleanest SVG export out of tested software which included Illustrator, Corel Draw, Inkscape and Drawplus.
+
+SVG tags will need to have the `viewBox=0 0 50 50` attribute added in order to provide more control over image scaling.
 
 [Back to Top](#contents)
 
