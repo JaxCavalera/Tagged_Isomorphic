@@ -22,10 +22,6 @@
 
 
 **[◄ Sprint Backlogs ►](#sprint-backlogs)**   
-[Sprint Backlog Summaries](#sprint-backlog-summaries)   
-[&nbsp;&nbsp;&nbsp; Display Components](#display-components)   
-[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ► Pre-Development](#display-components-pre--development)   
-[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ► Post-Development](#display-components-post--development)   
 
 <br/>
 
@@ -180,7 +176,6 @@ Tagged will be constructed from the following key components and User Stories (f
 #### Heading
 - Login and logout versions
 - Tagged logo
-- Authentication sub-components
 - Additional information shared by all views
 - Navigation bar when logged in
 
@@ -204,16 +199,16 @@ Tagged will be constructed from the following key components and User Stories (f
 
 - - -
 
-# Sprint Backlogs
+## Sprint Backlogs
 Completion of the following Sprint Backlogs will signify the finalisation of this project.
 
 1. Create display components (dumb)
 2. Style display components (tweak DOM elements as needed)
 3. Establish routing and view components
 4. Configure passport for social login
-5. Configure postgreSQL database tables
+5. Configure PostgreSQL database tables
 6. Configure session management
-7. Create view logic components (smart)
+7. Finalise view logic components (smart)
 
 The order of these Sprint Backlogs is subject to change depending on requirements of specific modules to ensure testing is complete.
 
@@ -223,69 +218,7 @@ The following tests will be slightly different when working with Mobservable to 
 - The behaviour of a React component and how it affects the state via dispatched actions.
 - The state or the application (the default values and how it changes with to subscribed actions)
 
-Sprint Backlogs will be documented in the [Sprint Backlog Summaries](#sprint-backlog-summaries) which are divided into 2 stages; **Pre-Development** and **Post-Development**.
-
-The Pre-Development stage will provide a rundown of each User Story being completed during a Sprint.  User Stories will be defined as Tasks and Sub-Tasks, designed to suit a test driven development process.
-
-The Post-Development stage will review any obstacles or changes that occurred during development. A brief summary will wrap up each Milestone detailing any differences between the Burndown Velocity and the Estimated Completion Date, plus what actions will be taken to keep the project on track.
-
-[Back to Top](#contents)
-
-- - -
-
-## Sprint Backlog Summaries
-
-> ### Display Components
-
-Display components are the React components that rely on inherited props to enable interactivity and have no knowledge of the store. These components define the CSS styling and DOM element structure.
-
-Declarative TDD will use each Display Component as the framework for reference purposes when developing the automatic tests in future Sprint Backlogs.
-
-### Display Components Pre-Development
-Below is a list of User Stories broken down into Tasks and Sub-Tasks that will be completed during this Sprint.
-
->Spike Solutions will need to be developed in order to complete the commented sub-tasks.
-
-* **Heading Display Components**
-  - Login
-  - Logout
-  - Navigation Bar
-  - Logo
-* **Home Display Components**
-  - Home Login Body
-  - Home Logout Body
-* **Gallery Display Components**
-  - Gallery Image
-  >*Missing props to handle checkbox related functions & onClick function if the image is clicked on to go to the Editor View*   
-
-  - Gallery Body   
-  >*run galleryImgList.map() in the gallery-body-view.jsx render() function, and have the callback function passed to map() return a child component element.(edited)  will result in an array proptype*   
-
-  - Gallery Footer
-* **Editor Display Components**
-  - Editor Sidebar
-  - Editor Body
-  - Editor Footer
-
-### Display Components Post-Development
-Post-Development notes regarding Display Components will be listed in this section of the document and describe changes that were made to the originally proposed layout or Spike Solutions that were produced as part of the development process.   
-
-#### Spike Solutions   
-The following Spike Solutions were produced in order to solve PropType and DOM Element Structure problems.
-
-**Problem - Instancing React Components**   
-Generate unique instances of a React component and insert them into another component programmatically.
-
-**Solution**   
-Retrieve unique information as an array and use the map() function to cycle through each array element. This will produce an Array and the array elements will be passed into the desired DOM Element with the following PropType definition : `PropTypes.arrayOf(PropTypes.object)`.
-
-**Problem - Using SVG**   
-Test SVG support as inline code and imported graphics, ensuring that style information can be manipulated programmatically.
-
-**Solution**   
-SVG graphics will need to be positioned in the top left corner of the canvas when being exported. Drawplus X8 provided the cleanest SVG export out of tested software which included Illustrator, Corel Draw, Inkscape and Drawplus.
-
-SVG tags will need to have the `viewBox=0 0 50 50` attribute added in order to provide more control over image scaling.
+The Agile-Scrum and TDD process will be managed via the [Tagged Isomorphic - Taiga Project Page](https://tree.taiga.io/project/jaxcavalera-tagged-isomorphic/).
 
 [Back to Top](#contents)
 
