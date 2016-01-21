@@ -14,7 +14,7 @@ export default class EditorFooterDisplay extends Component {
                     <h2>{'Details'}</h2>
                     <p>{'Tag Visibility : '}</p>
                     <label className='editorTagCheckbox'>
-                        <input type='checkbox' onChange={this.props.editorTagCheckbox} />
+                        <input type='checkbox' checked={this.props.editorShowTagsBool} />
                         <span><span></span></span>
                     </label>
                     <p>{'Image Name : '}{this.props.editorImgNameValue}</p>
@@ -35,6 +35,6 @@ EditorFooterDisplay.propTypes = {
     editorFooterPrevBtnClick: PropTypes.func.isRequired,
     editorFooterNextBtnClick: PropTypes.func.isRequired,
     editorImgNameValue: PropTypes.string.isRequired,
-    editorTagCheckbox: PropTypes.func.isRequired,
+    editorShowTagsBool: PropTypes.bool.isRequired,
     taggedUserDetails: PropTypes.string.isRequired,
 };

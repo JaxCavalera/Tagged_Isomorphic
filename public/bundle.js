@@ -24337,6 +24337,8 @@
 
 	'use strict';
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 	Object.defineProperty(exports, "__esModule", {
@@ -24348,6 +24350,8 @@
 	var _react2 = _interopRequireDefault(_react);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -24361,12 +24365,52 @@
 	    function HomeView() {
 	        _classCallCheck(this, HomeView);
 
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HomeView).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(HomeView).call(this));
+
+	        _this.state = {
+	            displayValue: { display: 'none' },
+	            imageURLs: ['some/url/a.png', 'some/url/b.png', 'some/url/c.png'],
+	            selectedURLs: {}
+	        };
+
+	        _this.state.imageURLs.forEach(function (url) {
+	            _this.state.selectedURLs[url] = { checkedValue: false, imageName: 'Image Name' };
+	        });
+
+	        console.log(JSON.stringify(_this.state));
+	        return _this;
 	    }
 
 	    _createClass(HomeView, [{
 	        key: 'render',
 	        value: function render() {
+	            var _this2 = this;
+
+	            var checkboxFunc = function checkboxFunc(e) {
+	                // true or false (false initially)
+	                var showImage = e.target.checked;
+
+	                // if showImage === True set newDisplayValue = 'block'
+	                var newDisplayValue = showImage ? 'block' : 'none';
+
+	                // Clone state and modify the cloned version
+	                var newState = _extends({}, _this2.state, {
+	                    displayValue: _extends({}, _this2.state.displayValue, {
+	                        display: newDisplayValue
+	                    }),
+	                    selectedURLs: _extends({}, _this2.state.selectedURLs, _defineProperty({}, e.target.name, _extends({}, _this2.state.selectedURLs[e.target.name], {
+	                        checkedValue: showImage
+	                    })))
+	                });
+
+	                _this2.setState(newState, function () {
+	                    console.log(_this2.state);
+	                });
+	            };
+
+	            var deleteUrlFunc = function deleteUrlFunc(e) {
+	                // get any current values then update state
+	            };
 
 	            return _react2.default.createElement(
 	                'div',
@@ -24375,6 +24419,36 @@
 	                    'p',
 	                    null,
 	                    'Tagged Isomorphic Home View'
+	                ),
+	                _react2.default.createElement(
+	                    'label',
+	                    { className: 'galleryImageCheckbox' },
+	                    _react2.default.createElement('input', { name: this.state.imageURLs[1], checked: this.state.imageURLs[1].checkedValue, type: 'checkbox', onClick: checkboxFunc }),
+	                    _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        _react2.default.createElement('span', null)
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'label',
+	                    { className: 'galleryImageCheckbox' },
+	                    _react2.default.createElement('input', { name: this.state.imageURLs[0], checked: this.state.imageURLs[0].checkedValue, type: 'checkbox', onClick: checkboxFunc }),
+	                    _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        _react2.default.createElement('span', null)
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'button',
+	                    { onClick: deleteUrlFunc },
+	                    'Delete Url'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    { style: this.state.displayValue },
+	                    this.state.imageURLs[1]
 	                )
 	            );
 	        }

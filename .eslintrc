@@ -2,28 +2,29 @@
   "env": {},
   "globals": {},
   "ecmaFeatures": {
-    "generators": true,
-    "forOf": true,
+    "arrowFunctions": true,
     "binaryLiterals": true,
+    "blockBindings": true,
     "classes": true,
     "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
     "modules": true,
-    "templateStrings": true,
-    "unicodeCodePointEscapes": true,
+    "objectLiteralComputedProperties": true,
     "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
     "objectLiteralShorthandProperties": true,
     "octalLiterals": true,
-    "jsx": true,
-    "destructuring": true,
-    "objectLiteralComputedProperties": true,
-    "arrowFunctions": true,
-    "spread": true,
-    "globalReturn": true,
-    "objectLiteralShorthandMethods": true,
     "regexUFlag": true,
+    "regexYFlag": true,
+    "spread": true,
+    "experimentalObjectRestSpread": true,
     "superInFunctions": true,
-    "blockBindings": true,
-    "regexYFlag": true
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": true,
+    "jsx": true
   },
   "parser": null,
   "rules": {
@@ -76,11 +77,11 @@
       {
         "vars": "all",
         "args": "all"
-      }
+      },
     ],
     "no-use-before-define": 2
   },
   "plugins": [
-    "react"
+    "react",
   ]
 }
