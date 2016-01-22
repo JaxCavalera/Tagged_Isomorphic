@@ -3,7 +3,7 @@ import React, {Component, PropTypes} from 'react';
 export default class HomeLogoutBodyDisplay extends Component {
     render() {
         return (
-            <div className='homeBody'>
+            <div className='homeBodyDisplay'>
                 <h1>{this.props.welcomeName}{'\'s Dashboard'}</h1>
                 <h2>{'Tagged Statistics'}</h2>
                 <p>{'Images In Gallery : '}{this.props.galleryImageCount}</p><br/>
