@@ -2,9 +2,6 @@
 import express from 'express';
 const app = express();
 
-//  =====  Configure environment variabe for browser to handle CSS Imports  =====
-delete process.env.BROWSER;
-
 // import path from 'path';
 import React from 'react';
 import {renderToString} from 'react-dom/server';

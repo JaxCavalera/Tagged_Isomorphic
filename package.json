@@ -4,8 +4,9 @@
   "description": "Tagged is an image tagging SPA based on facebooks image galleries",
   "main": "",
   "scripts": {
-    "bundle": "webpack --watch",
-    "start": "node src/config.js"
+    "clientBundle": "webpack --config webpack-client-config.js --watch",
+    "serverBundle": "webpack --config webpack-server-config.js --watch",
+    "start": "node src/serverBundle.js"
   },
   "repository": {
     "type": "git",
