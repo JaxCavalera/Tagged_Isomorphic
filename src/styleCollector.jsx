@@ -1,4 +1,4 @@
-const canUseDOM = Boolean(
+let canUseDOM = Boolean(
     typeof window !== 'undefined' &&
     window.document &&
     window.document.createElement
@@ -6,7 +6,7 @@ const canUseDOM = Boolean(
 
 let css = [];
 
-export const collectOrRender = (styles) => {
+export let collectOrRender = (styles) => {
     if (canUseDOM === true) {
         return styles._insertCss();
     }
@@ -14,6 +14,6 @@ export const collectOrRender = (styles) => {
     css.push(styles._getCss());
 };
 
-export const renderStyles = () => {
+export let renderStyles = () => {
     return css.join('');
 };

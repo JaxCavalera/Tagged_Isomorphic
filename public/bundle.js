@@ -64,6 +64,9 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var serverStyles = document.getElementById('serverStyles');
+	serverStyles.parentNode.removeChild(serverStyles);
+
 	(0, _reactDom.render)(_react2.default.createElement(_reactRouter.Router, { routes: _routes2.default, history: (0, _createBrowserHistory2.default)() }), document.getElementById('container'));
 
 /***/ },

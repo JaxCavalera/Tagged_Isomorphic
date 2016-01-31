@@ -18886,7 +18886,7 @@
 	});
 	//  =====  HTML Template  =====
 	var indexTemplate = {
-	    html: "\n        <!DOCTYPE html>\n        <html>\n            <head>\n                <title>Tagged</title>\n                <!-- Add Favicons -->\n                <link rel=\"icon\" sizes=\"192x192\" href=\"images/android-icon.png\">\n                <link rel=\"manifest\" href=\"images/manifest.json\">\n\n                <!-- Check if viewed on a Mobile -->\n                <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n                <style>__GET_CSS__</style>\n            </head>\n\n            <body>\n                <div id='container'>__REACT_APP__</div>\n                <script src='bundle.js'></script>\n            </body>\n        </html>\n    "
+	    html: "\n        <!DOCTYPE html>\n        <html>\n            <head>\n                <title>Tagged</title>\n                <!-- Add Favicons -->\n                <link rel=\"icon\" sizes=\"192x192\" href=\"images/android-icon.png\">\n                <link rel=\"manifest\" href=\"images/manifest.json\">\n\n                <!-- Check if viewed on a Mobile -->\n                <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n                <style id=\"serverStyles\">__GET_CSS__</style>\n            </head>\n\n            <body>\n                <div id='container'>__REACT_APP__</div>\n                <script src='bundle.js'></script>\n            </body>\n        </html>\n    "
 	};
 
 	exports.default = indexTemplate;
