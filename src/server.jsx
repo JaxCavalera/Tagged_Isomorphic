@@ -1,10 +1,12 @@
 //  =====  Import & Configure Modules  =====
 import express from 'express';
 const app = express();
+require('dotenv').load();
 
 // import path from 'path';
 import React from 'react';
 import {renderToString} from 'react-dom/server';
+import {renderStyles} from './styleCollector.jsx';
 import {match, RoutingContext} from 'react-router';
 import createLocation from 'history/lib/createLocation';
 
@@ -33,7 +35,14 @@ app.get('*', (req, res) => {
         } else if (renderProps) {
             //  Props will be true if the req.url matches a route path
             let newView = renderToString(<RoutingContext {...renderProps} />);
-            res.send(indexTemplate.replace('__REACT_APP__', newView));
+            let appReplaced = indexTemplate.html.replace('__REACT_APP__', newView);
+
+            //  Add Critical CSS Styles
+            let styles = renderStyles();
+            let stylesReplaced = appReplaced.replace('__GET_CSS__', styles);
+
+            //  Send the server-side rendered static HTML View
+            res.send(stylesReplaced);
         }
     });
 });

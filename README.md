@@ -19,10 +19,10 @@
 [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ► Home](#home)   
 [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ► Gallery](#gallery)   
 [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ► Editor](#editor)   
+[Sprint Backlogs](#sprint-backlogs)   
 
-
-**[◄ Sprint Backlogs ►](#sprint-backlogs)**   
-
+**[◄ Critical Changes ►](#critical-changes)**   
+[CSS Importing](#css-importing)  
 <br/>
 
 - - -
@@ -49,7 +49,7 @@ Development will begin by establishing a basic stack environment and producing a
 
 An Agile Scrum management method will be deployed using [Taiga](https://tree.taiga.io/) with a new github branch being created at the completion of each Sprint Backlog.
 
-The project will use Test Driven Development and testing will be carried out using [Tape](https://github.com/substack/tape) based on [this setup](http://12devsofxmas.co.uk/2015/12/day-2-testing-react-applications/). The testing process will adhere to the following guidelines.
+The project will use Test Driven Development and testing will be carried out using [Karma + Karma-Webpack](https://github.com/substack/tape) based on [this setup](http://12devsofxmas.co.uk/2015/12/day-2-testing-react-applications/). The testing process will adhere to the following guidelines.
 
 - All tests will be written before the code they are testing is developed.   
 
@@ -219,6 +219,27 @@ The following tests will be slightly different when working with Mobservable to 
 - The state or the application (the default values and how it changes with to subscribed actions)
 
 The Agile-Scrum and TDD process will be managed via the [Tagged Isomorphic - Taiga Project Page](https://tree.taiga.io/project/jaxcavalera-tagged-isomorphic/).
+
+[Back to Top](#contents)
+
+- - -
+
+# Critical Changes
+During the development of Tagged Isomorphic there are likely to be some critical changes in the way that certain aspects of the development process are handled to best suit an isomorphic approach.
+
+## CSS Importing
+Initially the concept of View (smart) and Display (dumb) components is to divide the functional logic handling code from the display code. The benefits it provides are related to a separation of concerns and the ability to easily switch from one State Management Implementation to another without ever touching the display related code.
+
+CSS files are not able to be imported or required by node.js normally and require the project to bundle them up with webpack or similar. The problem is that normal webpack CSS/Style modules/loaders are designed to work client side and so their usage for server-side rendering requires additional functional logic to be added into the components.
+
+The best way to handle this is by moving the import statement from the Display components into the View components so that all additional "smart" code is handled in one place. There are Two (2) points that should be noted which directly relate to this change :
+
+1. The use of CSS-Modules will not be commensurate with the continued usage of View / Display component pairs.    
+>css-modules handle name-spacing your class names by replacing the string literals with variables and then parsing those variables to generate the class names.  (simplied explanation)
+>
+>Replacing class names in this way would impose significant code restructuring if it were to be used outside the context of a CSS-Modules based project and defeat one of the main benefits to using smart/dumb component pairs.
+
+2. In order to use a Display component outside of the current project, a single line of code to import the CSS file directly into the component will be required.
 
 [Back to Top](#contents)
 

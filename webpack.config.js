@@ -18,6 +18,7 @@ module.exports = {
             {
                 test: /\.jsx?$/, // scan for js and jsx files only
                 loader: 'babel',
+                exclude: /node_modules/,
                 query: {
                     "presets": ["es2015", "react", "stage-2"],
                     "ignore": ["/node_modules/"],
@@ -25,7 +26,11 @@ module.exports = {
             },
             {
                 test: /\.css$/, // scan for css files only
-                loader: 'style!css!postcss',
+                loaders: [
+                    'isomorphic-style-loader',
+                    'css-loader',
+                    'postcss-loader'
+                ],
                 include: APP_PATH,
                 exclude: /node_modules/
             }

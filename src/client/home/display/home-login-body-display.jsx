@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-require('./home.css');
 
 export default class HomeLoginBodyDisplay extends Component {
     render() {

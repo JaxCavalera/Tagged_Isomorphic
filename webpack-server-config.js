@@ -4,8 +4,6 @@ var fs = require('fs');
 var webpack = require('webpack');
 
 var ROOT_PATH = path.resolve(__dirname, 'src');
-var APP_PATH = path.resolve(ROOT_PATH, 'client');
-var BUILD_PATH = path.resolve(ROOT_PATH, '../public');
 
 var baseConfig = require('./webpack.config.js');
 
@@ -36,6 +34,9 @@ baseConfig.output = {
 };
 
 baseConfig.externals = nodeModules;
+
+// baseConfig.plugins = [
+// ];
 
 //  Exports the updated config which will be used by Webpack
 module.exports = baseConfig;
