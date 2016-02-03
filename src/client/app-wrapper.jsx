@@ -13,9 +13,9 @@ export default class AppWrapper extends Component {
     }
 }
 
-AppWrapper.proptypes = {
-    headingOption: PropTypes.object,
-    bodyOption: PropTypes.object,
-    sidebarOption: PropTypes.object,
-    footerOption: PropTypes.object
+AppWrapper.propTypes = {
+    headingOption: PropTypes.obj,
+    bodyOption: PropTypes.obj,
+    sidebarOption: PropTypes.obj,
+    footerOption: PropTypes.obj
 };

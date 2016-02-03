@@ -20782,11 +20782,11 @@
 
 	exports.default = AppWrapper;
 
-	AppWrapper.proptypes = {
-	    headingOption: _react.PropTypes.object,
-	    bodyOption: _react.PropTypes.object,
-	    sidebarOption: _react.PropTypes.object,
-	    footerOption: _react.PropTypes.object
+	AppWrapper.propTypes = {
+	    headingOption: _react.PropTypes.obj,
+	    bodyOption: _react.PropTypes.obj,
+	    sidebarOption: _react.PropTypes.obj,
+	    footerOption: _react.PropTypes.obj
 	};
 
 /***/ }
