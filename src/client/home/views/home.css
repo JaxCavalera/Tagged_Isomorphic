@@ -1,11 +1,17 @@
-/*
-This styling is for the heading component of Tagged
-Colours are listed :
-logo blue = #007DF1
-Sky blue = rgb(180, 213, 242)
-Navy = #000C4D
-Ice Blue = rgba(236, 248, 255, 1)
-*/
+/*  ==================================================
+            Define Colour Variables with PreCSS
+    ==================================================*/
+$logoBlue : rgba(0, 125, 241, 1);
+$skyBlue : rgba(180, 213, 242, 1);
+$navyBlue : rgba(0, 12, 77, 1);
+$iceBlue : rgba(236, 248, 255, 1);
+$white : rgba(255, 255, 255, 1);
+
+body
+{
+    background-color: $navyBlue;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
 
 .homeBodyView
 {
@@ -17,7 +23,14 @@ Ice Blue = rgba(236, 248, 255, 1)
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(236, 248, 255, 1);
+    background-color: $navyBlue;
+}
+
+@media (max-height: 400px) {
+    .homeBodyView
+    {
+        top: 50px;
+    }
 }
 
 .homeBodyDisplay
@@ -27,15 +40,11 @@ Ice Blue = rgba(236, 248, 255, 1)
     max-width: 100%;
     width: 979px;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: $white;
+    overflow: auto;
 }
 
-.homeBodyDisplay > h1
-{
-    margin: 5px 10px 0px 10px;
-}
-
-.homeBodyDisplay > p
+.homeBodyDisplay > h1, h2, p
 {
     margin: 5px 10px 0px 10px;
 }

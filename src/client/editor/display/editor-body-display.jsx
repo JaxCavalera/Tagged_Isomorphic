@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class EditorBodyDisplay extends Component {
     render() {
         return (
-            <div className='editorBodyDisplay'>
+            <div className="editorBodyDisplay">
                 <img src={this.props.editorImgSrcPath} />
                 {this.props.editorTagViewInstances}
             </div>

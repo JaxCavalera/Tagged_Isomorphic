@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 
-export default class LogoutDisplay extends Component {
+export default class HeadingLogoutDisplay extends Component {
     render() {
         return (
             <div className='logoutPanel'>

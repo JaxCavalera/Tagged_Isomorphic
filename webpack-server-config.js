@@ -1,18 +1,16 @@
 require('dotenv').config();
 var path = require('path');
 var fs = require('fs');
-var webpack = require('webpack');
+// var webpack = require('webpack');
 
 var ROOT_PATH = path.resolve(__dirname, 'src');
 
 var baseConfig = require('./webpack.config.js');
 
-/*
-    ==================================================
+/*  ==================================================
             Prevent node_modules being bundled
               (express server compatibility)
-    ==================================================
-*/
+    ==================================================*/
 var nodeModules = {};
 
 fs.readdirSync('node_modules')

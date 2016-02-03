@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
 
-export default class NavDisplay extends Component {
+export default class HeadingNavDisplay extends Component {
     render() {
         return (
             <div className='navPanel'>

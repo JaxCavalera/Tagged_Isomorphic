@@ -58,7 +58,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _createBrowserHistory = __webpack_require__(266);
+	var _createBrowserHistory = __webpack_require__(279);
 
 	var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
@@ -24313,24 +24313,27 @@
 
 	var _reactRouter = __webpack_require__(159);
 
+	var _appWrapper = __webpack_require__(280);
+
+	var _appWrapper2 = _interopRequireDefault(_appWrapper);
+
 	var _homeBodyView = __webpack_require__(209);
 
 	var _homeBodyView2 = _interopRequireDefault(_homeBodyView);
 
-	var _headingView = __webpack_require__(265);
+	var _headingLoginWrapperView = __webpack_require__(265);
 
-	var _headingView2 = _interopRequireDefault(_headingView);
+	var _headingLoginWrapperView2 = _interopRequireDefault(_headingLoginWrapperView);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	//  =====  Import View Components  =====
-
 	var routes = _react2.default.createElement(
 	    _reactRouter.Route,
-	    null,
-	    _react2.default.createElement(_reactRouter.Route, { components: _homeBodyView2.default, path: '/' }),
-	    _react2.default.createElement(_reactRouter.Route, { components: _headingView2.default, path: 'heading' })
+	    { component: _appWrapper2.default },
+	    _react2.default.createElement(_reactRouter.Route, { components: { headingOption: _headingLoginWrapperView2.default, bodyOption: _homeBodyView2.default }, path: '/' })
 	);
+
+	//  =====  Import View Components  =====
 
 	exports.default = routes;
 
@@ -24350,9 +24353,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _homeLoginBodyDisplay = __webpack_require__(210);
+	var _homeLogoutBodyDisplay = __webpack_require__(210);
 
-	var _homeLoginBodyDisplay2 = _interopRequireDefault(_homeLoginBodyDisplay);
+	var _homeLogoutBodyDisplay2 = _interopRequireDefault(_homeLogoutBodyDisplay);
 
 	var _styleCollector = __webpack_require__(211);
 
@@ -24395,7 +24398,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'homeBodyView' },
-	                _react2.default.createElement(_homeLoginBodyDisplay2.default, null)
+	                _react2.default.createElement(_homeLogoutBodyDisplay2.default, null)
 	            );
 	        }
 	    }]);
@@ -24429,16 +24432,16 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var HomeLoginBodyDisplay = (function (_Component) {
-	    _inherits(HomeLoginBodyDisplay, _Component);
+	var HomeLogoutBodyDisplay = (function (_Component) {
+	    _inherits(HomeLogoutBodyDisplay, _Component);
 
-	    function HomeLoginBodyDisplay() {
-	        _classCallCheck(this, HomeLoginBodyDisplay);
+	    function HomeLogoutBodyDisplay() {
+	        _classCallCheck(this, HomeLogoutBodyDisplay);
 
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HomeLoginBodyDisplay).apply(this, arguments));
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HomeLogoutBodyDisplay).apply(this, arguments));
 	    }
 
-	    _createClass(HomeLoginBodyDisplay, [{
+	    _createClass(HomeLogoutBodyDisplay, [{
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
@@ -24447,21 +24450,44 @@
 	                _react2.default.createElement(
 	                    'h1',
 	                    null,
-	                    'Welcome to Tagged'
+	                    this.props.welcomeName,
+	                    '\'s Dashboard'
+	                ),
+	                _react2.default.createElement(
+	                    'h2',
+	                    null,
+	                    'Tagged Statistics'
 	                ),
 	                _react2.default.createElement(
 	                    'p',
 	                    null,
-	                    'Start uploading your images and tagging other users today!'
+	                    'Images In Gallery : ',
+	                    this.props.galleryImageCount
+	                ),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Times ',
+	                    this.props.welcomeName,
+	                    'Has Been Tagged : ',
+	                    this.props.userTagCount
 	                )
 	            );
 	        }
 	    }]);
 
-	    return HomeLoginBodyDisplay;
+	    return HomeLogoutBodyDisplay;
 	})(_react.Component);
 
-	exports.default = HomeLoginBodyDisplay;
+	//  declare PropTypes here to lock variables into a specific type
+
+	exports.default = HomeLogoutBodyDisplay;
+	HomeLogoutBodyDisplay.propTypes = {
+	    welcomeName: _react.PropTypes.string,
+	    galleryImageCount: _react.PropTypes.function,
+	    userTagCount: _react.PropTypes.function
+	};
 
 /***/ },
 /* 211 */
@@ -24514,7 +24540,7 @@
 
 
 	// module
-	exports.push([module.id, "/*\r\nThis styling is for the heading component of Tagged\r\nColours are listed :\r\nlogo blue = #007DF1\r\nSky blue = rgb(180, 213, 242)\r\nNavy = #000C4D\r\nIce Blue = rgba(236, 248, 255, 1)\r\n*/\r\n\r\n.homeBodyView\r\n{\r\n    position: absolute;\r\n    top: 160px;\r\n    left: 0px;\r\n    right: 0px;\r\n    bottom: 0px;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgba(236, 248, 255, 1);\r\n}\r\n\r\n.homeBodyDisplay\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    max-width: 100%;\r\n    width: 979px;\r\n    height: 100%;\r\n    background-color: #FFFFFF;\r\n}\r\n\r\n.homeBodyDisplay > h1\r\n{\r\n    margin: 5px 10px 0px 10px;\r\n}\r\n\r\n.homeBodyDisplay > p\r\n{\r\n    margin: 5px 10px 0px 10px;\r\n}\r\n", ""]);
+	exports.push([module.id, "/*  ==================================================\r\n            Define Colour Variables with PreCSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgba(0, 12, 77, 1);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n}\r\n\r\n.homeBodyView\r\n{\r\n    position: absolute;\r\n    top: 160px;\r\n    left: 0px;\r\n    right: 0px;\r\n    bottom: 0px;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgba(0, 12, 77, 1);\r\n}\r\n\r\n@media (max-height: 400px) {\r\n    .homeBodyView\r\n    {\r\n        top: 50px;\r\n    }\r\n}\r\n\r\n.homeBodyDisplay\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    max-width: 100%;\r\n    width: 979px;\r\n    height: 100%;\r\n    background-color: rgba(255, 255, 255, 1);\r\n    overflow: auto;\r\n}\r\n\r\n.homeBodyDisplay > h1, h2, p\r\n{\r\n    margin: 5px 10px 0px 10px;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -25513,6 +25539,18 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _headingLoginView = __webpack_require__(266);
+
+	var _headingLoginView2 = _interopRequireDefault(_headingLoginView);
+
+	var _headingLogoView = __webpack_require__(270);
+
+	var _headingLogoView2 = _interopRequireDefault(_headingLogoView);
+
+	var _headingNavView = __webpack_require__(275);
+
+	var _headingNavView2 = _interopRequireDefault(_headingNavView);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25521,37 +25559,604 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var HeadingView = (function (_Component) {
-	    _inherits(HeadingView, _Component);
+	/*  ==================================================
+	                Import Child View Components
+	    ==================================================*/
 
-	    function HeadingView() {
-	        _classCallCheck(this, HeadingView);
+	/*  ==================================================
+	                   React View Component
+	    (CSS for wrapper DIV is inside heading-login.css)
+	    ==================================================*/
 
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HeadingView).apply(this, arguments));
+	var HeadingLoginWrapperView = (function (_Component) {
+	    _inherits(HeadingLoginWrapperView, _Component);
+
+	    function HeadingLoginWrapperView() {
+	        _classCallCheck(this, HeadingLoginWrapperView);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HeadingLoginWrapperView).apply(this, arguments));
 	    }
 
-	    _createClass(HeadingView, [{
+	    _createClass(HeadingLoginWrapperView, [{
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'headingView' },
+	                { className: 'headingLoginWrapperView' },
+	                _react2.default.createElement(_headingLogoView2.default, null),
+	                _react2.default.createElement(_headingLoginView2.default, null),
+	                _react2.default.createElement(_headingNavView2.default, null)
+	            );
+	        }
+	    }]);
+
+	    return HeadingLoginWrapperView;
+	})(_react.Component);
+
+	exports.default = HeadingLoginWrapperView;
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _headingLoginDisplay = __webpack_require__(267);
+
+	var _headingLoginDisplay2 = _interopRequireDefault(_headingLoginDisplay);
+
+	var _styleCollector = __webpack_require__(211);
+
+	var _headingLogin = __webpack_require__(268);
+
+	var _headingLogin2 = _interopRequireDefault(_headingLogin);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//  CSS Related Imports
+
+	var HeadingLoginView = (function (_Component) {
+	    _inherits(HeadingLoginView, _Component);
+
+	    function HeadingLoginView() {
+	        _classCallCheck(this, HeadingLoginView);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HeadingLoginView).apply(this, arguments));
+	    }
+
+	    _createClass(HeadingLoginView, [{
+	        key: 'componentWillMount',
+	        value: function componentWillMount() {
+	            this.removeStyles = (0, _styleCollector.collectOrRender)(_headingLogin2.default);
+	        }
+	    }, {
+	        key: 'componentWillUnmount',
+	        value: function componentWillUnmount() {
+	            this.removeStyles();
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'headingLoginView' },
+	                _react2.default.createElement(_headingLoginDisplay2.default, null)
+	            );
+	        }
+	    }]);
+
+	    return HeadingLoginView;
+	})(_react.Component);
+
+	exports.default = HeadingLoginView;
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var HeadingLoginDisplay = (function (_Component) {
+	    _inherits(HeadingLoginDisplay, _Component);
+
+	    function HeadingLoginDisplay() {
+	        _classCallCheck(this, HeadingLoginDisplay);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HeadingLoginDisplay).apply(this, arguments));
+	    }
+
+	    _createClass(HeadingLoginDisplay, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "loginPanel" },
 	                _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Heading View'
+	                    "span",
+	                    { className: "loginTitle" },
+	                    'My Account'
+	                ),
+	                _react2.default.createElement("input", {
+	                    className: "authInput",
+	                    maxLength: "20",
+	                    type: "text",
+	                    onChange: this.props.unameInput,
+	                    value: this.props.unameValue
+	                }),
+	                _react2.default.createElement("input", {
+	                    className: "authInput",
+	                    maxLength: "20",
+	                    type: "password",
+	                    onChange: this.props.pwordInput,
+	                    value: this.props.pwordValue
+	                }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "loginBtns" },
+	                    _react2.default.createElement(
+	                        "button",
+	                        {
+	                            className: "authInput",
+	                            type: "button",
+	                            onClick: this.props.regBtnClick
+	                        },
+	                        'Register'
+	                    ),
+	                    _react2.default.createElement(
+	                        "button",
+	                        {
+	                            className: "authInput",
+	                            type: "button",
+	                            onClick: this.props.loginBtnClick
+	                        },
+	                        'Login'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "p",
+	                    { className: "inputError" },
+	                    this.props.errorTxt
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "socialLogin" },
+	                    _react2.default.createElement(
+	                        "span",
+	                        null,
+	                        'Placeholder for Social Login Buttons'
+	                    )
 	                )
 	            );
 	        }
 	    }]);
 
-	    return HeadingView;
+	    return HeadingLoginDisplay;
 	})(_react.Component);
 
-	exports.default = HeadingView;
+	//  declare PropTypes here to lock variables into a specific type
+
+	exports.default = HeadingLoginDisplay;
+	HeadingLoginDisplay.propTypes = {
+	    regBtnClick: _react.PropTypes.func,
+	    loginBtnClick: _react.PropTypes.func,
+	    unameInput: _react.PropTypes.func,
+	    pwordInput: _react.PropTypes.func,
+	    errorTxt: _react.PropTypes.string,
+	    unameValue: _react.PropTypes.string,
+	    pwordValue: _react.PropTypes.string
+	};
 
 /***/ },
-/* 266 */
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	    var content = __webpack_require__(269);
+	    var insertCss = __webpack_require__(215);
+
+	    if (typeof content === 'string') {
+	      content = [[module.id, content, '']];
+	    }
+
+	    module.exports = content.locals || {};
+	    module.exports._getCss = function() { return content.toString(); };
+	    module.exports._insertCss = insertCss.bind(null, content);
+	  
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(214)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".headingLoginWrapperView\r\n{\r\n\r\n}\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _headingLogoDisplay = __webpack_require__(271);
+
+	var _headingLogoDisplay2 = _interopRequireDefault(_headingLogoDisplay);
+
+	var _styleCollector = __webpack_require__(211);
+
+	var _headingLogo = __webpack_require__(273);
+
+	var _headingLogo2 = _interopRequireDefault(_headingLogo);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//  CSS Related Imports
+
+	var HeadingLogoView = (function (_Component) {
+	    _inherits(HeadingLogoView, _Component);
+
+	    function HeadingLogoView() {
+	        _classCallCheck(this, HeadingLogoView);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HeadingLogoView).apply(this, arguments));
+	    }
+
+	    _createClass(HeadingLogoView, [{
+	        key: 'componentWillMount',
+	        value: function componentWillMount() {
+	            this.removeStyles = (0, _styleCollector.collectOrRender)(_headingLogo2.default);
+	        }
+	    }, {
+	        key: 'componentWillUnmount',
+	        value: function componentWillUnmount() {
+	            this.removeStyles();
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'headingLogoView' },
+	                _react2.default.createElement(_headingLogoDisplay2.default, null)
+	            );
+	        }
+	    }]);
+
+	    return HeadingLogoView;
+	})(_react.Component);
+
+	exports.default = HeadingLogoView;
+
+/***/ },
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _taggedLogo = __webpack_require__(272);
+
+	var _taggedLogo2 = _interopRequireDefault(_taggedLogo);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var HeadingLogoDisplay = (function (_Component) {
+	    _inherits(HeadingLogoDisplay, _Component);
+
+	    function HeadingLogoDisplay() {
+	        _classCallCheck(this, HeadingLogoDisplay);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HeadingLogoDisplay).apply(this, arguments));
+	    }
+
+	    _createClass(HeadingLogoDisplay, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'logoPanel' },
+	                _react2.default.createElement('img', { className: 'tagLogo', src: _taggedLogo2.default, alt: 'Tagged Logo' })
+	            );
+	        }
+	    }]);
+
+	    return HeadingLogoDisplay;
+	})(_react.Component);
+
+	exports.default = HeadingLogoDisplay;
+
+/***/ },
+/* 272 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuYAAAFOCAMAAAD94Ch/AAADAFBMVEVapTD///8AffEAAAAAAU7vtWcAAAAAAABL+dAAAAAAAAEAAABL6HAAAADgM8sAAAAAAU4AAABL4pAAAABL+QAAAAAAAAAAAAAAAEEAAAAAAAEAAADTIeAAAAAAAAAAAABLAAsAAAABAAEAAAAAAAsAAAAAAFsAAADTIdAAAAAAAAEAAAAAAAsAAAAABQAAAAAAAAsAAADTIdAAAAAAAAsAAAAAAAAAAIAAAFsAAAAAAFAAAAA8zjrukmQ50GDS6AFsbZbuW50AAF7UPRMFN2UFpRoAAAtJgAAAAABjIAAAAABioAAAAAB84AAAAABHgAAAAABjAAAI/wBiYAAAAAB8oAAAA2kAAAC2G+aOJf0AAAAAAACFiuXvsfcI/wAAAAAAAABmP1AAAAIAAAAAAADwAAAAAAIAAAAAAAFtqcC0CwAAAAAAAAEAAAAAAFsAAABXHFAAAABeAVAAAAAAAFsAAAAAAFgAAAAsAvgAAF4AAAEAf/osAAAAAAD/AQv///0AAIDwAAAAAAAAAAAAAFsAAADNqmgAf/osAAAAAACTAAAAAAAAAAAAAADJCVAAAAAsAAAAAAAAAAsAAAAAAAsAAAAsAwAAAAAAAAAAAADJDmAAAAAAAAsAAADNqmgAf/oAAAIAAAAAAQAAAAAI/wAAAAAsAwAAAAAkDMAAAAAsmEAAAAAAAAsAAAAAAEEAAADTIeAAAAAAAAsAAAAAAAsAAAAAAAAAAAD/AVsAAAAAAFsAAADTIdAAAAAABPAAAAAAAFkAAADN7tIAf/osAAAAAAAAAAIAAAAABPAAAAAAANEAAAAAAGwAAAD6JcAAAAAAAF4AAADTJFAAAAAAAFsAAAD6Ij8AAAAAAQAAAAAAAAEAAAAAAQAAAAAAAAIAAAAAAQAAAAAAAAEAAADTIeAAAADNqZYAf/osAAAAAAAsAAAAAAAAAAAAAAAAAAAAAADTJDwAAADTJFAAAAAAAFEAAAD6JcAAAAD///////8AAAAAAAAwpVoAAACiadgAf/rewiWrAAABAHRSTlMA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Cpf0PAAAAAlwSFlzAAAuIwAALiMBeKU/dgAADidJREFUeNrt3WGP67gNhWGC//9HF3s/dHfuzMSWRB5R1MtFgaLdhLH0zIksJ44ZRVEURVF/yhkCCuUUdb5ymFMXKIc5dYFymFMXKIc5RZhTVIMshzkFc4rqoBzmFMopqoFymFMXKIc5dYFymFMop1pN+63KYX7TjF+rHOb3TPe9SxaYXzPXNyNHOedgMKc4A2uAHOYghznF2RfKKZalRyiHOcj7I4c5yG9gjgqQ989ymHPmeYFymN+NvCEBlIP8+799Q5bD/FLlfhNymF+JvO/sO8yvUQ5ylN8e5X3n3h3mRHlz5Cgnyq9GDvOrovxW5DC/KMr7zro7ylF+O3KY37JguRo5zK9TfqFxlN+hvOmE++vCyQXL8pbT7SOFlCZzHYjc6/9IrDvKWbAsKD/AhQ8XVJozH5vqA1S4oxzkC8rro/DJwsolWX4+cp8vqLRWPjDRtUn4WmEF5cWR+3phBeWFkXtQgeUG5Qci9zDiKO/N/NDPn4cCR/k1yk+J8njfKG/EfIVvBQtZvGHeP8zHvkvUEDfILwjzsQ+gK22LdMOcJYsuyje4Bvl9YR4U5R8luduXfwoVUJowX1W+aLx24aRzmA98bLGxcZRfH+bDn3RBOVU1zBeX5e4op45lPvgRAJBTBdcsIR/oQjl1NHMWLFSnE9B71+UIIczHPoGOcqo086WdRJBTB69Z+u+Xw4Mwb68cHDB/fUctkFN1mA//n803WZBxHfP5MAc5dfSaZeT7RCCnzmYOcqoJ8/EwZ6ecarE0f/UJdZBT9dN8LuhBTnVZmr/6Uh3GqQMWLWurdpBTTc5AmzDHAcw//F89TkBRwBno8NLcME41SfMme+bMP8yf0/xs5kw+zJszZ+Jh/sz8MxaMUzCHOHUSczuMObPd2O/nSX/B3DowB8Slzq9JcyiQ5hnMyzg3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"
+
+/***/ },
+/* 273 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	    var content = __webpack_require__(274);
+	    var insertCss = __webpack_require__(215);
+
+	    if (typeof content === 'string') {
+	      content = [[module.id, content, '']];
+	    }
+
+	    module.exports = content.locals || {};
+	    module.exports._getCss = function() { return content.toString(); };
+	    module.exports._insertCss = insertCss.bind(null, content);
+	  
+
+/***/ },
+/* 274 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(214)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "", ""]);
+
+	// exports
+
+
+/***/ },
+/* 275 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _headingNavDisplay = __webpack_require__(276);
+
+	var _headingNavDisplay2 = _interopRequireDefault(_headingNavDisplay);
+
+	var _styleCollector = __webpack_require__(211);
+
+	var _headingNav = __webpack_require__(277);
+
+	var _headingNav2 = _interopRequireDefault(_headingNav);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//  CSS Related Imports
+
+	var HeadingNavView = (function (_Component) {
+	    _inherits(HeadingNavView, _Component);
+
+	    function HeadingNavView() {
+	        _classCallCheck(this, HeadingNavView);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HeadingNavView).apply(this, arguments));
+	    }
+
+	    _createClass(HeadingNavView, [{
+	        key: 'componentWillMount',
+	        value: function componentWillMount() {
+	            this.removeStyles = (0, _styleCollector.collectOrRender)(_headingNav2.default);
+	        }
+	    }, {
+	        key: 'componentWillUnmount',
+	        value: function componentWillUnmount() {
+	            this.removeStyles();
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'headingNavView' },
+	                _react2.default.createElement(_headingNavDisplay2.default, null)
+	            );
+	        }
+	    }]);
+
+	    return HeadingNavView;
+	})(_react.Component);
+
+	exports.default = HeadingNavView;
+
+/***/ },
+/* 276 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var HeadingNavDisplay = (function (_Component) {
+	    _inherits(HeadingNavDisplay, _Component);
+
+	    function HeadingNavDisplay() {
+	        _classCallCheck(this, HeadingNavDisplay);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(HeadingNavDisplay).apply(this, arguments));
+	    }
+
+	    _createClass(HeadingNavDisplay, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'navPanel' },
+	                _react2.default.createElement(
+	                    'ul',
+	                    null,
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            _reactRouter.Link,
+	                            { to: '/secure' },
+	                            'Home'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            _reactRouter.Link,
+	                            { to: '/secure/gallery' },
+	                            'Gallery'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            _reactRouter.Link,
+	                            { to: '/secure/editor' },
+	                            'Editor'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return HeadingNavDisplay;
+	})(_react.Component);
+
+	exports.default = HeadingNavDisplay;
+
+/***/ },
+/* 277 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	    var content = __webpack_require__(278);
+	    var insertCss = __webpack_require__(215);
+
+	    if (typeof content === 'string') {
+	      content = [[module.id, content, '']];
+	    }
+
+	    module.exports = content.locals || {};
+	    module.exports._getCss = function() { return content.toString(); };
+	    module.exports._insertCss = insertCss.bind(null, content);
+	  
+
+/***/ },
+/* 278 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(214)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "", ""]);
+
+	// exports
+
+
+/***/ },
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -25727,6 +26332,65 @@
 	exports['default'] = createBrowserHistory;
 	module.exports = exports['default'];
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 280 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var AppWrapper = (function (_Component) {
+	    _inherits(AppWrapper, _Component);
+
+	    function AppWrapper() {
+	        _classCallCheck(this, AppWrapper);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(AppWrapper).apply(this, arguments));
+	    }
+
+	    _createClass(AppWrapper, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "appWrapper" },
+	                this.props.headingOption,
+	                this.props.bodyOption,
+	                this.props.sidebarOption,
+	                this.props.footerOption
+	            );
+	        }
+	    }]);
+
+	    return AppWrapper;
+	})(_react.Component);
+
+	exports.default = AppWrapper;
+
+	AppWrapper.proptypes = {
+	    headingOption: _react.PropTypes.object,
+	    bodyOption: _react.PropTypes.object,
+	    sidebarOption: _react.PropTypes.object,
+	    footerOption: _react.PropTypes.object
+	};
 
 /***/ }
 /******/ ]);

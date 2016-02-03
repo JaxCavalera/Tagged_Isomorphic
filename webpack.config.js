@@ -4,7 +4,7 @@ var autoprefixer = require('autoprefixer');
 var precss = require('precss');
 
 var ROOT_PATH = path.resolve(__dirname, 'src');
-var APP_PATH = path.resolve(ROOT_PATH, 'client');
+// var APP_PATH = path.resolve(ROOT_PATH, 'client');
 var BUILD_PATH = path.resolve(ROOT_PATH, '../public');
 
 module.exports = {
@@ -31,8 +31,17 @@ module.exports = {
                     'css-loader',
                     'postcss-loader'
                 ],
-                include: APP_PATH,
                 exclude: /node_modules/
+            },
+            {
+                test: /\.png$/,
+                loader: 'url?limit=100000&mimetype=image/png',
+                exclude: /node_modules/,
+            },
+            {
+                test: /\.jpg$/,
+                loader: 'file',
+                exclude: /node_modules/,
             }
         ]
     },

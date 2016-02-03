@@ -116,7 +116,10 @@ The following list of modules is not exhaustive but will provide a quick overvie
 - Webpack
 - React (views)
 - React-Router (routing views)
-- SASS via PostCSS (precss plugin for advanced CSS using the SCSS syntax)
+- SASS / SCSS via PostCSS (precss plugin for advanced CSS using the PreCSS syntax)
+>Usage of the [PostCSS-SCSS Plugin](https://github.com/postcss/postcss-scss) would only be required if existing CSS were in SCSS syntax or similar but since all the CSS files are coded from scratch, adding an extra parser would be an unnecessary waste.
+>
+>The key differences in syntax can be seen by comparing things like [scss mixins](http://sass-lang.com/guide#topic-6) vs [precss mixins](https://github.com/jonathantneal/precss#mixins)
 - Babel-Loader (transpiling)
 - Mobservable (state management)
 - ExpressJS (node.js server)
@@ -160,7 +163,7 @@ Verdana, Arial, Helvetica, sans-serif
 **Colours**   
 Logo Blue = rgba(0, 125, 241, 1)   
 Sky Blue = rgba(180, 213, 242, 1)   
-Navy = rgba(0, 12, 77, 1)   
+Navy Blue = rgba(0, 12, 77, 1)   
 Ice Blue = rgba(236, 248, 255, 1)   
 
 **Other**   
