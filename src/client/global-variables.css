@@ -1,0 +1,31 @@
+/*  ==================================================
+     The following CSS will be imported into the rest
+      of the project's top level components to avoid
+                 repetition and clutter.
+
+           CSS Variable Definitions with PreCSS
+    ==================================================*/
+$logoBlue : rgba(0, 125, 241, 1);
+$skyBlue : rgba(180, 213, 242, 1);
+$navyBlue : rgba(0, 12, 77, 1);
+$iceBlue : rgba(236, 248, 255, 1);
+$white : rgba(255, 255, 255, 1);
+
+/*  ==================================================
+            Mobile Height Media Query Variables
+    ==================================================*/
+$mobileDisplayHeight : 22rem;
+$mobileHeadingValue : 4.5rem;
+
+
+/*  ==================================================
+                       Global CSS
+    ==================================================*/
+body
+{
+    background-color: $navyBlue;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}

@@ -1,4 +1,34 @@
+@import '../../global-variables.css';
+
 .headingLoginWrapperView
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    background-color: $navyBlue;
+    height: 10rem;
+    /*min-width: 285px;*/
+    width: 100%;
+    max-width: 61.25rem;
+    padding: 0.32rem 0rem;
+}
 
+.loginPanel
+{
+    display: none;
+}
+
+/*  ==================================================
+     Media Queries - Using Globally Defined Variables
+    ==================================================*/
+@media (max-height: $mobileDisplayHeight)
+{
+    .headingLoginWrapperView
+    {
+        height: $mobileHeadingValue;
+    }
 }
