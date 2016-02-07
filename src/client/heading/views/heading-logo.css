@@ -1,37 +1,33 @@
-@import '../../global-variables.css';
-
-/*  ==================================================
-                    Mixin Definitions
-    ==================================================*/
-@define-mixin logoDivs
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: $skyBlue;
-}
+@import '../../global-scss-values.css';
 
 /*  ==================================================
                       Component CSS
     ==================================================*/
 .headingLogoView
 {
-    @mixin logoDivs;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $skyBlue;
     height: 100%;
     width: 100%;
 }
 
 .logoPanel
 {
-    @mixin logoDivs;
-    background-color: $white;
-    width: 40%;
+    display: inline-block;
+    table-layout: fixed;
+    width: 80%;
     height: 80%;
+    text-align: center;
 }
 
 .tagLogo
 {
+    @mixin vertical-center;
+    height: auto;
+    width: auto;
     max-width: 100%;
     max-height: 100%;
 }

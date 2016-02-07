@@ -17,7 +17,6 @@ $white : rgba(255, 255, 255, 1);
 $mobileDisplayHeight : 22rem;
 $mobileHeadingValue : 4.5rem;
 
-
 /*  ==================================================
                        Global CSS
     ==================================================*/
@@ -28,4 +27,14 @@ body
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+}
+
+/*  ==================================================
+                       Global Mixins
+    ==================================================*/
+@define-mixin vertical-center
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
