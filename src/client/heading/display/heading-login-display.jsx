@@ -4,7 +4,6 @@ export default class HeadingLoginDisplay extends Component {
     render() {
         return (
             <div className="loginPanel">
-                <span className="loginTitle">{'My Account'}</span>
                 <input
                     className="authInput"
                     maxLength="20"
@@ -35,10 +34,10 @@ export default class HeadingLoginDisplay extends Component {
                     >{'Login'}</button>
 
                 </div>
-                <p className="inputError">{this.props.errorTxt}</p>
                 <div className="socialLogin">
-                    <span>{'Placeholder for Social Login Buttons'}</span>
+                    <span>{'Social Login Here'}</span>
                 </div>
+                <p className="inputError">{'error' + this.props.errorTxt}</p>
             </div>
         );
     }

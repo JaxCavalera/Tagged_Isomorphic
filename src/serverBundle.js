@@ -20215,8 +20215,12 @@
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'headingLoginWrapperView' },
-	                _react2.default.createElement(_headingLogoView2.default, null),
-	                _react2.default.createElement(_headingLoginView2.default, null),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'headingTopRow' },
+	                    _react2.default.createElement(_headingLogoView2.default, null),
+	                    _react2.default.createElement(_headingLoginView2.default, null)
+	                ),
 	                _react2.default.createElement(_headingNavView2.default, null)
 	            );
 	        }
@@ -20337,11 +20341,6 @@
 	            return _react2.default.createElement(
 	                "div",
 	                { className: "loginPanel" },
-	                _react2.default.createElement(
-	                    "span",
-	                    { className: "loginTitle" },
-	                    'My Account'
-	                ),
 	                _react2.default.createElement("input", {
 	                    className: "authInput",
 	                    maxLength: "20",
@@ -20379,18 +20378,18 @@
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    "p",
-	                    { className: "inputError" },
-	                    this.props.errorTxt
-	                ),
-	                _react2.default.createElement(
 	                    "div",
 	                    { className: "socialLogin" },
 	                    _react2.default.createElement(
 	                        "span",
 	                        null,
-	                        'Placeholder for Social Login Buttons'
+	                        'Social Login Here'
 	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "p",
+	                    { className: "inputError" },
+	                    'error' + this.props.errorTxt
 	                )
 	            );
 	        }
@@ -20438,7 +20437,7 @@
 
 
 	// module
-	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgba(0, 12, 77, 1);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.headingLoginWrapperView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    position: absolute;\r\n    top: 0rem;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    background-color: rgba(0, 12, 77, 1);\r\n    height: 10rem;\r\n    /*min-width: 285px;*/\r\n    width: 100%;\r\n    max-width: 61.25rem;\r\n    padding: 0.32rem 0rem;\r\n}\r\n\r\n.loginPanel\r\n{\r\n    display: none;\r\n}\r\n\r\n/*  ==================================================\r\n     Media Queries - Using Globally Defined Variables\r\n    ==================================================*/\r\n@media (max-height: 22rem)\r\n{\r\n    .headingLoginWrapperView\r\n    {\r\n        height: 4.5rem;\r\n    }\r\n}\r\n", ""]);
+	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgba(0, 12, 77, 1);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.headingLoginWrapperView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    position: absolute;\r\n    top: 0rem;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    height: 10rem;\r\n}\r\n\r\n.headingTopRow\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    background-color: rgba(0, 125, 241, 1);\r\n    height: 70%;\r\n    width: 100%;\r\n    max-width: 61.25rem;\r\n    margin: 0.32rem 0rem;\r\n}\r\n\r\n.headingLoginView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 9rem;\r\n    max-width: 12rem;\r\n    background-color: rgba(180, 213, 242, 1);\r\n    margin-left: 0.32rem;\r\n}\r\n\r\n.loginPanel\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 100%;\r\n    width: 80%;\r\n}\r\n\r\n.authInput\r\n{\r\n    text-align: center;\r\n    line-height: 100%;\r\n    height: 1.1rem;\r\n    width: 100%;\r\n    /*box-sizing is used to make the border sit inside*/\r\n    box-sizing: border-box;\r\n    font-size: 0.8rem;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgba(0, 0, 0, 1);\r\n}\r\n\r\n.loginBtns\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    width: 100%;\r\n}\r\n\r\n.loginBtns > button\r\n{\r\n    max-width: 4rem;\r\n    font-size: 0.75rem;\r\n    border: solid;\r\n    border-color: rgba(0, 12, 77, 1);\r\n    border-width: 1px;\r\n    border-radius: 0.25em;\r\n    cursor: pointer;\r\n    background: -webkit-radial-gradient(rgba(255,255,255,0.75), rgba(180, 213, 242, 1));\r\n    background: radial-gradient(rgba(255,255,255,0.75), rgba(180, 213, 242, 1));\r\n}\r\n\r\n.loginBtns > button:hover\r\n{\r\n    background: rgba(0, 125, 241, 1);\r\n    color: rgba(255, 255, 255, 1);\r\n}\r\n\r\n.socialLogin\r\n{\r\n    text-align: center;\r\n    font-size: 0.8rem;\r\n    height: 0.8rem;\r\n    width: 100%;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgba(0, 0, 0, 1);\r\n}\r\n\r\n.inputError\r\n{\r\n    text-align: center;\r\n    font-size: 0.8rem;\r\n    height: 0.8rem;\r\n    width: 100%;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgba(255, 0, 0, 1);\r\n}\r\n\r\n/*  ==================================================\r\n     Media Queries - Using Globally Defined Variables\r\n    ==================================================*/\r\n@media (max-height: 22rem)\r\n{\r\n    .headingLoginWrapperView\r\n    {\r\n        height: 4.5rem;\r\n    }\r\n}\r\n", ""]);
 
 	// exports
 
@@ -20599,7 +20598,7 @@
 
 
 	// module
-	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\nbody\r\n{\r\n    background-color: rgba(0, 12, 77, 1);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                      Component CSS\r\n    ==================================================*/\r\n.headingLogoView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgba(180, 213, 242, 1);\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.logoPanel\r\n{\r\n    display: inline-block;\r\n    table-layout: fixed;\r\n    width: 80%;\r\n    height: 80%;\r\n    text-align: center;\r\n}\r\n\r\n.tagLogo\r\n{\r\n    position: relative;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n    height: auto;\r\n    width: auto;\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n", ""]);
+	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\nbody\r\n{\r\n    background-color: rgba(0, 12, 77, 1);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                      Component CSS\r\n    ==================================================*/\r\n.headingLogoView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgba(180, 213, 242, 1);\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 9rem;\r\n}\r\n\r\n.logoPanel\r\n{\r\n    display: inline-block;\r\n    table-layout: fixed;\r\n    width: 80%;\r\n    height: 80%;\r\n    text-align: center;\r\n}\r\n\r\n.tagLogo\r\n{\r\n    position: relative;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n    height: auto;\r\n    width: auto;\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -20716,6 +20715,11 @@
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'navPanel' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'hamburgerIcon' },
+	                    ' ||| '
+	                ),
 	                _react2.default.createElement(
 	                    'ul',
 	                    null,

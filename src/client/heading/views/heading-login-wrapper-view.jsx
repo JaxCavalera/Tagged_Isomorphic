@@ -15,8 +15,10 @@ export default class HeadingLoginWrapperView extends Component {
     render () {
         return (
             <div className="headingLoginWrapperView">
-                <HeadingLogoView />
-                <HeadingLoginView />
+                <div className="headingTopRow">
+                    <HeadingLogoView />
+                    <HeadingLoginView />
+                </div>
                 <HeadingNavView />
             </div>
         );

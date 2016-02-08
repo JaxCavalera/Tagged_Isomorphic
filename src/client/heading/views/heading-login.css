@@ -9,17 +9,107 @@
     top: 0rem;
     left: 0rem;
     right: 0rem;
-    background-color: $navyBlue;
     height: 10rem;
-    /*min-width: 285px;*/
+}
+
+.headingTopRow
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $logoBlue;
+    height: 70%;
     width: 100%;
     max-width: 61.25rem;
-    padding: 0.32rem 0rem;
+    margin: 0.32rem 0rem;
+}
+
+.headingLoginView
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    min-width: 9rem;
+    max-width: 12rem;
+    background-color: $skyBlue;
+    margin-left: 0.32rem;
 }
 
 .loginPanel
 {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+}
+
+.authInput
+{
+    text-align: center;
+    line-height: 100%;
+    height: 1.1rem;
+    width: 100%;
+    /*box-sizing is used to make the border sit inside*/
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0.15rem 0rem;
+    color: $black;
+}
+
+.loginBtns
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.loginBtns > button
+{
+    max-width: 4rem;
+    font-size: 0.75rem;
+    border: solid;
+    border-color: $navyBlue;
+    border-width: 1px;
+    border-radius: 0.25em;
+    cursor: pointer;
+    background: radial-gradient(rgba(255,255,255,0.75), $skyBlue);
+}
+
+.loginBtns > button:hover
+{
+    background: $logoBlue;
+    color: $white;
+}
+
+.socialLogin
+{
+    text-align: center;
+    font-size: 0.8rem;
+    height: 0.8rem;
+    width: 100%;
+    line-height: 0.8rem;
+    margin: 0.15rem 0rem;
+    color: $black;
+}
+
+.inputError
+{
+    text-align: center;
+    font-size: 0.8rem;
+    height: 0.8rem;
+    width: 100%;
+    line-height: 0.8rem;
+    margin: 0.15rem 0rem;
+    color: $errorRed;
 }
 
 /*  ==================================================

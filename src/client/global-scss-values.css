@@ -10,6 +10,8 @@ $skyBlue : rgba(180, 213, 242, 1);
 $navyBlue : rgba(0, 12, 77, 1);
 $iceBlue : rgba(236, 248, 255, 1);
 $white : rgba(255, 255, 255, 1);
+$black : rgba(0, 0, 0, 1);
+$errorRed : rgba(255, 0, 0, 1);
 
 /*  ==================================================
             Mobile Height Media Query Variables
