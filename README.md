@@ -161,10 +161,10 @@ Footer and Sidebar panels should be collapsible or shrinkable by the end user wi
 Verdana, Arial, Helvetica, sans-serif   
 
 **Colours**   
-Logo Blue = rgba(0, 125, 241, 1)   
-Sky Blue = rgba(180, 213, 242, 1)   
-Navy Blue = rgba(0, 12, 77, 1)   
-Ice Blue = rgba(236, 248, 255, 1)   
+Logo Blue = rgb(0, 125, 241)   
+Sky Blue = rgb(180, 213, 242)   
+Navy Blue = rgb(0, 17, 109)   
+Ice Blue = rgb(236, 248, 255)   
 
 **Other**   
 A margin of 5px should be maintained between DOM elements where practicable.

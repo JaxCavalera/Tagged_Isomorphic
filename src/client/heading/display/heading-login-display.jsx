@@ -4,23 +4,24 @@ export default class HeadingLoginDisplay extends Component {
     render() {
         return (
             <div className="loginPanel">
-                <input
-                    className="authInput"
-                    maxLength="20"
-                    type="text"
-                    onChange={this.props.unameInput}
-                    value={this.props.unameValue}
-                />
+                <div className="authInputWrapper">
+                    <input
+                        className="authInput"
+                        maxLength="20"
+                        type="text"
+                        onChange={this.props.unameInput}
+                        value={this.props.unameValue}
+                    />
 
-                <input
-                    className="authInput"
-                    maxLength="20"
-                    type="password"
-                    onChange={this.props.pwordInput}
-                    value={this.props.pwordValue}
-                />
-
-                <div className="loginBtns">
+                    <input
+                        className="authInput"
+                        maxLength="20"
+                        type="password"
+                        onChange={this.props.pwordInput}
+                        value={this.props.pwordValue}
+                    />
+                </div>
+                <div className="loginBtnsWrapper">
                     <button
                         className="authInput"
                         type="button"

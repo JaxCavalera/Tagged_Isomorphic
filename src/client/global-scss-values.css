@@ -5,18 +5,18 @@
 
            CSS Variable Definitions with PreCSS
     ==================================================*/
-$logoBlue : rgba(0, 125, 241, 1);
-$skyBlue : rgba(180, 213, 242, 1);
-$navyBlue : rgba(0, 12, 77, 1);
-$iceBlue : rgba(236, 248, 255, 1);
-$white : rgba(255, 255, 255, 1);
-$black : rgba(0, 0, 0, 1);
-$errorRed : rgba(255, 0, 0, 1);
+$logoBlue : rgb(0, 125, 241);
+$skyBlue : rgb(180, 213, 242);
+$navyBlue : rgb(0, 17, 109);
+$iceBlue : rgb(236, 248, 255);
+$white : rgb(255, 255, 255);
+$black : rgb(0, 0, 0);
+$errorRed : rgb(255, 0, 0);
 
 /*  ==================================================
             Mobile Height Media Query Variables
     ==================================================*/
-$mobileDisplayHeight : 22rem;
+$mobileDisplayHeight : 21rem;
 $mobileHeadingValue : 4.5rem;
 
 /*  ==================================================

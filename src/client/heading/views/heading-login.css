@@ -1,4 +1,5 @@
 @import '../../global-scss-values.css';
+@import './heading-media-queries.css';
 
 .headingLoginWrapperView
 {
@@ -18,7 +19,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: $logoBlue;
     height: 70%;
     width: 100%;
     max-width: 61.25rem;
@@ -49,6 +49,14 @@
     width: 80%;
 }
 
+.authInputWrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .authInput
 {
     text-align: center;
@@ -60,10 +68,10 @@
     font-size: 0.8rem;
     line-height: 0.8rem;
     margin: 0.15rem 0rem;
-    color: $black;
+    color: color($navyBlue);
 }
 
-.loginBtns
+.loginBtnsWrapper
 {
     display: flex;
     flex-direction: row;
@@ -72,7 +80,7 @@
     width: 100%;
 }
 
-.loginBtns > button
+.loginBtnsWrapper > button
 {
     max-width: 4rem;
     font-size: 0.75rem;
@@ -81,10 +89,10 @@
     border-width: 1px;
     border-radius: 0.25em;
     cursor: pointer;
-    background: radial-gradient(rgba(255,255,255,0.75), $skyBlue);
+    background: radial-gradient(color($white a(75%)), $skyBlue);
 }
 
-.loginBtns > button:hover
+.loginBtnsWrapper > button:hover
 {
     background: $logoBlue;
     color: $white;
@@ -93,12 +101,13 @@
 .socialLogin
 {
     text-align: center;
+    font-weight: bold;
     font-size: 0.8rem;
     height: 0.8rem;
     width: 100%;
     line-height: 0.8rem;
     margin: 0.15rem 0rem;
-    color: $black;
+    color: color($navyBlue);
 }
 
 .inputError
@@ -112,13 +121,66 @@
     color: $errorRed;
 }
 
-/*  ==================================================
-     Media Queries - Using Globally Defined Variables
-    ==================================================*/
 @media (max-height: $mobileDisplayHeight)
 {
+/*  ==================================================
+                        Logout View
+    ==================================================*/
+    .headingLogoutWrapperView
+    {
+        height: $mobileHeadingValue;
+    }
+
+/*  ==================================================
+                        Login View
+    ==================================================*/
     .headingLoginWrapperView
     {
         height: $mobileHeadingValue;
     }
+
+    .headingLoginView
+    {
+        flex-direction: row;
+        min-width: 23rem;
+        width: 100%;
+    }
+
+    .loginPanel
+    {
+        flex-direction: row;
+    }
+
+    .authInputWrapper
+    {
+        min-width: 9rem;
+        margin-right: 0.32rem;
+    }
+
+    .loginBtnsWrapper
+    {
+        flex-direction: column;
+        margin-right: 0.32rem;
+    }
+
+    .socialLogin
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.32rem;
+    }
+
+/*  ==================================================
+                        Logo View
+    ==================================================*/
+    .headingLogoView
+    {
+        min-width: 5.25rem;
+    }
+
+/*  ==================================================
+                     Navigation View
+    ==================================================*/
+
 }

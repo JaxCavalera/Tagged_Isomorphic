@@ -1,17 +1,7 @@
 @import '../../global-scss-values.css';
+@import './heading-media-queries.css';
 
 .headingLogoutWrapperView
 {
 
-}
-
-/*  ==================================================
-     Media Queries - Using Globally Defined Variables
-    ==================================================*/
-@media (max-height: $mobileDisplayHeight)
-{
-    .headingLogoutWrapperView
-    {
-        height: $mobileHeadingValue;
-    }
 }
