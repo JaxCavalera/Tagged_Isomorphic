@@ -1,5 +1,4 @@
 @import '../../global-scss-values.css';
-@import './heading-media-queries.css';
 
 .headingLoginWrapperView
 {
@@ -120,3 +119,5 @@
     margin: 0.15rem 0rem;
     color: $errorRed;
 }
+
+@import './heading-media-queries.css';

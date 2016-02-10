@@ -1,7 +1,8 @@
 @import '../../global-scss-values.css';
-@import './heading-media-queries.css';
 
 .headingLogoutWrapperView
 {
 
 }
+
+@import './heading-media-queries.css';
