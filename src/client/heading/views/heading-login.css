@@ -11,6 +11,7 @@
     left: 0rem;
     right: 0rem;
     height: 10rem;
+    margin: 0.32rem 0rem;
 }
 
 .headingTopRow
@@ -22,7 +23,6 @@
     height: 70%;
     width: 100%;
     max-width: 61.25rem;
-    margin: 0.32rem 0rem;
 }
 
 .headingLoginView
@@ -119,68 +119,4 @@
     line-height: 0.8rem;
     margin: 0.15rem 0rem;
     color: $errorRed;
-}
-
-@media (max-height: $mobileDisplayHeight)
-{
-/*  ==================================================
-                        Logout View
-    ==================================================*/
-    .headingLogoutWrapperView
-    {
-        height: $mobileHeadingValue;
-    }
-
-/*  ==================================================
-                        Login View
-    ==================================================*/
-    .headingLoginWrapperView
-    {
-        height: $mobileHeadingValue;
-    }
-
-    .headingLoginView
-    {
-        flex-direction: row;
-        min-width: 23rem;
-        width: 100%;
-    }
-
-    .loginPanel
-    {
-        flex-direction: row;
-    }
-
-    .authInputWrapper
-    {
-        min-width: 9rem;
-        margin-right: 0.32rem;
-    }
-
-    .loginBtnsWrapper
-    {
-        flex-direction: column;
-        margin-right: 0.32rem;
-    }
-
-    .socialLogin
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0.32rem;
-    }
-
-/*  ==================================================
-                        Logo View
-    ==================================================*/
-    .headingLogoView
-    {
-        min-width: 5.25rem;
-    }
-
-/*  ==================================================
-                     Navigation View
-    ==================================================*/
-
 }

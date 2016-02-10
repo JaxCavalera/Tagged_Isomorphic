@@ -1,7 +1,73 @@
 @import '../../global-scss-values.css';
-@import './heading-media-queries.css';
 
 .headingNavView
 {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navPanel
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navPanel > ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: $skyBlue;
+    background: radial-gradient(color($white a(75%)), color($white a(0%)));
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navPanel > ul > li
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 32%;
+    background: $navyBlue;
+}
+
+.navPanel > ul > li > a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: $skyBlue;
+    height: 100%;
+    width: 100%;
+}
+
+.navPanel > ul > li > a:hover
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.125rem;
+    background: $logoBlue;
+	color: $white;
+    height: 100%;
+    width: 100%;
 }

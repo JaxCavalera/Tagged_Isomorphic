@@ -1,0 +1,59 @@
+@media (max-height: $mobileDisplayHeight)
+{
+/*  ==================================================
+                        Logout View
+    ==================================================*/
+    .headingLogoutWrapperView
+    {
+        height: $mobileHeadingValue;
+    }
+
+/*  ==================================================
+                        Login View
+    ==================================================*/
+    .headingLoginWrapperView
+    {
+        height: $mobileHeadingValue;
+    }
+
+    .headingLoginView
+    {
+        flex-direction: row;
+        min-width: 23rem;
+        width: 100%;
+    }
+
+    .loginPanel
+    {
+        flex-direction: row;
+    }
+
+    .authInputWrapper
+    {
+        min-width: 9rem;
+        margin-right: 0.32rem;
+    }
+
+    .loginBtnsWrapper
+    {
+        flex-direction: column;
+        margin-right: 0.32rem;
+    }
+
+    .socialLogin
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.32rem;
+    }
+
+/*  ==================================================
+                        Logo View
+    ==================================================*/
+    .headingLogoView
+    {
+        min-width: 5.25rem;
+    }
+
+}
