@@ -106,7 +106,7 @@
     width: 100%;
     line-height: 0.8rem;
     margin: 0.15rem 0rem;
-    color: color($navyBlue);
+    color: $navyBlue;
 }
 
 .inputError
@@ -118,6 +118,56 @@
     line-height: 0.8rem;
     margin: 0.15rem 0rem;
     color: $errorRed;
+}
+
+/*  ==================================================
+                    Header Expanded
+    ==================================================*/
+.shrinkExpandToggle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 2.75rem;
+    margin-left: 0.32rem;
+    background: radial-gradient($white, $skyBlue);
+    border-radius: 0 25% 25% 0;
+    cursor: pointer;
+}
+
+.shrinkExpandCheckbox
+{
+    display: none;
+}
+
+.expandToggleImg
+{
+    display: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg) scaleY(1.5);
+    font-weight: bold;
+    color: $navyBlue;
+}
+
+.shrinkToggleImg
+{
+    display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-300%) scaleY(3);
+    font-weight: bold;
+    color: $navyBlue;
+}
+
+/*  ==================================================
+                      Header Shrunk
+    ==================================================*/
+.headingLoginWrapperView.headingTopRow > shrinkExpandToggle > shrinkExpandCheckbox :checked 
+{
+    position: fixed;
+    width: 25%;
 }
 
 @import './heading-media-queries.css';

@@ -14,10 +14,10 @@ $black : rgb(0, 0, 0);
 $errorRed : rgb(255, 0, 0);
 
 /*  ==================================================
-            Mobile Height Media Query Variables
+            Mobile Device Media Query Variables
     ==================================================*/
-$mobileDisplayHeight : 21rem;
-$mobileHeadingValue : 4.5rem;
+$mobileDisplayHeight : 23rem;
+$mobileDisplayWidth : 44rem;
 
 /*  ==================================================
                        Global CSS

@@ -18,6 +18,11 @@ export default class HeadingLoginWrapperView extends Component {
                 <div className="headingTopRow">
                     <HeadingLogoView />
                     <HeadingLoginView />
+                    <label className="shrinkExpandToggle">
+                        <input className="shrinkExpandCheckbox" type="checkbox" />
+                        <span className="shrinkToggleImg">{'<'}</span>
+                        <span className="expandToggleImg">{'|||'}</span>
+                    </label>
                 </div>
                 <HeadingNavView />
             </div>

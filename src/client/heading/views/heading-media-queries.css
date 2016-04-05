@@ -1,11 +1,11 @@
-@media (max-height: $mobileDisplayHeight)
+@media (max-height: $mobileDisplayHeight), (max-width: $mobileDisplayWidth)
 {
 /*  ==================================================
                         Logout View
     ==================================================*/
     .headingLogoutWrapperView
     {
-        height: $mobileHeadingValue;
+        /**/
     }
 
 /*  ==================================================
@@ -13,14 +13,12 @@
     ==================================================*/
     .headingLoginWrapperView
     {
-        height: $mobileHeadingValue;
+        /**/
     }
 
     .headingLoginView
     {
-        flex-direction: row;
-        min-width: 23rem;
-        width: 100%;
+        width: 0%;
     }
 
     .loginPanel

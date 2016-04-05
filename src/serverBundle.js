@@ -76,7 +76,7 @@
 
 	var app = (0, _express2.default)(); //  =====  Import & Configure Modules  =====
 
-	__webpack_require__(229).load();
+	__webpack_require__(230).load();
 
 	// import path from 'path';
 
@@ -19172,7 +19172,7 @@
 
 
 	// module
-	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.homeBodyView\r\n{\r\n    position: absolute;\r\n    top: 160rem;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    bottom: 0rem;\r\n    /*display: flex;*/\r\n    display: none;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgb(0, 17, 109);\r\n}\r\n\r\n.homeBodyDisplay\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    max-width: 100%;\r\n    width: 979px;\r\n    height: 100%;\r\n    background-color: rgb(255, 255, 255);\r\n    overflow: auto;\r\n}\r\n\r\n.homeBodyDisplay > h1, h2, p\r\n{\r\n    margin: 5px 10px 0px 10px;\r\n}\r\n\r\n/*  ==================================================\r\n     Media Queries - Using Globally Defined Variables\r\n    ==================================================*/\r\n@media (max-height: 21rem)\r\n{\r\n    .homeBodyView\r\n    {\r\n        top: 4.5rem;\r\n    }\r\n}\r\n", ""]);
+	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Device Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.homeBodyView\r\n{\r\n    position: absolute;\r\n    top: 160rem;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    bottom: 0rem;\r\n    /*display: flex;*/\r\n    display: none;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgb(0, 17, 109);\r\n}\r\n\r\n.homeBodyDisplay\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    max-width: 100%;\r\n    width: 979px;\r\n    height: 100%;\r\n    background-color: rgb(255, 255, 255);\r\n    overflow: auto;\r\n}\r\n\r\n.homeBodyDisplay > h1, h2, p\r\n{\r\n    margin: 5px 10px 0px 10px;\r\n}\r\n\r\n/*  ==================================================\r\n     Media Queries - Using Globally Defined Variables\r\n    ==================================================*/\r\n@media (max-height: 23rem)\r\n{\r\n    .homeBodyView\r\n    {\r\n        top: $mobileHeadingValue;\r\n    }\r\n}\r\n", ""]);
 
 	// exports
 
@@ -20175,11 +20175,11 @@
 
 	var _headingLoginView2 = _interopRequireDefault(_headingLoginView);
 
-	var _headingLogoView = __webpack_require__(220);
+	var _headingLogoView = __webpack_require__(221);
 
 	var _headingLogoView2 = _interopRequireDefault(_headingLogoView);
 
-	var _headingNavView = __webpack_require__(225);
+	var _headingNavView = __webpack_require__(226);
 
 	var _headingNavView2 = _interopRequireDefault(_headingNavView);
 
@@ -20219,7 +20219,22 @@
 	                    'div',
 	                    { className: 'headingTopRow' },
 	                    _react2.default.createElement(_headingLogoView2.default, null),
-	                    _react2.default.createElement(_headingLoginView2.default, null)
+	                    _react2.default.createElement(_headingLoginView2.default, null),
+	                    _react2.default.createElement(
+	                        'label',
+	                        { className: 'shrinkExpandToggle' },
+	                        _react2.default.createElement('input', { className: 'shrinkExpandCheckbox', type: 'checkbox' }),
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'shrinkToggleImg' },
+	                            '<'
+	                        ),
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'expandToggleImg' },
+	                            '|||'
+	                        )
+	                    )
 	                ),
 	                _react2.default.createElement(_headingNavView2.default, null)
 	            );
@@ -20247,13 +20262,21 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _headingLoginDisplay = __webpack_require__(217);
+	var _mobxReact = __webpack_require__(231);
+
+	var _store = __webpack_require__(232);
+
+	var _store2 = _interopRequireDefault(_store);
+
+	var _headingLoginAction = __webpack_require__(233);
+
+	var _headingLoginDisplay = __webpack_require__(218);
 
 	var _headingLoginDisplay2 = _interopRequireDefault(_headingLoginDisplay);
 
 	var _styleCollector = __webpack_require__(150);
 
-	var _headingLogin = __webpack_require__(218);
+	var _headingLogin = __webpack_require__(219);
 
 	var _headingLogin2 = _interopRequireDefault(_headingLogin);
 
@@ -20265,9 +20288,13 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	//  CSS Related Imports
+	// Action Imports
 
-	var HeadingLoginView = (function (_Component) {
+	// React Component Imports
+
+	// CSS Related Imports
+
+	exports.default = (0, _mobxReact.observer)((function (_Component) {
 	    _inherits(HeadingLoginView, _Component);
 
 	    function HeadingLoginView() {
@@ -20289,21 +20316,47 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
+	            console.log(_store2.default);
+	            var regBtnClick = function regBtnClick() {
+	                console.log('create store.testMsg');
+	            };
+
+	            var loginBtnClick = function loginBtnClick() {
+	                _store2.default.testMsg = _store2.default.testMsg + 1;
+	            };
+
+	            var unameValue = '';
+
+	            if (!_store2.default.testMsg) {
+	                (0, _headingLoginAction.registerTestMsg)();
+	                unameValue = _store2.default.testMsg;
+	            } else {
+	                unameValue = _store2.default.testMsg;
+	            }
+
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'headingLoginView' },
-	                _react2.default.createElement(_headingLoginDisplay2.default, null)
+	                _react2.default.createElement(_headingLoginDisplay2.default, {
+	                    regBtnClick: regBtnClick,
+	                    loginBtnClick: loginBtnClick,
+	                    unameValue: unameValue
+	                })
 	            );
 	        }
 	    }]);
 
 	    return HeadingLoginView;
-	})(_react.Component);
-
-	exports.default = HeadingLoginView;
+	})(_react.Component));
 
 /***/ },
 /* 217 */
+/***/ function(module, exports) {
+
+	module.exports = require("mobx");
+
+/***/ },
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20416,11 +20469,11 @@
 	};
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var content = __webpack_require__(219);
+	    var content = __webpack_require__(220);
 	    var insertCss = __webpack_require__(165);
 
 	    if (typeof content === 'string') {
@@ -20433,7 +20486,7 @@
 	  
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(164)();
@@ -20441,13 +20494,13 @@
 
 
 	// module
-	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.headingLoginWrapperView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    position: absolute;\r\n    top: 0rem;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    height: 10rem;\r\n    margin: 0.32rem 0rem;\r\n}\r\n\r\n.headingTopRow\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    height: 70%;\r\n    width: 100%;\r\n    max-width: 61.25rem;\r\n}\r\n\r\n.headingLoginView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 9rem;\r\n    max-width: 12rem;\r\n    background-color: rgb(180, 213, 242);\r\n    margin-left: 0.32rem;\r\n}\r\n\r\n.loginPanel\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 100%;\r\n    width: 80%;\r\n}\r\n\r\n.authInputWrapper\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n}\r\n\r\n.authInput\r\n{\r\n    text-align: center;\r\n    line-height: 100%;\r\n    height: 1.1rem;\r\n    width: 100%;\r\n    /*box-sizing is used to make the border sit inside*/\r\n    box-sizing: border-box;\r\n    font-size: 0.8rem;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n.loginBtnsWrapper\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    width: 100%;\r\n}\r\n\r\n.loginBtnsWrapper > button\r\n{\r\n    max-width: 4rem;\r\n    font-size: 0.75rem;\r\n    border: solid;\r\n    border-color: rgb(0, 17, 109);\r\n    border-width: 1px;\r\n    border-radius: 0.25em;\r\n    cursor: pointer;\r\n    background: -webkit-radial-gradient(rgba(255, 255, 255, 0.75), rgb(180, 213, 242));\r\n    background: radial-gradient(rgba(255, 255, 255, 0.75), rgb(180, 213, 242));\r\n}\r\n\r\n.loginBtnsWrapper > button:hover\r\n{\r\n    background: rgb(0, 125, 241);\r\n    color: rgb(255, 255, 255);\r\n}\r\n\r\n.socialLogin\r\n{\r\n    text-align: center;\r\n    font-weight: bold;\r\n    font-size: 0.8rem;\r\n    height: 0.8rem;\r\n    width: 100%;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n.inputError\r\n{\r\n    text-align: center;\r\n    font-size: 0.8rem;\r\n    height: 0.8rem;\r\n    width: 100%;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(255, 0, 0);\r\n}\r\n\r\n@media (max-height: 21rem)\r\n{\r\n    /*  ==================================================\r\n                        Logout View\r\n    ==================================================*/\r\n\r\n    .headingLogoutWrapperView\r\n{\r\n        height: 4.5rem;\r\n    }\r\n    /*  ==================================================\r\n                        Login View\r\n    ==================================================*/\r\n\r\n    .headingLoginWrapperView\r\n{\r\n        height: 4.5rem;\r\n    }\r\n\r\n    .headingLoginView\r\n{\r\n        flex-direction: row;\r\n        min-width: 23rem;\r\n        width: 100%;\r\n    }\r\n\r\n    .loginPanel\r\n{\r\n        flex-direction: row;\r\n    }\r\n\r\n    .authInputWrapper\r\n{\r\n        min-width: 9rem;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    .loginBtnsWrapper\r\n{\r\n        flex-direction: column;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    .socialLogin\r\n{\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        margin-right: 0.32rem;\r\n    }\r\n    /*  ==================================================\r\n                        Logo View\r\n    ==================================================*/\r\n\r\n    .headingLogoView\r\n{\r\n        min-width: 5.25rem;\r\n    }\r\n}\r\n", ""]);
+	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Device Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.headingLoginWrapperView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    position: absolute;\r\n    top: 0rem;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    height: 10rem;\r\n    margin: 0.32rem 0rem;\r\n}\r\n\r\n.headingTopRow\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    height: 70%;\r\n    width: 100%;\r\n    max-width: 61.25rem;\r\n}\r\n\r\n.headingLoginView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 9rem;\r\n    max-width: 12rem;\r\n    background-color: rgb(180, 213, 242);\r\n    margin-left: 0.32rem;\r\n}\r\n\r\n.loginPanel\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 100%;\r\n    width: 80%;\r\n}\r\n\r\n.authInputWrapper\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n}\r\n\r\n.authInput\r\n{\r\n    text-align: center;\r\n    line-height: 100%;\r\n    height: 1.1rem;\r\n    width: 100%;\r\n    /*box-sizing is used to make the border sit inside*/\r\n    box-sizing: border-box;\r\n    font-size: 0.8rem;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n.loginBtnsWrapper\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    width: 100%;\r\n}\r\n\r\n.loginBtnsWrapper > button\r\n{\r\n    max-width: 4rem;\r\n    font-size: 0.75rem;\r\n    border: solid;\r\n    border-color: rgb(0, 17, 109);\r\n    border-width: 1px;\r\n    border-radius: 0.25em;\r\n    cursor: pointer;\r\n    background: -webkit-radial-gradient(rgba(255, 255, 255, 0.75), rgb(180, 213, 242));\r\n    background: radial-gradient(rgba(255, 255, 255, 0.75), rgb(180, 213, 242));\r\n}\r\n\r\n.loginBtnsWrapper > button:hover\r\n{\r\n    background: rgb(0, 125, 241);\r\n    color: rgb(255, 255, 255);\r\n}\r\n\r\n.socialLogin\r\n{\r\n    text-align: center;\r\n    font-weight: bold;\r\n    font-size: 0.8rem;\r\n    height: 0.8rem;\r\n    width: 100%;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n.inputError\r\n{\r\n    text-align: center;\r\n    font-size: 0.8rem;\r\n    height: 0.8rem;\r\n    width: 100%;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(255, 0, 0);\r\n}\r\n\r\n/*  ==================================================\r\n                    Header Expanded\r\n    ==================================================*/\r\n.shrinkExpandToggle\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    height: 100%;\r\n    width: 2.75rem;\r\n    margin-left: 0.32rem;\r\n    background: -webkit-radial-gradient(rgb(255, 255, 255), rgb(180, 213, 242));\r\n    background: radial-gradient(rgb(255, 255, 255), rgb(180, 213, 242));\r\n    border-radius: 0 25% 25% 0;\r\n    cursor: pointer;\r\n}\r\n\r\n.shrinkExpandCheckbox\r\n{\r\n    display: none;\r\n}\r\n\r\n.expandToggleImg\r\n{\r\n    display: none;\r\n    position: relative;\r\n    left: 50%;\r\n    -webkit-transform: translateX(-50%) rotate(90deg) scaleY(1.5);\r\n        -ms-transform: translateX(-50%) rotate(90deg) scaleY(1.5);\r\n            transform: translateX(-50%) rotate(90deg) scaleY(1.5);\r\n    font-weight: bold;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n.shrinkToggleImg\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    position: relative;\r\n    top: 50%;\r\n    -webkit-transform: translateY(-300%) scaleY(3);\r\n        -ms-transform: translateY(-300%) scaleY(3);\r\n            transform: translateY(-300%) scaleY(3);\r\n    font-weight: bold;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n/*  ==================================================\r\n                      Header Shrunk\r\n    ==================================================*/\r\n.headingLoginWrapperView.headingTopRow > shrinkExpandToggle > shrinkExpandCheckbox :checked \r\n{\r\n    position: fixed;\r\n    width: 25%;\r\n}\r\n\r\n@media (max-height: 23rem), (max-width: 44rem)\r\n{\r\n    /*  ==================================================\r\n                        Logout View\r\n    ==================================================*/\r\n\r\n    .headingLogoutWrapperView\r\n{\r\n        /**/\r\n    }\r\n    /*  ==================================================\r\n                        Login View\r\n    ==================================================*/\r\n\r\n    .headingLoginWrapperView\r\n{\r\n        /**/\r\n    }\r\n\r\n    .headingLoginView\r\n{\r\n        width: 0%;\r\n    }\r\n\r\n    .loginPanel\r\n{\r\n        flex-direction: row;\r\n    }\r\n\r\n    .authInputWrapper\r\n{\r\n        min-width: 9rem;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    .loginBtnsWrapper\r\n{\r\n        flex-direction: column;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    .socialLogin\r\n{\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        margin-right: 0.32rem;\r\n    }\r\n    /*  ==================================================\r\n                        Logo View\r\n    ==================================================*/\r\n\r\n    .headingLogoView\r\n{\r\n        min-width: 5.25rem;\r\n    }\r\n}\r\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20462,13 +20515,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _headingLogoDisplay = __webpack_require__(221);
+	var _headingLogoDisplay = __webpack_require__(222);
 
 	var _headingLogoDisplay2 = _interopRequireDefault(_headingLogoDisplay);
 
 	var _styleCollector = __webpack_require__(150);
 
-	var _headingLogo = __webpack_require__(223);
+	var _headingLogo = __webpack_require__(224);
 
 	var _headingLogo2 = _interopRequireDefault(_headingLogo);
 
@@ -20518,7 +20571,7 @@
 	exports.default = HeadingLogoView;
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20533,7 +20586,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _taggedLogo = __webpack_require__(222);
+	var _taggedLogo = __webpack_require__(223);
 
 	var _taggedLogo2 = _interopRequireDefault(_taggedLogo);
 
@@ -20571,17 +20624,17 @@
 	exports.default = HeadingLogoDisplay;
 
 /***/ },
-/* 222 */
+/* 223 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuYAAAFOCAMAAAD94Ch/AAADAFBMVEVapTD///8AffEAAAAAAU7vtWcAAAAAAABL+dAAAAAAAAEAAABL6HAAAADgM8sAAAAAAU4AAABL4pAAAABL+QAAAAAAAAAAAAAAAEEAAAAAAAEAAADTIeAAAAAAAAAAAABLAAsAAAABAAEAAAAAAAsAAAAAAFsAAADTIdAAAAAAAAEAAAAAAAsAAAAABQAAAAAAAAsAAADTIdAAAAAAAAsAAAAAAAAAAIAAAFsAAAAAAFAAAAA8zjrukmQ50GDS6AFsbZbuW50AAF7UPRMFN2UFpRoAAAtJgAAAAABjIAAAAABioAAAAAB84AAAAABHgAAAAABjAAAI/wBiYAAAAAB8oAAAA2kAAAC2G+aOJf0AAAAAAACFiuXvsfcI/wAAAAAAAABmP1AAAAIAAAAAAADwAAAAAAIAAAAAAAFtqcC0CwAAAAAAAAEAAAAAAFsAAABXHFAAAABeAVAAAAAAAFsAAAAAAFgAAAAsAvgAAF4AAAEAf/osAAAAAAD/AQv///0AAIDwAAAAAAAAAAAAAFsAAADNqmgAf/osAAAAAACTAAAAAAAAAAAAAADJCVAAAAAsAAAAAAAAAAsAAAAAAAsAAAAsAwAAAAAAAAAAAADJDmAAAAAAAAsAAADNqmgAf/oAAAIAAAAAAQAAAAAI/wAAAAAsAwAAAAAkDMAAAAAsmEAAAAAAAAsAAAAAAEEAAADTIeAAAAAAAAsAAAAAAAsAAAAAAAAAAAD/AVsAAAAAAFsAAADTIdAAAAAABPAAAAAAAFkAAADN7tIAf/osAAAAAAAAAAIAAAAABPAAAAAAANEAAAAAAGwAAAD6JcAAAAAAAF4AAADTJFAAAAAAAFsAAAD6Ij8AAAAAAQAAAAAAAAEAAAAAAQAAAAAAAAIAAAAAAQAAAAAAAAEAAADTIeAAAADNqZYAf/osAAAAAAAsAAAAAAAAAAAAAAAAAAAAAADTJDwAAADTJFAAAAAAAFEAAAD6JcAAAAD///////8AAAAAAAAwpVoAAACiadgAf/rewiWrAAABAHRSTlMA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Cpf0PAAAAAlwSFlzAAAuIwAALiMBeKU/dgAADidJREFUeNrt3WGP67gNhWGC//9HF3s/dHfuzMSWRB5R1MtFgaLdhLH0zIksJ44ZRVEURVF/yhkCCuUUdb5ymFMXKIc5dYFymFMXKIc5RZhTVIMshzkFc4rqoBzmFMopqoFymFMXKIc5dYFymFMop1pN+63KYX7TjF+rHOb3TPe9SxaYXzPXNyNHOedgMKc4A2uAHOYghznF2RfKKZalRyiHOcj7I4c5yG9gjgqQ989ymHPmeYFymN+NvCEBlIP8+799Q5bD/FLlfhNymF+JvO/sO8yvUQ5ylN8e5X3n3h3mRHlz5Cgnyq9GDvOrovxW5DC/KMr7zro7ylF+O3KY37JguRo5zK9TfqFxlN+hvOmE++vCyQXL8pbT7SOFlCZzHYjc6/9IrDvKWbAsKD/AhQ8XVJozH5vqA1S4oxzkC8rro/DJwsolWX4+cp8vqLRWPjDRtUn4WmEF5cWR+3phBeWFkXtQgeUG5Qci9zDiKO/N/NDPn4cCR/k1yk+J8njfKG/EfIVvBQtZvGHeP8zHvkvUEDfILwjzsQ+gK22LdMOcJYsuyje4Bvl9YR4U5R8luduXfwoVUJowX1W+aLx24aRzmA98bLGxcZRfH+bDn3RBOVU1zBeX5e4op45lPvgRAJBTBdcsIR/oQjl1NHMWLFSnE9B71+UIIczHPoGOcqo086WdRJBTB69Z+u+Xw4Mwb68cHDB/fUctkFN1mA//n803WZBxHfP5MAc5dfSaZeT7RCCnzmYOcqoJ8/EwZ6ecarE0f/UJdZBT9dN8LuhBTnVZmr/6Uh3GqQMWLWurdpBTTc5AmzDHAcw//F89TkBRwBno8NLcME41SfMme+bMP8yf0/xs5kw+zJszZ+Jh/sz8MxaMUzCHOHUSczuMObPd2O/nSX/B3DowB8Slzq9JcyiQ5hnMyzg3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"
 
 /***/ },
-/* 223 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var content = __webpack_require__(224);
+	    var content = __webpack_require__(225);
 	    var insertCss = __webpack_require__(165);
 
 	    if (typeof content === 'string') {
@@ -20594,7 +20647,7 @@
 	  
 
 /***/ },
-/* 224 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(164)();
@@ -20602,13 +20655,13 @@
 
 
 	// module
-	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                      Component CSS\r\n    ==================================================*/\r\n.headingLogoView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgb(180, 213, 242);\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 9rem;\r\n}\r\n\r\n.logoPanel\r\n{\r\n    display: inline-block;\r\n    table-layout: fixed;\r\n    width: 80%;\r\n    height: 80%;\r\n    text-align: center;\r\n}\r\n\r\n.tagLogo\r\n{\r\n    position: relative;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n    height: auto;\r\n    width: auto;\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n\r\n@media (max-height: 21rem)\r\n{\r\n\r\n    /*  ==================================================\r\n                        Logout View\r\n    ==================================================*/\r\n    .headingLogoutWrapperView\r\n{\r\n        height: 4.5rem;\r\n    }\r\n\r\n    /*  ==================================================\r\n                        Login View\r\n    ==================================================*/\r\n    .headingLoginWrapperView\r\n{\r\n        height: 4.5rem;\r\n    }\r\n    .headingLoginView\r\n{\r\n        flex-direction: row;\r\n        min-width: 23rem;\r\n        width: 100%;\r\n    }\r\n    .loginPanel\r\n{\r\n        flex-direction: row;\r\n    }\r\n    .authInputWrapper\r\n{\r\n        min-width: 9rem;\r\n        margin-right: 0.32rem;\r\n    }\r\n    .loginBtnsWrapper\r\n{\r\n        flex-direction: column;\r\n        margin-right: 0.32rem;\r\n    }\r\n    .socialLogin\r\n{\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    /*  ==================================================\r\n                        Logo View\r\n    ==================================================*/\r\n    .headingLogoView\r\n{\r\n        min-width: 5.25rem;\r\n    }\r\n}\r\n", ""]);
+	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n            Mobile Device Media Query Variables\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                      Component CSS\r\n    ==================================================*/\r\n.headingLogoView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgb(180, 213, 242);\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 9rem;\r\n}\r\n\r\n.logoPanel\r\n{\r\n    display: inline-block;\r\n    table-layout: fixed;\r\n    width: 80%;\r\n    height: 80%;\r\n    text-align: center;\r\n}\r\n\r\n.tagLogo\r\n{\r\n    position: relative;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n    height: auto;\r\n    width: auto;\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n\r\n@media (max-height: 23rem), (max-width: 44rem)\r\n{\r\n\r\n    /*  ==================================================\r\n                        Logout View\r\n    ==================================================*/\r\n    .headingLogoutWrapperView\r\n{\r\n\r\n        /**/\r\n    }\r\n\r\n    /*  ==================================================\r\n                        Login View\r\n    ==================================================*/\r\n    .headingLoginWrapperView\r\n{\r\n\r\n        /**/\r\n    }\r\n    .headingLoginView\r\n{\r\n        width: 0%;\r\n    }\r\n    .loginPanel\r\n{\r\n        flex-direction: row;\r\n    }\r\n    .authInputWrapper\r\n{\r\n        min-width: 9rem;\r\n        margin-right: 0.32rem;\r\n    }\r\n    .loginBtnsWrapper\r\n{\r\n        flex-direction: column;\r\n        margin-right: 0.32rem;\r\n    }\r\n    .socialLogin\r\n{\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    /*  ==================================================\r\n                        Logo View\r\n    ==================================================*/\r\n    .headingLogoView\r\n{\r\n        min-width: 5.25rem;\r\n    }\r\n}\r\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 225 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20623,13 +20676,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _headingNavDisplay = __webpack_require__(226);
+	var _headingNavDisplay = __webpack_require__(227);
 
 	var _headingNavDisplay2 = _interopRequireDefault(_headingNavDisplay);
 
 	var _styleCollector = __webpack_require__(150);
 
-	var _headingNav = __webpack_require__(227);
+	var _headingNav = __webpack_require__(228);
 
 	var _headingNav2 = _interopRequireDefault(_headingNav);
 
@@ -20679,7 +20732,7 @@
 	exports.default = HeadingNavView;
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20760,11 +20813,11 @@
 	exports.default = HeadingNavDisplay;
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var content = __webpack_require__(228);
+	    var content = __webpack_require__(229);
 	    var insertCss = __webpack_require__(165);
 
 	    if (typeof content === 'string') {
@@ -20777,7 +20830,7 @@
 	  
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(164)();
@@ -20785,16 +20838,61 @@
 
 
 	// module
-	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.headingNavView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    width: 100%;\r\n    height: 30%;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n}\r\n\r\n.navPanel\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.navPanel > ul\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    height: 100%;\r\n    width: 100%;\r\n    background: rgb(180, 213, 242);\r\n    background: -webkit-radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));\r\n    background: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));\r\n    list-style: none;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n.navPanel > ul > li\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 100%;\r\n    width: 32%;\r\n    background: rgb(0, 17, 109);\r\n}\r\n\r\n.navPanel > ul > li > a\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: bold;\r\n    font-size: 1.125rem;\r\n    text-decoration: none;\r\n    color: rgb(180, 213, 242);\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.navPanel > ul > li > a:hover\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: bold;\r\n    font-size: 1.125rem;\r\n    background: rgb(0, 125, 241);\r\n\tcolor: rgb(255, 255, 255);\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n", ""]);
+	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Device Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.headingNavView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    width: 100%;\r\n    max-width: 61.25rem;\r\n    height: 30%;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n}\r\n\r\n.navPanel\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.navPanel > ul\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    height: 100%;\r\n    width: 100%;\r\n    background: rgb(180, 213, 242);\r\n    background: -webkit-radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));\r\n    background: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));\r\n    list-style: none;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n.navPanel > ul > li\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 100%;\r\n    width: 32%;\r\n    background: rgb(0, 17, 109);\r\n}\r\n\r\n.navPanel > ul > li > a\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: bold;\r\n    font-size: 1.125rem;\r\n    text-decoration: none;\r\n    color: rgb(180, 213, 242);\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.navPanel > ul > li > a:hover\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: bold;\r\n    font-size: 1.125rem;\r\n    background: rgb(0, 125, 241);\r\n\tcolor: rgb(255, 255, 255);\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports) {
 
 	module.exports = require("dotenv");
+
+/***/ },
+/* 231 */
+/***/ function(module, exports) {
+
+	module.exports = require("mobx-react");
+
+/***/ },
+/* 232 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _mobx = __webpack_require__(217);
+
+	var store = (0, _mobx.observable)({});
+
+	exports.default = store;
+
+/***/ },
+/* 233 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.registerTestMsg = undefined;
+
+	var _mobx = __webpack_require__(217);
+
+	var _store = __webpack_require__(232);
+
+	var _store2 = _interopRequireDefault(_store);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var registerTestMsg = exports.registerTestMsg = function registerTestMsg() {
+	    (0, _mobx.extendObservable)(_store2.default, { testMsg: 1 });
+	};
 
 /***/ }
 /******/ ]);

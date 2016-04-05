@@ -58,7 +58,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _createBrowserHistory = __webpack_require__(280);
+	var _createBrowserHistory = __webpack_require__(281);
 
 	var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
@@ -24603,7 +24603,7 @@
 
 
 	// module
-	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.homeBodyView\r\n{\r\n    position: absolute;\r\n    top: 160rem;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    bottom: 0rem;\r\n    /*display: flex;*/\r\n    display: none;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgb(0, 17, 109);\r\n}\r\n\r\n.homeBodyDisplay\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    max-width: 100%;\r\n    width: 979px;\r\n    height: 100%;\r\n    background-color: rgb(255, 255, 255);\r\n    overflow: auto;\r\n}\r\n\r\n.homeBodyDisplay > h1, h2, p\r\n{\r\n    margin: 5px 10px 0px 10px;\r\n}\r\n\r\n/*  ==================================================\r\n     Media Queries - Using Globally Defined Variables\r\n    ==================================================*/\r\n@media (max-height: 21rem)\r\n{\r\n    .homeBodyView\r\n    {\r\n        top: 4.5rem;\r\n    }\r\n}\r\n", ""]);
+	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Device Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.homeBodyView\r\n{\r\n    position: absolute;\r\n    top: 160rem;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    bottom: 0rem;\r\n    /*display: flex;*/\r\n    display: none;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgb(0, 17, 109);\r\n}\r\n\r\n.homeBodyDisplay\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    max-width: 100%;\r\n    width: 979px;\r\n    height: 100%;\r\n    background-color: rgb(255, 255, 255);\r\n    overflow: auto;\r\n}\r\n\r\n.homeBodyDisplay > h1, h2, p\r\n{\r\n    margin: 5px 10px 0px 10px;\r\n}\r\n\r\n/*  ==================================================\r\n     Media Queries - Using Globally Defined Variables\r\n    ==================================================*/\r\n@media (max-height: 23rem)\r\n{\r\n    .homeBodyView\r\n    {\r\n        top: $mobileHeadingValue;\r\n    }\r\n}\r\n", ""]);
 
 	// exports
 
@@ -25606,11 +25606,11 @@
 
 	var _headingLoginView2 = _interopRequireDefault(_headingLoginView);
 
-	var _headingLogoView = __webpack_require__(271);
+	var _headingLogoView = __webpack_require__(272);
 
 	var _headingLogoView2 = _interopRequireDefault(_headingLogoView);
 
-	var _headingNavView = __webpack_require__(276);
+	var _headingNavView = __webpack_require__(277);
 
 	var _headingNavView2 = _interopRequireDefault(_headingNavView);
 
@@ -25650,7 +25650,22 @@
 	                    'div',
 	                    { className: 'headingTopRow' },
 	                    _react2.default.createElement(_headingLogoView2.default, null),
-	                    _react2.default.createElement(_headingLoginView2.default, null)
+	                    _react2.default.createElement(_headingLoginView2.default, null),
+	                    _react2.default.createElement(
+	                        'label',
+	                        { className: 'shrinkExpandToggle' },
+	                        _react2.default.createElement('input', { className: 'shrinkExpandCheckbox', type: 'checkbox' }),
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'shrinkToggleImg' },
+	                            '<'
+	                        ),
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'expandToggleImg' },
+	                            '|||'
+	                        )
+	                    )
 	                ),
 	                _react2.default.createElement(_headingNavView2.default, null)
 	            );
@@ -25678,13 +25693,21 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _headingLoginDisplay = __webpack_require__(268);
+	var _mobxReact = __webpack_require__(282);
+
+	var _store = __webpack_require__(283);
+
+	var _store2 = _interopRequireDefault(_store);
+
+	var _headingLoginAction = __webpack_require__(284);
+
+	var _headingLoginDisplay = __webpack_require__(269);
 
 	var _headingLoginDisplay2 = _interopRequireDefault(_headingLoginDisplay);
 
 	var _styleCollector = __webpack_require__(212);
 
-	var _headingLogin = __webpack_require__(269);
+	var _headingLogin = __webpack_require__(270);
 
 	var _headingLogin2 = _interopRequireDefault(_headingLogin);
 
@@ -25696,9 +25719,13 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	//  CSS Related Imports
+	// Action Imports
 
-	var HeadingLoginView = (function (_Component) {
+	// React Component Imports
+
+	// CSS Related Imports
+
+	exports.default = (0, _mobxReact.observer)((function (_Component) {
 	    _inherits(HeadingLoginView, _Component);
 
 	    function HeadingLoginView() {
@@ -25720,21 +25747,1685 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
+	            console.log(_store2.default);
+	            var regBtnClick = function regBtnClick() {
+	                console.log('create store.testMsg');
+	            };
+
+	            var loginBtnClick = function loginBtnClick() {
+	                _store2.default.testMsg = _store2.default.testMsg + 1;
+	            };
+
+	            var unameValue = '';
+
+	            if (!_store2.default.testMsg) {
+	                (0, _headingLoginAction.registerTestMsg)();
+	                unameValue = _store2.default.testMsg;
+	            } else {
+	                unameValue = _store2.default.testMsg;
+	            }
+
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'headingLoginView' },
-	                _react2.default.createElement(_headingLoginDisplay2.default, null)
+	                _react2.default.createElement(_headingLoginDisplay2.default, {
+	                    regBtnClick: regBtnClick,
+	                    loginBtnClick: loginBtnClick,
+	                    unameValue: unameValue
+	                })
 	            );
 	        }
 	    }]);
 
 	    return HeadingLoginView;
-	})(_react.Component);
-
-	exports.default = HeadingLoginView;
+	})(_react.Component));
 
 /***/ },
 /* 268 */
+/***/ function(module, exports) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	registerGlobals();
+	exports._ = {
+	    quickDiff: quickDiff,
+	    resetGlobalState: resetGlobalState
+	};
+	exports.extras = {
+	    getDependencyTree: getDependencyTree,
+	    getObserverTree: getObserverTree,
+	    trackTransitions: trackTransitions,
+	    isComputingDerivation: isComputingDerivation,
+	    allowStateChanges: allowStateChanges
+	};
+	function autorun(view, scope) {
+	    assertUnwrapped(view, "autorun methods cannot have modifiers");
+	    invariant(typeof view === "function", "autorun expects a function");
+	    invariant(view.length === 0, "autorun expects a function without arguments");
+	    if (scope)
+	        view = view.bind(scope);
+	    var reaction = new Reaction(view.name || "Autorun", function () {
+	        this.track(view);
+	    });
+	    if (isComputingDerivation() || globalState.inTransaction > 0)
+	        globalState.pendingReactions.push(reaction);
+	    else
+	        reaction.runReaction();
+	    return reaction.getDisposer();
+	}
+	exports.autorun = autorun;
+	function when(predicate, effect, scope) {
+	    var disposeImmediately = false;
+	    var disposer = autorun(function () {
+	        if (predicate.call(scope)) {
+	            if (disposer)
+	                disposer();
+	            else
+	                disposeImmediately = true;
+	            effect.call(scope);
+	        }
+	    });
+	    if (disposeImmediately)
+	        disposer();
+	    return disposer;
+	}
+	exports.when = when;
+	function autorunUntil(predicate, effect, scope) {
+	    deprecated("`autorunUntil` is deprecated, please use `when`.");
+	    return when.apply(null, arguments);
+	}
+	exports.autorunUntil = autorunUntil;
+	function autorunAsync(func, delay, scope) {
+	    if (delay === void 0) { delay = 1; }
+	    if (scope)
+	        func = func.bind(scope);
+	    var isScheduled = false;
+	    var r = new Reaction(func.name || "AutorunAsync", function () {
+	        if (!isScheduled) {
+	            isScheduled = true;
+	            setTimeout(function () {
+	                isScheduled = false;
+	                if (!r.isDisposed)
+	                    r.track(func);
+	            }, delay);
+	        }
+	    });
+	    r.runReaction();
+	    return r.getDisposer();
+	}
+	exports.autorunAsync = autorunAsync;
+	function computed(targetOrExpr, keyOrScope, baseDescriptor, options) {
+	    if (arguments.length < 3 && typeof targetOrExpr === "function")
+	        return computedExpr(targetOrExpr, keyOrScope);
+	    return computedDecorator.apply(null, arguments);
+	}
+	exports.computed = computed;
+	function computedExpr(expr, scope) {
+	    var _a = getValueModeFromValue(expr, ValueMode.Recursive), mode = _a[0], value = _a[1];
+	    return new ComputedValue(value, scope, mode === ValueMode.Structure, value.name || "ComputedValue");
+	}
+	function computedDecorator(target, key, baseDescriptor, options) {
+	    if (arguments.length === 1) {
+	        var options_1 = target;
+	        return function (target, key, baseDescriptor) { return computedDecorator.call(null, target, key, baseDescriptor, options_1); };
+	    }
+	    invariant(baseDescriptor && baseDescriptor.hasOwnProperty("get"), "@computed can only be used on getter functions, like: '@computed get myProps() { return ...; }'");
+	    assertPropertyConfigurable(target, key);
+	    var descriptor = {};
+	    var getter = baseDescriptor.get;
+	    invariant(typeof target === "object", "The @observable decorator can only be used on objects", key);
+	    invariant(typeof getter === "function", "@observable expects a getter function if used on a property.", key);
+	    invariant(!baseDescriptor.set, "@observable properties cannot have a setter.", key);
+	    invariant(getter.length === 0, "@observable getter functions should not take arguments.", key);
+	    descriptor.configurable = true;
+	    descriptor.enumerable = false;
+	    descriptor.get = function () {
+	        setObservableObjectProperty(asObservableObject(this, undefined, ValueMode.Recursive), key, options && options.asStructure === true ? asStructure(getter) : getter);
+	        return this[key];
+	    };
+	    descriptor.set = throwingComputedValueSetter;
+	    if (!baseDescriptor) {
+	        Object.defineProperty(target, key, descriptor);
+	    }
+	    else {
+	        return descriptor;
+	    }
+	}
+	function throwingComputedValueSetter() {
+	    throw new Error("[ComputedValue] It is not allowed to assign new values to computed properties.");
+	}
+	function createTransformer(transformer, onCleanup) {
+	    invariant(typeof transformer === "function" && transformer.length === 1, "createTransformer expects a function that accepts one argument");
+	    var objectCache = {};
+	    var Transformer = (function (_super) {
+	        __extends(Transformer, _super);
+	        function Transformer(sourceIdentifier, sourceObject) {
+	            _super.call(this, function () { return transformer(sourceObject); }, null, false, "Transformer-" + transformer.name + "-" + sourceIdentifier);
+	            this.sourceIdentifier = sourceIdentifier;
+	            this.sourceObject = sourceObject;
+	        }
+	        Transformer.prototype.onBecomeUnobserved = function () {
+	            var lastValue = this.value;
+	            _super.prototype.onBecomeUnobserved.call(this);
+	            delete objectCache[this.sourceIdentifier];
+	            if (onCleanup)
+	                onCleanup(lastValue, this.sourceObject);
+	        };
+	        return Transformer;
+	    })(ComputedValue);
+	    return function (object) {
+	        var identifier = getMemoizationId(object);
+	        var reactiveTransformer = objectCache[identifier];
+	        if (reactiveTransformer)
+	            return reactiveTransformer.get();
+	        reactiveTransformer = objectCache[identifier] = new Transformer(identifier, object);
+	        return reactiveTransformer.get();
+	    };
+	}
+	exports.createTransformer = createTransformer;
+	function getMemoizationId(object) {
+	    if (object === null || typeof object !== "object")
+	        throw new Error("[mobx] transform expected some kind of object, got: " + object);
+	    var tid = object.$transformId;
+	    if (tid === undefined) {
+	        tid = getNextId();
+	        Object.defineProperty(object, '$transformId', {
+	            configurable: true,
+	            writable: true,
+	            enumerable: false,
+	            value: tid
+	        });
+	    }
+	    return tid;
+	}
+	function expr(expr, scope) {
+	    if (!isComputingDerivation())
+	        console.warn("[mobx.expr] 'expr' should only be used inside other reactive functions.");
+	    return computed(expr, scope).get();
+	}
+	exports.expr = expr;
+	function extendObservable(target) {
+	    var properties = [];
+	    for (var _i = 1; _i < arguments.length; _i++) {
+	        properties[_i - 1] = arguments[_i];
+	    }
+	    invariant(arguments.length >= 2, "extendObservable expected 2 or more arguments");
+	    invariant(typeof target === "object", "extendObservable expects an object as first argument");
+	    invariant(!(target instanceof ObservableMap), "extendObservable should not be used on maps, use map.merge instead");
+	    properties.forEach(function (propSet) {
+	        invariant(typeof propSet === "object", "all arguments of extendObservable should be objects");
+	        extendObservableHelper(target, propSet, ValueMode.Recursive, null);
+	    });
+	    return target;
+	}
+	exports.extendObservable = extendObservable;
+	function extendObservableHelper(target, properties, mode, name) {
+	    var adm = asObservableObject(target, name, mode);
+	    for (var key in properties)
+	        if (properties.hasOwnProperty(key)) {
+	            if (target === properties && !isPropertyConfigurable(target, key))
+	                continue;
+	            setObservableObjectProperty(adm, key, properties[key]);
+	        }
+	    return target;
+	}
+	function allowStateChanges(allowStateChanges, func) {
+	    var prev = globalState.allowStateChanges;
+	    globalState.allowStateChanges = allowStateChanges;
+	    var res = func();
+	    globalState.allowStateChanges = prev;
+	    return res;
+	}
+	var transitionTracker = null;
+	function reportTransition(node, state, changed) {
+	    if (changed === void 0) { changed = false; }
+	    if (transitionTracker)
+	        transitionTracker.emit({
+	            id: node.id,
+	            name: node.name + "@" + node.id,
+	            node: node, state: state, changed: changed
+	        });
+	}
+	function getDependencyTree(thing) {
+	    return nodeToDependencyTree(thing);
+	}
+	function nodeToDependencyTree(node) {
+	    var result = {
+	        id: node.id,
+	        name: node.name + "@" + node.id
+	    };
+	    if (node.observing && node.observing.length)
+	        result.dependencies = unique(node.observing).map(nodeToDependencyTree);
+	    return result;
+	}
+	function getObserverTree(thing) {
+	    return nodeToObserverTree(thing);
+	}
+	function nodeToObserverTree(node) {
+	    var result = {
+	        id: node.id,
+	        name: node.name + "@" + node.id
+	    };
+	    if (node.observers && node.observers.length)
+	        result.observers = unique(node.observers).map(nodeToObserverTree);
+	    return result;
+	}
+	function createConsoleReporter(extensive) {
+	    var lines = [];
+	    var scheduled = false;
+	    return function (line) {
+	        if (extensive || line.changed)
+	            lines.push(line);
+	        if (!scheduled) {
+	            scheduled = true;
+	            setTimeout(function () {
+	                console[console["table"] ? "table" : "dir"](lines);
+	                lines = [];
+	                scheduled = false;
+	            }, 1);
+	        }
+	    };
+	}
+	function trackTransitions(extensive, onReport) {
+	    if (extensive === void 0) { extensive = false; }
+	    if (!transitionTracker)
+	        transitionTracker = new SimpleEventEmitter();
+	    var reporter = onReport
+	        ? function (line) {
+	            if (extensive || line.changed)
+	                onReport(line);
+	        }
+	        : createConsoleReporter(extensive);
+	    var disposer = transitionTracker.on(reporter);
+	    return once(function () {
+	        disposer();
+	        if (transitionTracker.listeners.length === 0)
+	            transitionTracker = null;
+	    });
+	}
+	function isObservable(value, property) {
+	    if (value === null || value === undefined)
+	        return false;
+	    if (property !== undefined) {
+	        if (value instanceof ObservableMap || value instanceof ObservableArray)
+	            throw new Error("[mobx.isObservable] isObservable(object, propertyName) is not supported for arrays and maps. Use map.has or array.length instead.");
+	        else if (isObservableObject(value)) {
+	            var o = value.$mobx;
+	            return o.values && !!o.values[property];
+	        }
+	        return false;
+	    }
+	    return !!value.$mobx || value instanceof Atom || value instanceof Reaction || value instanceof ComputedValue;
+	}
+	exports.isObservable = isObservable;
+	function observableDecorator(target, key, baseDescriptor) {
+	    invariant(arguments.length >= 2 && arguments.length <= 3, "Illegal decorator config", key);
+	    assertPropertyConfigurable(target, key);
+	    if (baseDescriptor && baseDescriptor.hasOwnProperty("get")) {
+	        deprecated("Using @observable on computed values is deprecated. Use @computed instead.");
+	        return computed.apply(null, arguments);
+	    }
+	    var descriptor = {};
+	    var baseValue = undefined;
+	    if (baseDescriptor) {
+	        if (baseDescriptor.hasOwnProperty("value"))
+	            baseValue = baseDescriptor.value;
+	        else if (baseDescriptor.initializer) {
+	            baseValue = baseDescriptor.initializer();
+	            if (typeof baseValue === "function")
+	                baseValue = asReference(baseValue);
+	        }
+	    }
+	    invariant(typeof target === "object", "The @observable decorator can only be used on objects", key);
+	    descriptor.configurable = true;
+	    descriptor.enumerable = true;
+	    descriptor.get = function () {
+	        var _this = this;
+	        allowStateChanges(true, function () {
+	            setObservableObjectProperty(asObservableObject(_this, undefined, ValueMode.Recursive), key, baseValue);
+	        });
+	        return this[key];
+	    };
+	    descriptor.set = function (value) {
+	        setObservableObjectProperty(asObservableObject(this, undefined, ValueMode.Recursive), key, typeof value === "function" ? asReference(value) : value);
+	    };
+	    if (!baseDescriptor) {
+	        Object.defineProperty(target, key, descriptor);
+	    }
+	    else {
+	        return descriptor;
+	    }
+	}
+	function observable(v, keyOrScope) {
+	    if (typeof arguments[1] === "string")
+	        return observableDecorator.apply(null, arguments);
+	    invariant(arguments.length === 1 || arguments.length === 2, "observable expects one or two arguments");
+	    if (isObservable(v))
+	        return v;
+	    var _a = getValueModeFromValue(v, ValueMode.Recursive), mode = _a[0], value = _a[1];
+	    var sourceType = mode === ValueMode.Reference ? ValueType.Reference : getTypeOfValue(value);
+	    switch (sourceType) {
+	        case ValueType.Array:
+	        case ValueType.PlainObject:
+	            return makeChildObservable(value, mode);
+	        case ValueType.Reference:
+	        case ValueType.ComplexObject:
+	            return new ObservableValue(value, mode);
+	        case ValueType.ComplexFunction:
+	            throw new Error("[mobx.observable] To be able to make a function reactive it should not have arguments. If you need an observable reference to a function, use `observable(asReference(f))`");
+	        case ValueType.ViewFunction:
+	            deprecated("Use `computed(expr)` instead of `observable(expr)`");
+	            return computed(v, keyOrScope);
+	    }
+	    invariant(false, "Illegal State");
+	}
+	exports.observable = observable;
+	var ValueType;
+	(function (ValueType) {
+	    ValueType[ValueType["Reference"] = 0] = "Reference";
+	    ValueType[ValueType["PlainObject"] = 1] = "PlainObject";
+	    ValueType[ValueType["ComplexObject"] = 2] = "ComplexObject";
+	    ValueType[ValueType["Array"] = 3] = "Array";
+	    ValueType[ValueType["ViewFunction"] = 4] = "ViewFunction";
+	    ValueType[ValueType["ComplexFunction"] = 5] = "ComplexFunction";
+	})(ValueType || (ValueType = {}));
+	function getTypeOfValue(value) {
+	    if (value === null || value === undefined)
+	        return ValueType.Reference;
+	    if (typeof value === "function")
+	        return value.length ? ValueType.ComplexFunction : ValueType.ViewFunction;
+	    if (Array.isArray(value) || value instanceof ObservableArray)
+	        return ValueType.Array;
+	    if (typeof value === "object")
+	        return isPlainObject(value) ? ValueType.PlainObject : ValueType.ComplexObject;
+	    return ValueType.Reference;
+	}
+	function observe(thing, propOrCb, cbOrFire, fireImmediately) {
+	    if (typeof cbOrFire === "function")
+	        return observeObservableProperty(thing, propOrCb, cbOrFire, fireImmediately);
+	    else
+	        return observeObservable(thing, propOrCb, cbOrFire);
+	}
+	exports.observe = observe;
+	function observeObservable(thing, listener, fireImmediately) {
+	    if (isObservableArray(thing))
+	        return thing.observe(listener);
+	    if (isObservableMap(thing))
+	        return thing.observe(listener);
+	    if (isObservableObject(thing))
+	        return observeObservableObject(thing, listener, fireImmediately);
+	    if (thing instanceof ObservableValue || thing instanceof ComputedValue)
+	        return thing.observe(listener, fireImmediately);
+	    if (isPlainObject(thing))
+	        return observeObservable(observable(thing), listener, fireImmediately);
+	    invariant(false, "first argument of observe should be some observable value or plain object");
+	}
+	function observeObservableProperty(thing, property, listener, fireImmediately) {
+	    var propError = "[mobx.observe] the provided observable map has no key with name: " + property;
+	    if (isObservableMap(thing)) {
+	        if (!thing._has(property))
+	            throw new Error(propError);
+	        return observe(thing._data[property], listener);
+	    }
+	    if (isObservableObject(thing)) {
+	        if (!isObservable(thing, property))
+	            throw new Error(propError);
+	        return observe(thing.$mobx.values[property], listener, fireImmediately);
+	    }
+	    if (isPlainObject(thing)) {
+	        extendObservable(thing, {
+	            property: thing[property]
+	        });
+	        return observeObservableProperty(thing, property, listener, fireImmediately);
+	    }
+	    invariant(false, "first argument of observe should be an (observable)object or observableMap if a property name is given");
+	}
+	function toJSON(source, detectCycles, __alreadySeen) {
+	    if (detectCycles === void 0) { detectCycles = true; }
+	    if (__alreadySeen === void 0) { __alreadySeen = null; }
+	    function cache(value) {
+	        if (detectCycles)
+	            __alreadySeen.push([source, value]);
+	        return value;
+	    }
+	    if (detectCycles && __alreadySeen === null)
+	        __alreadySeen = [];
+	    if (detectCycles && source !== null && typeof source === "object") {
+	        for (var i = 0, l = __alreadySeen.length; i < l; i++)
+	            if (__alreadySeen[i][0] === source)
+	                return __alreadySeen[i][1];
+	    }
+	    if (!source)
+	        return source;
+	    if (Array.isArray(source) || source instanceof ObservableArray) {
+	        var res = cache([]);
+	        res.push.apply(res, source.map(function (value) { return toJSON(value, detectCycles, __alreadySeen); }));
+	        return res;
+	    }
+	    if (source instanceof ObservableMap) {
+	        var res = cache({});
+	        source.forEach(function (value, key) { return res[key] = toJSON(value, detectCycles, __alreadySeen); });
+	        return res;
+	    }
+	    if (typeof source === "object" && isPlainObject(source)) {
+	        var res = cache({});
+	        for (var key in source)
+	            if (source.hasOwnProperty(key))
+	                res[key] = toJSON(source[key], detectCycles, __alreadySeen);
+	        return res;
+	    }
+	    if (isObservable(source) && source.$mobx instanceof ObservableValue)
+	        return toJSON(source(), detectCycles, __alreadySeen);
+	    return source;
+	}
+	exports.toJSON = toJSON;
+	function propagateAtomReady(atom) {
+	    invariant(atom.isDirty, "atom not dirty");
+	    atom.isDirty = false;
+	    reportTransition(atom, "READY", true);
+	    propagateReadiness(atom, true);
+	}
+	var Atom = (function () {
+	    function Atom(name, onBecomeObserved, onBecomeUnobserved) {
+	        if (name === void 0) { name = "Atom"; }
+	        if (onBecomeObserved === void 0) { onBecomeObserved = noop; }
+	        if (onBecomeUnobserved === void 0) { onBecomeUnobserved = noop; }
+	        this.name = name;
+	        this.onBecomeObserved = onBecomeObserved;
+	        this.onBecomeUnobserved = onBecomeUnobserved;
+	        this.id = getNextId();
+	        this.isDirty = false;
+	        this.staleObservers = [];
+	        this.observers = [];
+	    }
+	    Atom.prototype.reportObserved = function () {
+	        reportObserved(this);
+	    };
+	    Atom.prototype.reportChanged = function () {
+	        if (!this.isDirty) {
+	            this.reportStale();
+	            this.reportReady();
+	        }
+	    };
+	    Atom.prototype.reportStale = function () {
+	        if (!this.isDirty) {
+	            this.isDirty = true;
+	            reportTransition(this, "STALE");
+	            propagateStaleness(this);
+	        }
+	    };
+	    Atom.prototype.reportReady = function () {
+	        invariant(this.isDirty, "atom not dirty");
+	        if (globalState.inTransaction > 0)
+	            globalState.changedAtoms.push(this);
+	        else {
+	            propagateAtomReady(this);
+	            runReactions();
+	        }
+	    };
+	    Atom.prototype.toString = function () {
+	        return this.name + "@" + this.id;
+	    };
+	    return Atom;
+	})();
+	exports.Atom = Atom;
+	var ComputedValue = (function () {
+	    function ComputedValue(derivation, scope, compareStructural, name) {
+	        var _this = this;
+	        if (name === void 0) { name = "ComputedValue"; }
+	        this.derivation = derivation;
+	        this.scope = scope;
+	        this.compareStructural = compareStructural;
+	        this.name = name;
+	        this.id = getNextId();
+	        this.isLazy = true;
+	        this.isComputing = false;
+	        this.staleObservers = [];
+	        this.observers = [];
+	        this.observing = [];
+	        this.dependencyChangeCount = 0;
+	        this.dependencyStaleCount = 0;
+	        this.value = undefined;
+	        this.peek = function () {
+	            _this.isComputing = true;
+	            globalState.isComputingComputedValue++;
+	            var prevAllowStateChanges = globalState.allowStateChanges;
+	            globalState.allowStateChanges = false;
+	            var res = derivation.call(scope);
+	            globalState.allowStateChanges = prevAllowStateChanges;
+	            globalState.isComputingComputedValue--;
+	            _this.isComputing = false;
+	            return res;
+	        };
+	    }
+	    ComputedValue.prototype.onBecomeObserved = function () {
+	    };
+	    ComputedValue.prototype.onBecomeUnobserved = function () {
+	        for (var i = 0, l = this.observing.length; i < l; i++)
+	            removeObserver(this.observing[i], this);
+	        this.observing = [];
+	        this.isLazy = true;
+	        this.value = undefined;
+	    };
+	    ComputedValue.prototype.onDependenciesReady = function () {
+	        var changed = this.trackAndCompute();
+	        reportTransition(this, "READY", changed);
+	        return changed;
+	    };
+	    ComputedValue.prototype.get = function () {
+	        invariant(!this.isComputing, "Cycle detected", this.derivation);
+	        reportObserved(this);
+	        if (this.dependencyStaleCount > 0) {
+	            return this.peek();
+	        }
+	        if (this.isLazy) {
+	            if (isComputingDerivation()) {
+	                this.isLazy = false;
+	                this.trackAndCompute();
+	            }
+	            else {
+	                return this.peek();
+	            }
+	        }
+	        return this.value;
+	    };
+	    ComputedValue.prototype.set = function (_) {
+	        throw new Error("[ComputedValue '" + name + "'] It is not possible to assign a new value to a computed value.");
+	    };
+	    ComputedValue.prototype.trackAndCompute = function () {
+	        var oldValue = this.value;
+	        this.value = trackDerivedFunction(this, this.peek);
+	        return valueDidChange(this.compareStructural, this.value, oldValue);
+	    };
+	    ComputedValue.prototype.observe = function (listener, fireImmediately) {
+	        var _this = this;
+	        var firstTime = true;
+	        var prevValue = undefined;
+	        return autorun(function () {
+	            var newValue = _this.get();
+	            if (!firstTime || fireImmediately) {
+	                listener(newValue, prevValue);
+	            }
+	            firstTime = false;
+	            prevValue = newValue;
+	        });
+	    };
+	    ComputedValue.prototype.toString = function () {
+	        return this.name + "@" + this.id + "[" + this.derivation.toString() + "]";
+	    };
+	    return ComputedValue;
+	})();
+	function isComputingDerivation() {
+	    return globalState.derivationStack.length > 0;
+	}
+	function checkIfStateModificationsAreAllowed() {
+	    invariant(globalState.allowStateChanges, "It is not allowed to change the state when a computed value is being evaluated. Use 'autorun' to create reactive functions with side-effects. Or use 'extras.allowStateChanges(true, block)' to supress this message.");
+	}
+	function notifyDependencyStale(derivation) {
+	    if (++derivation.dependencyStaleCount === 1) {
+	        reportTransition(derivation, "STALE");
+	        propagateStaleness(derivation);
+	    }
+	}
+	function notifyDependencyReady(derivation, dependencyDidChange) {
+	    invariant(derivation.dependencyStaleCount > 0, "unexpected ready notification");
+	    if (dependencyDidChange)
+	        derivation.dependencyChangeCount += 1;
+	    if (--derivation.dependencyStaleCount === 0) {
+	        if (derivation.dependencyChangeCount > 0) {
+	            derivation.dependencyChangeCount = 0;
+	            reportTransition(derivation, "PENDING");
+	            var changed = derivation.onDependenciesReady();
+	            propagateReadiness(derivation, changed);
+	        }
+	        else {
+	            reportTransition(derivation, "READY", false);
+	            propagateReadiness(derivation, false);
+	        }
+	    }
+	}
+	function trackDerivedFunction(derivation, f) {
+	    var prevObserving = derivation.observing;
+	    derivation.observing = [];
+	    globalState.derivationStack.push(derivation);
+	    var result = f();
+	    bindDependencies(derivation, prevObserving);
+	    return result;
+	}
+	function bindDependencies(derivation, prevObserving) {
+	    globalState.derivationStack.length -= 1;
+	    var _a = quickDiff(derivation.observing, prevObserving), added = _a[0], removed = _a[1];
+	    for (var i = 0, l = added.length; i < l; i++) {
+	        var dependency = added[i];
+	        invariant(!findCycle(derivation, dependency), "Cycle detected", derivation);
+	        addObserver(added[i], derivation);
+	    }
+	    for (var i = 0, l = removed.length; i < l; i++)
+	        removeObserver(removed[i], derivation);
+	}
+	function findCycle(needle, node) {
+	    var obs = node.observing;
+	    if (obs === undefined)
+	        return false;
+	    if (obs.indexOf(node) !== -1)
+	        return true;
+	    for (var l = obs.length, i = 0; i < l; i++)
+	        if (findCycle(needle, obs[i]))
+	            return true;
+	    return false;
+	}
+	var MobXGlobals = (function () {
+	    function MobXGlobals() {
+	        this.version = 1;
+	        this.derivationStack = [];
+	        this.mobxGuid = 0;
+	        this.inTransaction = 0;
+	        this.inUntracked = 0;
+	        this.isRunningReactions = false;
+	        this.isComputingComputedValue = 0;
+	        this.changedAtoms = [];
+	        this.pendingReactions = [];
+	        this.allowStateChanges = true;
+	    }
+	    return MobXGlobals;
+	})();
+	var globalState = (function () {
+	    var res = new MobXGlobals();
+	    if (global.__mobservableTrackingStack || global.__mobservableViewStack)
+	        throw new Error("[mobx] An incompatible version of mobservable is already loaded.");
+	    if (global.__mobxGlobal && global.__mobxGlobal.version !== res.version)
+	        throw new Error("[mobx] An incompatible version of mobx is already loaded.");
+	    if (global.__mobxGlobal)
+	        return global.__mobxGlobal;
+	    return global.__mobxGlobal = res;
+	})();
+	function getNextId() {
+	    return ++globalState.mobxGuid;
+	}
+	function registerGlobals() {
+	}
+	function resetGlobalState() {
+	    var defaultGlobals = new MobXGlobals();
+	    for (var key in defaultGlobals)
+	        globalState[key] = defaultGlobals[key];
+	}
+	function addObserver(observable, node) {
+	    var obs = observable.observers, l = obs.length;
+	    obs[l] = node;
+	    if (l === 0)
+	        observable.onBecomeObserved();
+	}
+	function removeObserver(observable, node) {
+	    var obs = observable.observers, idx = obs.indexOf(node);
+	    if (idx !== -1)
+	        obs.splice(idx, 1);
+	    if (obs.length === 0)
+	        observable.onBecomeUnobserved();
+	}
+	function reportObserved(observable) {
+	    if (globalState.inUntracked > 0)
+	        return;
+	    var derivationStack = globalState.derivationStack;
+	    var l = derivationStack.length;
+	    if (l > 0) {
+	        var deps = derivationStack[l - 1].observing, depslength = deps.length;
+	        if (deps[depslength - 1] !== observable && deps[depslength - 2] !== observable)
+	            deps[depslength] = observable;
+	    }
+	}
+	function propagateStaleness(observable) {
+	    var os = observable.observers.slice();
+	    os.forEach(notifyDependencyStale);
+	    observable.staleObservers = observable.staleObservers.concat(os);
+	}
+	function propagateReadiness(observable, valueDidActuallyChange) {
+	    observable.staleObservers.splice(0).forEach(function (o) { return notifyDependencyReady(o, valueDidActuallyChange); });
+	}
+	function untracked(action) {
+	    deprecated("This feature is experimental and might be removed in a future minor release. Please report if you use this feature in production: https://github.com/mobxjs/mobx/issues/49");
+	    globalState.inUntracked++;
+	    var res = action();
+	    globalState.inUntracked--;
+	    return res;
+	}
+	exports.untracked = untracked;
+	var Reaction = (function () {
+	    function Reaction(name, onInvalidate) {
+	        if (name === void 0) { name = "Reaction"; }
+	        this.name = name;
+	        this.onInvalidate = onInvalidate;
+	        this.id = getNextId();
+	        this.staleObservers = EMPTY_ARRAY;
+	        this.observers = EMPTY_ARRAY;
+	        this.observing = [];
+	        this.dependencyChangeCount = 0;
+	        this.dependencyStaleCount = 0;
+	        this.isDisposed = false;
+	        this._isScheduled = false;
+	    }
+	    Reaction.prototype.onBecomeObserved = function () {
+	    };
+	    Reaction.prototype.onBecomeUnobserved = function () {
+	    };
+	    Reaction.prototype.onDependenciesReady = function () {
+	        if (!this._isScheduled) {
+	            this._isScheduled = true;
+	            globalState.pendingReactions.push(this);
+	        }
+	        return false;
+	    };
+	    Reaction.prototype.isScheduled = function () {
+	        return this.dependencyStaleCount > 0 || this._isScheduled;
+	    };
+	    Reaction.prototype.runReaction = function () {
+	        if (!this.isDisposed) {
+	            this._isScheduled = false;
+	            this.onInvalidate();
+	            reportTransition(this, "READY", true);
+	        }
+	    };
+	    Reaction.prototype.track = function (fn) {
+	        trackDerivedFunction(this, fn);
+	    };
+	    Reaction.prototype.dispose = function () {
+	        if (!this.isDisposed) {
+	            this.isDisposed = true;
+	            var deps = this.observing.splice(0);
+	            for (var i = 0, l = deps.length; i < l; i++)
+	                removeObserver(deps[i], this);
+	        }
+	    };
+	    Reaction.prototype.getDisposer = function () {
+	        var r = this.dispose.bind(this);
+	        r.$mobx = this;
+	        return r;
+	    };
+	    Reaction.prototype.toString = function () {
+	        return "Reaction[" + this.name + "]";
+	    };
+	    return Reaction;
+	})();
+	exports.Reaction = Reaction;
+	var MAX_REACTION_ITERATIONS = 100;
+	function runReactions() {
+	    if (globalState.isRunningReactions)
+	        return;
+	    globalState.isRunningReactions = true;
+	    var pr = globalState.pendingReactions;
+	    var iterations = 0;
+	    while (pr.length) {
+	        if (++iterations === MAX_REACTION_ITERATIONS)
+	            throw new Error("Reaction doesn't converge to a stable state. Probably there is a cycle in the reactive function: " + pr[0].toString());
+	        var rs = pr.splice(0);
+	        for (var i = 0, l = rs.length; i < l; i++)
+	            rs[i].runReaction();
+	    }
+	    globalState.isRunningReactions = false;
+	}
+	function transaction(action, thisArg) {
+	    globalState.inTransaction += 1;
+	    var res = action.call(thisArg);
+	    if (--globalState.inTransaction === 0) {
+	        var values = globalState.changedAtoms.splice(0);
+	        for (var i = 0, l = values.length; i < l; i++)
+	            propagateAtomReady(values[i]);
+	        runReactions();
+	    }
+	    return res;
+	}
+	exports.transaction = transaction;
+	var ValueMode;
+	(function (ValueMode) {
+	    ValueMode[ValueMode["Recursive"] = 0] = "Recursive";
+	    ValueMode[ValueMode["Reference"] = 1] = "Reference";
+	    ValueMode[ValueMode["Structure"] = 2] = "Structure";
+	    ValueMode[ValueMode["Flat"] = 3] = "Flat";
+	})(ValueMode || (ValueMode = {}));
+	function asReference(value) {
+	    return new AsReference(value);
+	}
+	exports.asReference = asReference;
+	function asStructure(value) {
+	    return new AsStructure(value);
+	}
+	exports.asStructure = asStructure;
+	function asFlat(value) {
+	    return new AsFlat(value);
+	}
+	exports.asFlat = asFlat;
+	var AsReference = (function () {
+	    function AsReference(value) {
+	        this.value = value;
+	        assertUnwrapped(value, "Modifiers are not allowed to be nested");
+	    }
+	    return AsReference;
+	})();
+	var AsStructure = (function () {
+	    function AsStructure(value) {
+	        this.value = value;
+	        assertUnwrapped(value, "Modifiers are not allowed to be nested");
+	    }
+	    return AsStructure;
+	})();
+	var AsFlat = (function () {
+	    function AsFlat(value) {
+	        this.value = value;
+	        assertUnwrapped(value, "Modifiers are not allowed to be nested");
+	    }
+	    return AsFlat;
+	})();
+	function getValueModeFromValue(value, defaultMode) {
+	    if (value instanceof AsReference)
+	        return [ValueMode.Reference, value.value];
+	    if (value instanceof AsStructure)
+	        return [ValueMode.Structure, value.value];
+	    if (value instanceof AsFlat)
+	        return [ValueMode.Flat, value.value];
+	    return [defaultMode, value];
+	}
+	function getValueModeFromModifierFunc(func) {
+	    if (func === asReference)
+	        return ValueMode.Reference;
+	    else if (func === asStructure)
+	        return ValueMode.Structure;
+	    else if (func === asFlat)
+	        return ValueMode.Flat;
+	    invariant(func === undefined, "Cannot determine value mode from function. Please pass in one of these: mobx.asReference, mobx.asStructure or mobx.asFlat, got: " + func);
+	    return ValueMode.Recursive;
+	}
+	function makeChildObservable(value, parentMode, name) {
+	    var childMode;
+	    if (isObservable(value))
+	        return value;
+	    switch (parentMode) {
+	        case ValueMode.Reference:
+	            return value;
+	        case ValueMode.Flat:
+	            assertUnwrapped(value, "Items inside 'asFlat' canont have modifiers");
+	            childMode = ValueMode.Reference;
+	            break;
+	        case ValueMode.Structure:
+	            assertUnwrapped(value, "Items inside 'asStructure' canont have modifiers");
+	            childMode = ValueMode.Structure;
+	            break;
+	        case ValueMode.Recursive:
+	            _a = getValueModeFromValue(value, ValueMode.Recursive), childMode = _a[0], value = _a[1];
+	            break;
+	        default:
+	            invariant(false, "Illegal State");
+	    }
+	    if (Array.isArray(value) && Object.isExtensible(value))
+	        return createObservableArray(value, childMode, name);
+	    if (isPlainObject(value) && Object.isExtensible(value))
+	        return extendObservableHelper(value, value, childMode, name);
+	    return value;
+	    var _a;
+	}
+	function assertUnwrapped(value, message) {
+	    if (value instanceof AsReference || value instanceof AsStructure || value instanceof AsFlat)
+	        throw new Error("[mobx] asStructure / asReference / asFlat cannot be used here. " + message);
+	}
+	var OBSERVABLE_ARRAY_BUFFER_SIZE = 0;
+	var StubArray = (function () {
+	    function StubArray() {
+	    }
+	    return StubArray;
+	})();
+	StubArray.prototype = [];
+	function getArrayLength(adm) {
+	    adm.atom.reportObserved();
+	    return adm.values.length;
+	}
+	function setArrayLength(adm, newLength) {
+	    if (typeof newLength !== "number" || newLength < 0)
+	        throw new Error("[mobx.array] Out of range: " + newLength);
+	    var currentLength = adm.values.length;
+	    if (newLength === currentLength)
+	        return;
+	    else if (newLength > currentLength)
+	        spliceWithArray(adm, currentLength, 0, new Array(newLength - currentLength));
+	    else
+	        spliceWithArray(adm, newLength, currentLength - newLength);
+	}
+	function updateArrayLength(adm, oldLength, delta) {
+	    if (oldLength !== adm.lastKnownLength)
+	        throw new Error("[mobx] Modification exception: the internal structure of an observable array was changed. Did you use peek() to change it?");
+	    checkIfStateModificationsAreAllowed();
+	    adm.lastKnownLength += delta;
+	    if (delta > 0 && oldLength + delta > OBSERVABLE_ARRAY_BUFFER_SIZE)
+	        reserveArrayBuffer(oldLength + delta);
+	}
+	function spliceWithArray(adm, index, deleteCount, newItems) {
+	    var length = adm.values.length;
+	    if ((newItems === undefined || newItems.length === 0) && (deleteCount === 0 || length === 0))
+	        return [];
+	    if (index === undefined)
+	        index = 0;
+	    else if (index > length)
+	        index = length;
+	    else if (index < 0)
+	        index = Math.max(0, length + index);
+	    if (arguments.length === 2)
+	        deleteCount = length - index;
+	    else if (deleteCount === undefined || deleteCount === null)
+	        deleteCount = 0;
+	    else
+	        deleteCount = Math.max(0, Math.min(deleteCount, length - index));
+	    if (newItems === undefined)
+	        newItems = EMPTY_ARRAY;
+	    else
+	        newItems = newItems.map(adm.makeChildReactive);
+	    var lengthDelta = newItems.length - deleteCount;
+	    updateArrayLength(adm, length, lengthDelta);
+	    var res = (_a = adm.values).splice.apply(_a, [index, deleteCount].concat(newItems));
+	    notifyArraySplice(adm, index, res, newItems);
+	    return res;
+	    var _a;
+	}
+	function makeReactiveArrayItem(value) {
+	    assertUnwrapped(value, "Array values cannot have modifiers");
+	    if (this.mode === ValueMode.Flat || this.mode === ValueMode.Reference)
+	        return value;
+	    return makeChildObservable(value, this.mode, this.atom.name + "@" + this.atom.id + " / ArrayEntry");
+	}
+	function notifyArrayChildUpdate(adm, index, oldValue) {
+	    adm.atom.reportChanged();
+	    if (adm.changeEvent)
+	        adm.changeEvent.emit({ object: adm.array, type: "update", index: index, oldValue: oldValue });
+	}
+	function notifyArraySplice(adm, index, deleted, added) {
+	    if (deleted.length === 0 && added.length === 0)
+	        return;
+	    adm.atom.reportChanged();
+	    if (adm.changeEvent)
+	        adm.changeEvent.emit({ object: adm.array, type: "splice", index: index, addedCount: added.length, removed: deleted });
+	}
+	var ObservableArray = (function (_super) {
+	    __extends(ObservableArray, _super);
+	    function ObservableArray(initialValues, mode, name) {
+	        _super.call(this);
+	        var adm = this.$mobx = {
+	            atom: new Atom(name || "ObservableArray"),
+	            values: undefined,
+	            changeEvent: undefined,
+	            lastKnownLength: 0,
+	            mode: mode,
+	            array: this,
+	            makeChildReactive: function (v) { return makeReactiveArrayItem.call(adm, v); }
+	        };
+	        Object.defineProperty(this, "$mobx", {
+	            enumerable: false,
+	            configurable: false,
+	            writable: false
+	        });
+	        if (initialValues && initialValues.length) {
+	            updateArrayLength(adm, 0, initialValues.length);
+	            adm.values = initialValues.map(adm.makeChildReactive);
+	        }
+	        else
+	            adm.values = [];
+	    }
+	    ObservableArray.prototype.observe = function (listener, fireImmediately) {
+	        if (fireImmediately === void 0) { fireImmediately = false; }
+	        if (this.$mobx.changeEvent === undefined)
+	            this.$mobx.changeEvent = new SimpleEventEmitter();
+	        if (fireImmediately)
+	            listener({ object: this, type: "splice", index: 0, addedCount: this.$mobx.values.length, removed: [] });
+	        return this.$mobx.changeEvent.on(listener);
+	    };
+	    ObservableArray.prototype.clear = function () {
+	        return this.splice(0);
+	    };
+	    ObservableArray.prototype.replace = function (newItems) {
+	        return spliceWithArray(this.$mobx, 0, this.$mobx.values.length, newItems);
+	    };
+	    ObservableArray.prototype.toJSON = function () {
+	        this.$mobx.atom.reportObserved();
+	        return this.$mobx.values.slice();
+	    };
+	    ObservableArray.prototype.peek = function () {
+	        return this.$mobx.values;
+	    };
+	    ObservableArray.prototype.find = function (predicate, thisArg, fromIndex) {
+	        if (fromIndex === void 0) { fromIndex = 0; }
+	        this.$mobx.atom.reportObserved();
+	        var items = this.$mobx.values, l = items.length;
+	        for (var i = fromIndex; i < l; i++)
+	            if (predicate.call(thisArg, items[i], i, this))
+	                return items[i];
+	        return null;
+	    };
+	    ObservableArray.prototype.splice = function (index, deleteCount) {
+	        var newItems = [];
+	        for (var _i = 2; _i < arguments.length; _i++) {
+	            newItems[_i - 2] = arguments[_i];
+	        }
+	        switch (arguments.length) {
+	            case 0:
+	                return [];
+	            case 1:
+	                return spliceWithArray(this.$mobx, index);
+	            case 2:
+	                return spliceWithArray(this.$mobx, index, deleteCount);
+	        }
+	        return spliceWithArray(this.$mobx, index, deleteCount, newItems);
+	    };
+	    ObservableArray.prototype.push = function () {
+	        var items = [];
+	        for (var _i = 0; _i < arguments.length; _i++) {
+	            items[_i - 0] = arguments[_i];
+	        }
+	        spliceWithArray(this.$mobx, this.$mobx.values.length, 0, items);
+	        return this.$mobx.values.length;
+	    };
+	    ObservableArray.prototype.pop = function () {
+	        return this.splice(Math.max(this.$mobx.values.length - 1, 0), 1)[0];
+	    };
+	    ObservableArray.prototype.shift = function () {
+	        return this.splice(0, 1)[0];
+	    };
+	    ObservableArray.prototype.unshift = function () {
+	        var items = [];
+	        for (var _i = 0; _i < arguments.length; _i++) {
+	            items[_i - 0] = arguments[_i];
+	        }
+	        spliceWithArray(this.$mobx, 0, 0, items);
+	        return this.$mobx.values.length;
+	    };
+	    ObservableArray.prototype.reverse = function () {
+	        this.$mobx.atom.reportObserved();
+	        var clone = this.slice();
+	        return clone.reverse.apply(clone, arguments);
+	    };
+	    ObservableArray.prototype.sort = function (compareFn) {
+	        this.$mobx.atom.reportObserved();
+	        var clone = this.slice();
+	        return clone.sort.apply(clone, arguments);
+	    };
+	    ObservableArray.prototype.remove = function (value) {
+	        var idx = this.$mobx.values.indexOf(value);
+	        if (idx > -1) {
+	            this.splice(idx, 1);
+	            return true;
+	        }
+	        return false;
+	    };
+	    ObservableArray.prototype.toString = function () {
+	        return "[mobx.array] " + Array.prototype.toString.apply(this.$mobx.values, arguments);
+	    };
+	    ObservableArray.prototype.toLocaleString = function () {
+	        return "[mobx.array] " + Array.prototype.toLocaleString.apply(this.$mobx.values, arguments);
+	    };
+	    return ObservableArray;
+	})(StubArray);
+	makeNonEnumerable(ObservableArray.prototype, [
+	    "constructor",
+	    "clear",
+	    "find",
+	    "observe",
+	    "pop",
+	    "peek",
+	    "push",
+	    "remove",
+	    "replace",
+	    "reverse",
+	    "shift",
+	    "sort",
+	    "splice",
+	    "split",
+	    "toJSON",
+	    "toLocaleString",
+	    "toString",
+	    "unshift"
+	]);
+	Object.defineProperty(ObservableArray.prototype, "length", {
+	    enumerable: false,
+	    configurable: true,
+	    get: function () {
+	        return getArrayLength(this.$mobx);
+	    },
+	    set: function (newLength) {
+	        setArrayLength(this.$mobx, newLength);
+	    }
+	});
+	[
+	    "concat",
+	    "every",
+	    "filter",
+	    "forEach",
+	    "indexOf",
+	    "join",
+	    "lastIndexOf",
+	    "map",
+	    "reduce",
+	    "reduceRight",
+	    "slice",
+	    "some"
+	].forEach(function (funcName) {
+	    var baseFunc = Array.prototype[funcName];
+	    Object.defineProperty(ObservableArray.prototype, funcName, {
+	        configurable: false,
+	        writable: true,
+	        enumerable: false,
+	        value: function () {
+	            this.$mobx.atom.reportObserved();
+	            return baseFunc.apply(this.$mobx.values, arguments);
+	        }
+	    });
+	});
+	function createArrayBufferItem(index) {
+	    Object.defineProperty(ObservableArray.prototype, "" + index, {
+	        enumerable: false,
+	        configurable: false,
+	        set: function (value) {
+	            var impl = this.$mobx;
+	            var values = impl.values;
+	            assertUnwrapped(value, "Modifiers cannot be used on array values. For non-reactive array values use makeReactive(asFlat(array)).");
+	            if (index < values.length) {
+	                checkIfStateModificationsAreAllowed();
+	                var oldValue = values[index];
+	                var changed = impl.mode === ValueMode.Structure ? !deepEquals(oldValue, value) : oldValue !== value;
+	                if (changed) {
+	                    values[index] = impl.makeChildReactive(value);
+	                    notifyArrayChildUpdate(impl, index, oldValue);
+	                }
+	            }
+	            else if (index === values.length)
+	                spliceWithArray(impl, index, 0, [value]);
+	            else
+	                throw new Error("[mobx.array] Index out of bounds, " + index + " is larger than " + values.length);
+	        },
+	        get: function () {
+	            var impl = this.$mobx;
+	            if (impl && index < impl.values.length) {
+	                impl.atom.reportObserved();
+	                return impl.values[index];
+	            }
+	            return undefined;
+	        }
+	    });
+	}
+	function reserveArrayBuffer(max) {
+	    for (var index = OBSERVABLE_ARRAY_BUFFER_SIZE; index < max; index++)
+	        createArrayBufferItem(index);
+	    OBSERVABLE_ARRAY_BUFFER_SIZE = max;
+	}
+	reserveArrayBuffer(1000);
+	function createObservableArray(initialValues, mode, name) {
+	    return new ObservableArray(initialValues, mode, name);
+	}
+	function fastArray(initialValues) {
+	    deprecated("fastArray is deprecated. Please use `observable(asFlat([]))`");
+	    return createObservableArray(initialValues, ValueMode.Flat, null);
+	}
+	exports.fastArray = fastArray;
+	function isObservableArray(thing) {
+	    return thing instanceof ObservableArray;
+	}
+	exports.isObservableArray = isObservableArray;
+	var ObservableMapMarker = {};
+	var ObservableMap = (function () {
+	    function ObservableMap(initialData, valueModeFunc) {
+	        var _this = this;
+	        this.$mobx = ObservableMapMarker;
+	        this._data = {};
+	        this._hasMap = {};
+	        this._events = undefined;
+	        this.name = "ObservableMap";
+	        this.id = getNextId();
+	        this._keys = new ObservableArray(null, ValueMode.Reference, this.name + "@" + this.id + " / keys()");
+	        this._valueMode = getValueModeFromModifierFunc(valueModeFunc);
+	        if (isPlainObject(initialData))
+	            this.merge(initialData);
+	        else if (Array.isArray(initialData))
+	            initialData.forEach(function (_a) {
+	                var key = _a[0], value = _a[1];
+	                return _this.set(key, value);
+	            });
+	    }
+	    ObservableMap.prototype._has = function (key) {
+	        return typeof this._data[key] !== "undefined";
+	    };
+	    ObservableMap.prototype.has = function (key) {
+	        if (!this.isValidKey(key))
+	            return false;
+	        if (this._hasMap[key])
+	            return this._hasMap[key].get();
+	        return this._updateHasMapEntry(key, false).get();
+	    };
+	    ObservableMap.prototype.set = function (key, value) {
+	        var _this = this;
+	        this.assertValidKey(key);
+	        assertUnwrapped(value, "[mobx.map.set] Expected unwrapped value to be inserted to key '" + key + "'. If you need to use modifiers pass them as second argument to the constructor");
+	        if (this._has(key)) {
+	            var oldValue = this._data[key].value;
+	            var changed = this._data[key].set(value);
+	            if (changed && this._events) {
+	                this._events.emit({
+	                    type: "update",
+	                    object: this,
+	                    name: key,
+	                    oldValue: oldValue
+	                });
+	            }
+	        }
+	        else {
+	            transaction(function () {
+	                _this._data[key] = new ObservableValue(value, _this._valueMode, _this.name + "@" + _this.id + " / Entry \"" + key + "\"");
+	                _this._updateHasMapEntry(key, true);
+	                _this._keys.push(key);
+	            });
+	            this._events && this._events.emit({
+	                type: "add",
+	                object: this,
+	                name: key
+	            });
+	        }
+	    };
+	    ObservableMap.prototype.delete = function (key) {
+	        var _this = this;
+	        if (this._has(key)) {
+	            var oldValue = this._data[key].value;
+	            transaction(function () {
+	                _this._keys.remove(key);
+	                _this._updateHasMapEntry(key, false);
+	                var observable = _this._data[key];
+	                observable.set(undefined);
+	                _this._data[key] = undefined;
+	            });
+	            this._events && this._events.emit({
+	                type: "delete",
+	                object: this,
+	                name: key,
+	                oldValue: oldValue
+	            });
+	        }
+	    };
+	    ObservableMap.prototype._updateHasMapEntry = function (key, value) {
+	        var entry = this._hasMap[key];
+	        if (entry) {
+	            entry.set(value);
+	        }
+	        else {
+	            entry = this._hasMap[key] = new ObservableValue(value, ValueMode.Reference, this.name + "@" + this.id + " / Contains \"" + key + "\"");
+	        }
+	        return entry;
+	    };
+	    ObservableMap.prototype.get = function (key) {
+	        if (this.has(key))
+	            return this._data[key].get();
+	        return undefined;
+	    };
+	    ObservableMap.prototype.keys = function () {
+	        return this._keys.slice();
+	    };
+	    ObservableMap.prototype.values = function () {
+	        return this.keys().map(this.get, this);
+	    };
+	    ObservableMap.prototype.entries = function () {
+	        var _this = this;
+	        return this.keys().map(function (key) { return [key, _this.get(key)]; });
+	    };
+	    ObservableMap.prototype.forEach = function (callback, thisArg) {
+	        var _this = this;
+	        this.keys().forEach(function (key) { return callback.call(thisArg, _this.get(key), key); });
+	    };
+	    ObservableMap.prototype.merge = function (other) {
+	        var _this = this;
+	        transaction(function () {
+	            if (other instanceof ObservableMap)
+	                other.keys().forEach(function (key) { return _this.set(key, other.get(key)); });
+	            else
+	                Object.keys(other).forEach(function (key) { return _this.set(key, other[key]); });
+	        });
+	        return this;
+	    };
+	    ObservableMap.prototype.clear = function () {
+	        var _this = this;
+	        transaction(function () {
+	            _this.keys().forEach(_this.delete, _this);
+	        });
+	    };
+	    Object.defineProperty(ObservableMap.prototype, "size", {
+	        get: function () {
+	            return this._keys.length;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    ObservableMap.prototype.toJs = function () {
+	        var _this = this;
+	        var res = {};
+	        this.keys().forEach(function (key) { return res[key] = _this.get(key); });
+	        return res;
+	    };
+	    ObservableMap.prototype.isValidKey = function (key) {
+	        if (key === null || key === undefined)
+	            return false;
+	        if (typeof key !== "string" && typeof key !== "number")
+	            return false;
+	        return true;
+	    };
+	    ObservableMap.prototype.assertValidKey = function (key) {
+	        if (!this.isValidKey(key))
+	            throw new Error("[mobx.map] Invalid key: '" + key + "'");
+	    };
+	    ObservableMap.prototype.toString = function () {
+	        var _this = this;
+	        return "[mobx.map { " + this.keys().map(function (key) { return (key + ": " + ("" + _this.get(key))); }).join(", ") + " }]";
+	    };
+	    ObservableMap.prototype.observe = function (callback) {
+	        if (!this._events)
+	            this._events = new SimpleEventEmitter();
+	        return this._events.on(callback);
+	    };
+	    return ObservableMap;
+	})();
+	exports.ObservableMap = ObservableMap;
+	function map(initialValues, valueModifier) {
+	    return new ObservableMap(initialValues, valueModifier);
+	}
+	exports.map = map;
+	function isObservableMap(thing) {
+	    return thing instanceof ObservableMap;
+	}
+	exports.isObservableMap = isObservableMap;
+	var ObservableObjectMarker = {};
+	function asObservableObject(target, name, mode) {
+	    if (name === void 0) { name = "ObservableObject"; }
+	    if (mode === void 0) { mode = ValueMode.Recursive; }
+	    if (target.$mobx) {
+	        if (target.$mobx.type !== ObservableObjectMarker)
+	            throw new Error("The given object is observable but not an observable object");
+	        return target.$mobx;
+	    }
+	    var adm = {
+	        type: ObservableObjectMarker,
+	        values: {},
+	        events: undefined,
+	        id: getNextId(),
+	        target: target, name: name, mode: mode
+	    };
+	    Object.defineProperty(target, "$mobx", {
+	        enumerable: false,
+	        configurable: false,
+	        writable: false,
+	        value: adm
+	    });
+	    return adm;
+	}
+	function setObservableObjectProperty(adm, propName, value) {
+	    if (adm.values[propName])
+	        adm.target[propName] = value;
+	    else
+	        defineObservableProperty(adm, propName, value);
+	}
+	function defineObservableProperty(adm, propName, value) {
+	    assertPropertyConfigurable(adm.target, propName);
+	    var observable;
+	    var name = adm.name + "@" + adm.id + " / Prop \"" + propName + "\"";
+	    var isComputed = true;
+	    if (typeof value === "function" && value.length === 0)
+	        observable = new ComputedValue(value, adm.target, false, name);
+	    else if (value instanceof AsStructure && typeof value.value === "function" && value.value.length === 0)
+	        observable = new ComputedValue(value.value, adm.target, true, name);
+	    else {
+	        isComputed = false;
+	        observable = new ObservableValue(value, adm.mode, name);
+	    }
+	    adm.values[propName] = observable;
+	    Object.defineProperty(adm.target, propName, {
+	        configurable: true,
+	        enumerable: !isComputed,
+	        get: function () {
+	            return observable.get();
+	        },
+	        set: isComputed
+	            ? throwingComputedValueSetter
+	            : function (newValue) {
+	                var oldValue = observable.value;
+	                if (observable.set(newValue) && adm.events !== undefined) {
+	                    adm.events.emit({
+	                        type: "update",
+	                        object: this,
+	                        name: propName,
+	                        oldValue: oldValue
+	                    });
+	                }
+	            }
+	    });
+	    if (adm.events !== undefined) {
+	        adm.events.emit({
+	            type: "add",
+	            object: adm.target,
+	            name: propName
+	        });
+	    }
+	    ;
+	}
+	function observeObservableObject(object, callback, fireImmediately) {
+	    invariant(isObservableObject(object), "Expected observable object");
+	    invariant(fireImmediately !== true, "`observe` doesn't support the fire immediately property for observable objects.");
+	    var adm = object.$mobx;
+	    if (adm.events === undefined)
+	        adm.events = new SimpleEventEmitter();
+	    return object.$mobx.events.on(callback);
+	}
+	function isObservableObject(thing) {
+	    return thing && thing.$mobx && thing.$mobx.type === ObservableObjectMarker;
+	}
+	exports.isObservableObject = isObservableObject;
+	var ObservableValue = (function (_super) {
+	    __extends(ObservableValue, _super);
+	    function ObservableValue(value, mode, name) {
+	        if (name === void 0) { name = "ObservableValue"; }
+	        _super.call(this, name);
+	        this.mode = mode;
+	        this.hasUnreportedChange = false;
+	        this.events = null;
+	        this.value = undefined;
+	        var _a = getValueModeFromValue(value, ValueMode.Recursive), childmode = _a[0], unwrappedValue = _a[1];
+	        if (this.mode === ValueMode.Recursive)
+	            this.mode = childmode;
+	        this.value = makeChildObservable(unwrappedValue, this.mode, this.name);
+	    }
+	    ObservableValue.prototype.set = function (newValue) {
+	        assertUnwrapped(newValue, "Modifiers cannot be used on non-initial values.");
+	        checkIfStateModificationsAreAllowed();
+	        var oldValue = this.value;
+	        var changed = valueDidChange(this.mode === ValueMode.Structure, oldValue, newValue);
+	        if (changed) {
+	            this.value = makeChildObservable(newValue, this.mode, this.name);
+	            this.reportChanged();
+	            if (this.events)
+	                this.events.emit(newValue, oldValue);
+	        }
+	        return changed;
+	    };
+	    ObservableValue.prototype.get = function () {
+	        this.reportObserved();
+	        return this.value;
+	    };
+	    ObservableValue.prototype.observe = function (listener, fireImmediately) {
+	        if (!this.events)
+	            this.events = new SimpleEventEmitter();
+	        if (fireImmediately)
+	            listener(this.value, undefined);
+	        return this.events.on(listener);
+	    };
+	    ObservableValue.prototype.toString = function () {
+	        return this.name + "@" + this.id + "[" + this.value + "]";
+	    };
+	    return ObservableValue;
+	})(Atom);
+	var SimpleEventEmitter = (function () {
+	    function SimpleEventEmitter() {
+	        this.listeners = [];
+	    }
+	    SimpleEventEmitter.prototype.emit = function () {
+	        var listeners = this.listeners.slice();
+	        for (var i = 0, l = listeners.length; i < l; i++)
+	            listeners[i].apply(null, arguments);
+	    };
+	    SimpleEventEmitter.prototype.on = function (listener) {
+	        var _this = this;
+	        this.listeners.push(listener);
+	        return once(function () {
+	            var idx = _this.listeners.indexOf(listener);
+	            if (idx !== -1)
+	                _this.listeners.splice(idx, 1);
+	        });
+	    };
+	    SimpleEventEmitter.prototype.once = function (listener) {
+	        var subscription = this.on(function () {
+	            subscription();
+	            listener.apply(this, arguments);
+	        });
+	        return subscription;
+	    };
+	    return SimpleEventEmitter;
+	})();
+	exports.SimpleEventEmitter = SimpleEventEmitter;
+	var EMPTY_ARRAY = [];
+	Object.freeze(EMPTY_ARRAY);
+	function invariant(check, message, thing) {
+	    if (!check)
+	        throw new Error("[mobx] Invariant failed: " + message + (thing ? " in '" + thing + "'" : ""));
+	}
+	var deprecatedMessages = [];
+	function deprecated(msg) {
+	    if (deprecatedMessages.indexOf(msg) !== -1)
+	        return;
+	    deprecatedMessages.push(msg);
+	    console.error("[mobx] Deprecated: " + msg);
+	}
+	function once(func) {
+	    var invoked = false;
+	    return function () {
+	        if (invoked)
+	            return;
+	        invoked = true;
+	        return func.apply(this, arguments);
+	    };
+	}
+	var noop = function () { };
+	function unique(list) {
+	    var res = [];
+	    list.forEach(function (item) {
+	        if (res.indexOf(item) === -1)
+	            res.push(item);
+	    });
+	    return res;
+	}
+	function isPlainObject(value) {
+	    return value !== null && typeof value === "object" && Object.getPrototypeOf(value) === Object.prototype;
+	}
+	function valueDidChange(compareStructural, oldValue, newValue) {
+	    return compareStructural
+	        ? !deepEquals(oldValue, newValue)
+	        : oldValue !== newValue;
+	}
+	function makeNonEnumerable(object, props) {
+	    for (var i = 0; i < props.length; i++) {
+	        Object.defineProperty(object, props[i], {
+	            configurable: true,
+	            writable: true,
+	            enumerable: false,
+	            value: object[props[i]]
+	        });
+	    }
+	}
+	function isPropertyConfigurable(object, prop) {
+	    var descriptor = Object.getOwnPropertyDescriptor(object, prop);
+	    return !descriptor || (descriptor.configurable !== false && descriptor.writable !== false);
+	}
+	function assertPropertyConfigurable(object, prop) {
+	    invariant(isPropertyConfigurable(object, prop), "Cannot make property '" + prop + "' observable, it is not configurable and writable in the target object");
+	}
+	function deepEquals(a, b) {
+	    if (a === null && b === null)
+	        return true;
+	    if (a === undefined && b === undefined)
+	        return true;
+	    var aIsArray = Array.isArray(a) || isObservableArray(a);
+	    if (aIsArray !== (Array.isArray(b) || isObservableArray(b))) {
+	        return false;
+	    }
+	    else if (aIsArray) {
+	        if (a.length !== b.length)
+	            return false;
+	        for (var i = a.length; i >= 0; i--)
+	            if (!deepEquals(a[i], b[i]))
+	                return false;
+	        return true;
+	    }
+	    else if (typeof a === "object" && typeof b === "object") {
+	        if (a === null || b === null)
+	            return false;
+	        if (Object.keys(a).length !== Object.keys(b).length)
+	            return false;
+	        for (var prop in a) {
+	            if (!b.hasOwnProperty(prop))
+	                return false;
+	            if (!deepEquals(a[prop], b[prop]))
+	                return false;
+	        }
+	        return true;
+	    }
+	    return a === b;
+	}
+	function quickDiff(current, base) {
+	    if (!base || !base.length)
+	        return [current, []];
+	    if (!current || !current.length)
+	        return [[], base];
+	    var added = [];
+	    var removed = [];
+	    var currentIndex = 0, currentSearch = 0, currentLength = current.length, currentExhausted = false, baseIndex = 0, baseSearch = 0, baseLength = base.length, isSearching = false, baseExhausted = false;
+	    while (!baseExhausted && !currentExhausted) {
+	        if (!isSearching) {
+	            if (currentIndex < currentLength && baseIndex < baseLength && current[currentIndex] === base[baseIndex]) {
+	                currentIndex++;
+	                baseIndex++;
+	                if (currentIndex === currentLength && baseIndex === baseLength)
+	                    return [added, removed];
+	                continue;
+	            }
+	            currentSearch = currentIndex;
+	            baseSearch = baseIndex;
+	            isSearching = true;
+	        }
+	        baseSearch += 1;
+	        currentSearch += 1;
+	        if (baseSearch >= baseLength)
+	            baseExhausted = true;
+	        if (currentSearch >= currentLength)
+	            currentExhausted = true;
+	        if (!currentExhausted && current[currentSearch] === base[baseIndex]) {
+	            added.push.apply(added, current.slice(currentIndex, currentSearch));
+	            currentIndex = currentSearch + 1;
+	            baseIndex++;
+	            isSearching = false;
+	        }
+	        else if (!baseExhausted && base[baseSearch] === current[currentIndex]) {
+	            removed.push.apply(removed, base.slice(baseIndex, baseSearch));
+	            baseIndex = baseSearch + 1;
+	            currentIndex++;
+	            isSearching = false;
+	        }
+	    }
+	    added.push.apply(added, current.slice(currentIndex));
+	    removed.push.apply(removed, base.slice(baseIndex));
+	    return [added, removed];
+	}
+
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25847,11 +27538,11 @@
 	};
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var content = __webpack_require__(270);
+	    var content = __webpack_require__(271);
 	    var insertCss = __webpack_require__(216);
 
 	    if (typeof content === 'string') {
@@ -25864,7 +27555,7 @@
 	  
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(215)();
@@ -25872,13 +27563,13 @@
 
 
 	// module
-	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.headingLoginWrapperView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    position: absolute;\r\n    top: 0rem;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    height: 10rem;\r\n    margin: 0.32rem 0rem;\r\n}\r\n\r\n.headingTopRow\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    height: 70%;\r\n    width: 100%;\r\n    max-width: 61.25rem;\r\n}\r\n\r\n.headingLoginView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 9rem;\r\n    max-width: 12rem;\r\n    background-color: rgb(180, 213, 242);\r\n    margin-left: 0.32rem;\r\n}\r\n\r\n.loginPanel\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 100%;\r\n    width: 80%;\r\n}\r\n\r\n.authInputWrapper\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n}\r\n\r\n.authInput\r\n{\r\n    text-align: center;\r\n    line-height: 100%;\r\n    height: 1.1rem;\r\n    width: 100%;\r\n    /*box-sizing is used to make the border sit inside*/\r\n    box-sizing: border-box;\r\n    font-size: 0.8rem;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n.loginBtnsWrapper\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    width: 100%;\r\n}\r\n\r\n.loginBtnsWrapper > button\r\n{\r\n    max-width: 4rem;\r\n    font-size: 0.75rem;\r\n    border: solid;\r\n    border-color: rgb(0, 17, 109);\r\n    border-width: 1px;\r\n    border-radius: 0.25em;\r\n    cursor: pointer;\r\n    background: -webkit-radial-gradient(rgba(255, 255, 255, 0.75), rgb(180, 213, 242));\r\n    background: radial-gradient(rgba(255, 255, 255, 0.75), rgb(180, 213, 242));\r\n}\r\n\r\n.loginBtnsWrapper > button:hover\r\n{\r\n    background: rgb(0, 125, 241);\r\n    color: rgb(255, 255, 255);\r\n}\r\n\r\n.socialLogin\r\n{\r\n    text-align: center;\r\n    font-weight: bold;\r\n    font-size: 0.8rem;\r\n    height: 0.8rem;\r\n    width: 100%;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n.inputError\r\n{\r\n    text-align: center;\r\n    font-size: 0.8rem;\r\n    height: 0.8rem;\r\n    width: 100%;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(255, 0, 0);\r\n}\r\n\r\n@media (max-height: 21rem)\r\n{\r\n    /*  ==================================================\r\n                        Logout View\r\n    ==================================================*/\r\n\r\n    .headingLogoutWrapperView\r\n{\r\n        height: 4.5rem;\r\n    }\r\n    /*  ==================================================\r\n                        Login View\r\n    ==================================================*/\r\n\r\n    .headingLoginWrapperView\r\n{\r\n        height: 4.5rem;\r\n    }\r\n\r\n    .headingLoginView\r\n{\r\n        flex-direction: row;\r\n        min-width: 23rem;\r\n        width: 100%;\r\n    }\r\n\r\n    .loginPanel\r\n{\r\n        flex-direction: row;\r\n    }\r\n\r\n    .authInputWrapper\r\n{\r\n        min-width: 9rem;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    .loginBtnsWrapper\r\n{\r\n        flex-direction: column;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    .socialLogin\r\n{\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        margin-right: 0.32rem;\r\n    }\r\n    /*  ==================================================\r\n                        Logo View\r\n    ==================================================*/\r\n\r\n    .headingLogoView\r\n{\r\n        min-width: 5.25rem;\r\n    }\r\n}\r\n", ""]);
+	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Device Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.headingLoginWrapperView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    position: absolute;\r\n    top: 0rem;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    height: 10rem;\r\n    margin: 0.32rem 0rem;\r\n}\r\n\r\n.headingTopRow\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    height: 70%;\r\n    width: 100%;\r\n    max-width: 61.25rem;\r\n}\r\n\r\n.headingLoginView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 9rem;\r\n    max-width: 12rem;\r\n    background-color: rgb(180, 213, 242);\r\n    margin-left: 0.32rem;\r\n}\r\n\r\n.loginPanel\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 100%;\r\n    width: 80%;\r\n}\r\n\r\n.authInputWrapper\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n}\r\n\r\n.authInput\r\n{\r\n    text-align: center;\r\n    line-height: 100%;\r\n    height: 1.1rem;\r\n    width: 100%;\r\n    /*box-sizing is used to make the border sit inside*/\r\n    box-sizing: border-box;\r\n    font-size: 0.8rem;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n.loginBtnsWrapper\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    width: 100%;\r\n}\r\n\r\n.loginBtnsWrapper > button\r\n{\r\n    max-width: 4rem;\r\n    font-size: 0.75rem;\r\n    border: solid;\r\n    border-color: rgb(0, 17, 109);\r\n    border-width: 1px;\r\n    border-radius: 0.25em;\r\n    cursor: pointer;\r\n    background: -webkit-radial-gradient(rgba(255, 255, 255, 0.75), rgb(180, 213, 242));\r\n    background: radial-gradient(rgba(255, 255, 255, 0.75), rgb(180, 213, 242));\r\n}\r\n\r\n.loginBtnsWrapper > button:hover\r\n{\r\n    background: rgb(0, 125, 241);\r\n    color: rgb(255, 255, 255);\r\n}\r\n\r\n.socialLogin\r\n{\r\n    text-align: center;\r\n    font-weight: bold;\r\n    font-size: 0.8rem;\r\n    height: 0.8rem;\r\n    width: 100%;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n.inputError\r\n{\r\n    text-align: center;\r\n    font-size: 0.8rem;\r\n    height: 0.8rem;\r\n    width: 100%;\r\n    line-height: 0.8rem;\r\n    margin: 0.15rem 0rem;\r\n    color: rgb(255, 0, 0);\r\n}\r\n\r\n/*  ==================================================\r\n                    Header Expanded\r\n    ==================================================*/\r\n.shrinkExpandToggle\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    height: 100%;\r\n    width: 2.75rem;\r\n    margin-left: 0.32rem;\r\n    background: -webkit-radial-gradient(rgb(255, 255, 255), rgb(180, 213, 242));\r\n    background: radial-gradient(rgb(255, 255, 255), rgb(180, 213, 242));\r\n    border-radius: 0 25% 25% 0;\r\n    cursor: pointer;\r\n}\r\n\r\n.shrinkExpandCheckbox\r\n{\r\n    display: none;\r\n}\r\n\r\n.expandToggleImg\r\n{\r\n    display: none;\r\n    position: relative;\r\n    left: 50%;\r\n    -webkit-transform: translateX(-50%) rotate(90deg) scaleY(1.5);\r\n        -ms-transform: translateX(-50%) rotate(90deg) scaleY(1.5);\r\n            transform: translateX(-50%) rotate(90deg) scaleY(1.5);\r\n    font-weight: bold;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n.shrinkToggleImg\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    position: relative;\r\n    top: 50%;\r\n    -webkit-transform: translateY(-300%) scaleY(3);\r\n        -ms-transform: translateY(-300%) scaleY(3);\r\n            transform: translateY(-300%) scaleY(3);\r\n    font-weight: bold;\r\n    color: rgb(0, 17, 109);\r\n}\r\n\r\n/*  ==================================================\r\n                      Header Shrunk\r\n    ==================================================*/\r\n.headingLoginWrapperView.headingTopRow > shrinkExpandToggle > shrinkExpandCheckbox :checked \r\n{\r\n    position: fixed;\r\n    width: 25%;\r\n}\r\n\r\n@media (max-height: 23rem), (max-width: 44rem)\r\n{\r\n    /*  ==================================================\r\n                        Logout View\r\n    ==================================================*/\r\n\r\n    .headingLogoutWrapperView\r\n{\r\n        /**/\r\n    }\r\n    /*  ==================================================\r\n                        Login View\r\n    ==================================================*/\r\n\r\n    .headingLoginWrapperView\r\n{\r\n        /**/\r\n    }\r\n\r\n    .headingLoginView\r\n{\r\n        width: 0%;\r\n    }\r\n\r\n    .loginPanel\r\n{\r\n        flex-direction: row;\r\n    }\r\n\r\n    .authInputWrapper\r\n{\r\n        min-width: 9rem;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    .loginBtnsWrapper\r\n{\r\n        flex-direction: column;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    .socialLogin\r\n{\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        margin-right: 0.32rem;\r\n    }\r\n    /*  ==================================================\r\n                        Logo View\r\n    ==================================================*/\r\n\r\n    .headingLogoView\r\n{\r\n        min-width: 5.25rem;\r\n    }\r\n}\r\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25893,13 +27584,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _headingLogoDisplay = __webpack_require__(272);
+	var _headingLogoDisplay = __webpack_require__(273);
 
 	var _headingLogoDisplay2 = _interopRequireDefault(_headingLogoDisplay);
 
 	var _styleCollector = __webpack_require__(212);
 
-	var _headingLogo = __webpack_require__(274);
+	var _headingLogo = __webpack_require__(275);
 
 	var _headingLogo2 = _interopRequireDefault(_headingLogo);
 
@@ -25949,7 +27640,7 @@
 	exports.default = HeadingLogoView;
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25964,7 +27655,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _taggedLogo = __webpack_require__(273);
+	var _taggedLogo = __webpack_require__(274);
 
 	var _taggedLogo2 = _interopRequireDefault(_taggedLogo);
 
@@ -26002,17 +27693,17 @@
 	exports.default = HeadingLogoDisplay;
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuYAAAFOCAMAAAD94Ch/AAADAFBMVEVapTD///8AffEAAAAAAU7vtWcAAAAAAABL+dAAAAAAAAEAAABL6HAAAADgM8sAAAAAAU4AAABL4pAAAABL+QAAAAAAAAAAAAAAAEEAAAAAAAEAAADTIeAAAAAAAAAAAABLAAsAAAABAAEAAAAAAAsAAAAAAFsAAADTIdAAAAAAAAEAAAAAAAsAAAAABQAAAAAAAAsAAADTIdAAAAAAAAsAAAAAAAAAAIAAAFsAAAAAAFAAAAA8zjrukmQ50GDS6AFsbZbuW50AAF7UPRMFN2UFpRoAAAtJgAAAAABjIAAAAABioAAAAAB84AAAAABHgAAAAABjAAAI/wBiYAAAAAB8oAAAA2kAAAC2G+aOJf0AAAAAAACFiuXvsfcI/wAAAAAAAABmP1AAAAIAAAAAAADwAAAAAAIAAAAAAAFtqcC0CwAAAAAAAAEAAAAAAFsAAABXHFAAAABeAVAAAAAAAFsAAAAAAFgAAAAsAvgAAF4AAAEAf/osAAAAAAD/AQv///0AAIDwAAAAAAAAAAAAAFsAAADNqmgAf/osAAAAAACTAAAAAAAAAAAAAADJCVAAAAAsAAAAAAAAAAsAAAAAAAsAAAAsAwAAAAAAAAAAAADJDmAAAAAAAAsAAADNqmgAf/oAAAIAAAAAAQAAAAAI/wAAAAAsAwAAAAAkDMAAAAAsmEAAAAAAAAsAAAAAAEEAAADTIeAAAAAAAAsAAAAAAAsAAAAAAAAAAAD/AVsAAAAAAFsAAADTIdAAAAAABPAAAAAAAFkAAADN7tIAf/osAAAAAAAAAAIAAAAABPAAAAAAANEAAAAAAGwAAAD6JcAAAAAAAF4AAADTJFAAAAAAAFsAAAD6Ij8AAAAAAQAAAAAAAAEAAAAAAQAAAAAAAAIAAAAAAQAAAAAAAAEAAADTIeAAAADNqZYAf/osAAAAAAAsAAAAAAAAAAAAAAAAAAAAAADTJDwAAADTJFAAAAAAAFEAAAD6JcAAAAD///////8AAAAAAAAwpVoAAACiadgAf/rewiWrAAABAHRSTlMA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Cpf0PAAAAAlwSFlzAAAuIwAALiMBeKU/dgAADidJREFUeNrt3WGP67gNhWGC//9HF3s/dHfuzMSWRB5R1MtFgaLdhLH0zIksJ44ZRVEURVF/yhkCCuUUdb5ymFMXKIc5dYFymFMXKIc5RZhTVIMshzkFc4rqoBzmFMopqoFymFMXKIc5dYFymFMop1pN+63KYX7TjF+rHOb3TPe9SxaYXzPXNyNHOedgMKc4A2uAHOYghznF2RfKKZalRyiHOcj7I4c5yG9gjgqQ989ymHPmeYFymN+NvCEBlIP8+799Q5bD/FLlfhNymF+JvO/sO8yvUQ5ylN8e5X3n3h3mRHlz5Cgnyq9GDvOrovxW5DC/KMr7zro7ylF+O3KY37JguRo5zK9TfqFxlN+hvOmE++vCyQXL8pbT7SOFlCZzHYjc6/9IrDvKWbAsKD/AhQ8XVJozH5vqA1S4oxzkC8rro/DJwsolWX4+cp8vqLRWPjDRtUn4WmEF5cWR+3phBeWFkXtQgeUG5Qci9zDiKO/N/NDPn4cCR/k1yk+J8njfKG/EfIVvBQtZvGHeP8zHvkvUEDfILwjzsQ+gK22LdMOcJYsuyje4Bvl9YR4U5R8luduXfwoVUJowX1W+aLx24aRzmA98bLGxcZRfH+bDn3RBOVU1zBeX5e4op45lPvgRAJBTBdcsIR/oQjl1NHMWLFSnE9B71+UIIczHPoGOcqo086WdRJBTB69Z+u+Xw4Mwb68cHDB/fUctkFN1mA//n803WZBxHfP5MAc5dfSaZeT7RCCnzmYOcqoJ8/EwZ6ecarE0f/UJdZBT9dN8LuhBTnVZmr/6Uh3GqQMWLWurdpBTTc5AmzDHAcw//F89TkBRwBno8NLcME41SfMme+bMP8yf0/xs5kw+zJszZ+Jh/sz8MxaMUzCHOHUSczuMObPd2O/nSX/B3DowB8Slzq9JcyiQ5hnMyzg3iJPmf/1bA8y9PHOAw7xzmuMb5j8tWZukObxh3nTRAm0qIM2tNHNmmHq2Zu8XLT7KHOdU1TQfX7WgnDouzQeYk+bUBWlegjkzTL1Pczt10YJz6hnbCHNnp4XqkuZxq5YxozinhGkexnwQJ8yp/DS3aOajLmFO5af5pzifWpwPm4Q5tZW5TTAf9whzKp+5TTN/c9vn9eUVzKlQ5gGrlimJMKe2Mh9dtcw5hDmVz3wizj/vwIwihDm1l/lQnM8ShDklYG4xzOf9wZxSMl9ZtSzogzm1l7l9ZP79TNZgThVlHhDnS/RgTimY23qcL7mDOSVlPupc8FJhTgUxt63MSXNKzPyYOGeGqWHmBnPqJuY7nMOc0jAfv83c5jhnhqkJ5juXLaQ5VYC5fdqGJM2pg5jvXLYQ55SK+eyyhTSnTmJu25YtMKcS5Dw9Rr1sYdFC6dLcnpfuOXGOckrIfJdzmFNK5pPOiXPqnLX503I7bbcF5ZQ0zTctW3BOSZm/yPOEZQvKKemiZXzZEuGcNKfEaf58Y2cLd45ySs18zjlpTp20aNnhHOWUPM0ftk8SnJPmlD7NH9bbv33LjjSnjkrz5zz/6X8kzanD0vxzPv+S56Q5dVaaP61DYvOcNKc2pbnSuUK5//OP/3nT8T//PW3ov/xuh4++RmU7XzrKzEH8oVdSmj85Dxy3zDR3070rLFyrmPmOyqduHt/uw3hmeX9/M+clIqPOTXWL89inFawTfwbh39RUbRcXnuvNwl/Q508zis4kZg5Bvdb3qNK2iz5GlYjYNF9cv+1hrpnzHOTvXoS4nf6d8XUfP8p52PQowy1D3ftLGlrm0k2wgT6Br0PgPGx+tO/i8epef95Iyly7AhzpE/kq8p1XSfOZsZG68yOUF1n/Db8KvybNXfET1atfBThhjXSgcrsozYeGx6Xu3DcwlyLb8FZVm7lnjtM+5Ck7SJtOBcqf5lye5nlL1pXWvoO5dmkM83fHcOjm9ZvWO5RrnTnMxWnu25R7jXYbtmcd5uK1eeqp2d7jGjnOxmfzpLlg0bptMabf2IF56TT3TcrrMNdac5jvWcLuUe7NlPs+5aR5wes0H9qK22lXf/s2S0lzmGu1wXzfGnaLct/ebsNHS/wO5odNj9adb2Cu5eZOmm+8irJDubcLc5ivHGdx5j98u3iuqWvbbfhwiZPmBdN88HH5zEPbvX2OsX+90CWI7mvz/99AJznqxh/w9YZCye3+GoCp6VgfE5jHM5/uOPFaJ47vP/+eeUA7X2g3p9wWvmI/Nusw//GZ1pqGzef8bIjbzf4hr/90YewqqTfz4DP86swtg3nKNuvi1E9uA/RP85C+caGV85ZuGc49JZeXpj7wzbgT87DGGq/RYW4r9yxd/0XZ6J2x6Yf2Zh7YOdBPfEJaCnN35SEuZfLFzGNb72bu4r8qC/mlzbyLEFHrq9OZWzJzJYGn6wApzJdGPeNy68L0tb3Wn87cUgyIl9hpzC2eufVhvvWnh1RpPvXQYswtmPn6NJPmauamZZ7Rbvl+4aG7s8uXsmA+O7HCqIM5zF3T3c5lbvHM1wYzQ7kdpJw0L5Pm3ok5aX5Imrs6zWsxN5iLul+2aGnFnEXL+YsWO475+PeiSPOJn5X5+nAvleYen1X11+YRU3wQc09m/vAs7LS8nQl78U9gmoefWDW+COprdddOi6fW6B8VaS772ZRzr4JadebpM2x3MBcnEGlejHmDNNcgH3ujrZXmML8gzXesJ8XumjM30lx3u7JjmTvMu4d5nvKkr/OImRtp3sB55ibYKV95npp/J82PUZ6716v+jmVKuxJp7peleSxz38g84YYr0nak+SnMs5Xn5KT0TeCMNDfSXLi6jBLk2neBisrli5a2ae5Vmc/PqLQdaV5Luey3kMe7WMxDVkKvyHnNbuYG84U2sWetyxcBQv4wSPNzmHuJNB9ehC5f0V16dWdfHbowzV3E/N3Niv95pIfcbV7YjjS/k/mmTctN7Ujz+szdD3VuWue2y7ndnOaSq5PRJqTKTfdHRZrfGeZegbnJupHmxdNcqjz3o74b25HmxdM8ZagFqxbTMl/tY/P/CdzeJ82DFyDp8EzqfLGNcuJ7pblOecmPOWWPU2HmV317SMU8PhCkykXtCqW5k+ahC72NF1NMy3y5C2m+l3naZnGqPM1QRe5cwrwy86SR0iqXtGvF/HjlMuaJ8oSjFbZzWW9xfkaaS5gnLkeVyFeYa3f5YF6PedoP/GRMwOZ9S5jvZJ64WZxzBOIBk1+00fUizSOYpxyDeMQ2XJvUxfkRzL1AmqfvwgWP/dZdy6XXDfONS3NtmovHbNO1yZ+fePhISPMya3PTIk9vl3ME4Z/QiHorJs2j1yziIdu5//FKeYBzP4K5S5h7aiBIjQvaJTz1r49c7eUwV6X540sV706kn+LOP+HE/Kv/Itumed7bpnjEZJMy+3RTAJb0NGOedidOt1rMFd1i9Xx+3EovP4W5i9Lc86KrX5iHOn961PxphvSEqAjzWefrA9UvzFfsPTxRYC+H+esDXh+pjmEe5TyO6zSc65h7ytuedwxzS7u/6QKBfZfjNioP+GJ/yEANv32ImXvuzAw+fhXB2zv+FktzLfN/95RHRisizKN2t1++zIDpXhqejEV2lJOz1yyJo7XmTvWpKnv++02bmn//ZH3m40HdlUem+RbmDw+LnoaH5wltJxzL7mnuJ6T5tLvwifgcqMpuwWMJ89KLFvFMnNlus/NuzO1Y5sVu/Zw4ngbz85iLZ0M++YcOZTXm0a9ePFDi6dgw+x3iHOa1pkZsbotz08d5P+bn/sbW4oWotPkvsjd7NHOH+U7mfkecN2RuwoE6dVNnq3P99Sjvt2aRajh3U2ej8yrXXU8Jc9/N/OzT3V3O7T7nx8RegaXk1n0IXbvZZ22b5sFPOzxQ4n3evdttxTdNa99ertDO1PBAuZa5uF3eC8hoZKWZFzplt+FPhbsWnndxntDIbmVu+QN1HXOT9Zp5xrrMy5yyzw3Ufc6tYiO7mrnlD9Rtq/PEk6npRu8e0Jj58M1qCm1+1HWu+9G8wSe9l/ngFyMr7WV7hXaxWyEJPswOYF5hu3d1oK7aO186wY8nMvKSzmW+vg1mAQMlhlfFue7XOd4+693Kf+1U5TCK/FnlHHrUGFsVtJWZ/93N1HfUnDnuBVse2G5Q4KEW2zDfdSARmwiKdhGJa9E/PYPySnEx8xIzmMe941Awj1n8LxyfuB0F818OJnivc287auMGReHDCRmC94/MbkfB/PvxBA3By8eaoh2F8q9HFDYI0d0M5kcxL7prFf3ZkBcPNoN5S+a1D8lMytxg3lH5XaNwejvKMA5zlF8yBzCH+QUzAHOYXzD+MEd5/8EXHzrKqzK/ehgOb4dykLNmgfkl406Yo5xxEI86LvXMGQaYt1fOMMSPAmPee34ZBQb9gjMv3tJ4By03wQxCxkigvNQEMwYZQ8HGVqkpZghSBoP921JzDPKMweBSXKlJBnnKLTb5WEWlWQZ5xoDwCbla8wzyhAHh0861Jhrj8SPC91aKzTXIw8eEL9qivDrx1THhlgn1Jhzjsey4+U3BKUd4oLs296LsNu9dD3PxNqjD3UzYjhpUTnavsBO3o+YcsEZZZIfyAxiwFF9lh/LyCjjjXGeH8uIK2FmJYIdylB/KvHI7amRO7tlJSt9JRHlVAhdtJaWzQ3lRAVftJaWzQ3nJ+b9rM0mgDuQF599gHswO5eWm/7LdJD6rdaPy6/aTNOxQTh3D/Jh2FDXr7qB2FDXpTtuOGaI2OD+sHUWNu9O2Y3IoPfMT21HUkLsz21HUADxtOyaF0jM/uR1FvXF3eDuKeoIn/qtiKig5c207AzklZt6pHUV9d9euHUX9B55s1cAihaIoiqIoqln9D8zuHjWXRxTpAAAAAElFTkSuQmCC"
 
 /***/ },
-/* 274 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var content = __webpack_require__(275);
+	    var content = __webpack_require__(276);
 	    var insertCss = __webpack_require__(216);
 
 	    if (typeof content === 'string') {
@@ -26025,7 +27716,7 @@
 	  
 
 /***/ },
-/* 275 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(215)();
@@ -26033,13 +27724,13 @@
 
 
 	// module
-	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                      Component CSS\r\n    ==================================================*/\r\n.headingLogoView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgb(180, 213, 242);\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 9rem;\r\n}\r\n\r\n.logoPanel\r\n{\r\n    display: inline-block;\r\n    table-layout: fixed;\r\n    width: 80%;\r\n    height: 80%;\r\n    text-align: center;\r\n}\r\n\r\n.tagLogo\r\n{\r\n    position: relative;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n    height: auto;\r\n    width: auto;\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n\r\n@media (max-height: 21rem)\r\n{\r\n\r\n    /*  ==================================================\r\n                        Logout View\r\n    ==================================================*/\r\n    .headingLogoutWrapperView\r\n{\r\n        height: 4.5rem;\r\n    }\r\n\r\n    /*  ==================================================\r\n                        Login View\r\n    ==================================================*/\r\n    .headingLoginWrapperView\r\n{\r\n        height: 4.5rem;\r\n    }\r\n    .headingLoginView\r\n{\r\n        flex-direction: row;\r\n        min-width: 23rem;\r\n        width: 100%;\r\n    }\r\n    .loginPanel\r\n{\r\n        flex-direction: row;\r\n    }\r\n    .authInputWrapper\r\n{\r\n        min-width: 9rem;\r\n        margin-right: 0.32rem;\r\n    }\r\n    .loginBtnsWrapper\r\n{\r\n        flex-direction: column;\r\n        margin-right: 0.32rem;\r\n    }\r\n    .socialLogin\r\n{\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    /*  ==================================================\r\n                        Logo View\r\n    ==================================================*/\r\n    .headingLogoView\r\n{\r\n        min-width: 5.25rem;\r\n    }\r\n}\r\n", ""]);
+	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n            Mobile Device Media Query Variables\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n/*  ==================================================\r\n                      Component CSS\r\n    ==================================================*/\r\n.headingLogoView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    background-color: rgb(180, 213, 242);\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 9rem;\r\n}\r\n\r\n.logoPanel\r\n{\r\n    display: inline-block;\r\n    table-layout: fixed;\r\n    width: 80%;\r\n    height: 80%;\r\n    text-align: center;\r\n}\r\n\r\n.tagLogo\r\n{\r\n    position: relative;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n    height: auto;\r\n    width: auto;\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n\r\n@media (max-height: 23rem), (max-width: 44rem)\r\n{\r\n\r\n    /*  ==================================================\r\n                        Logout View\r\n    ==================================================*/\r\n    .headingLogoutWrapperView\r\n{\r\n\r\n        /**/\r\n    }\r\n\r\n    /*  ==================================================\r\n                        Login View\r\n    ==================================================*/\r\n    .headingLoginWrapperView\r\n{\r\n\r\n        /**/\r\n    }\r\n    .headingLoginView\r\n{\r\n        width: 0%;\r\n    }\r\n    .loginPanel\r\n{\r\n        flex-direction: row;\r\n    }\r\n    .authInputWrapper\r\n{\r\n        min-width: 9rem;\r\n        margin-right: 0.32rem;\r\n    }\r\n    .loginBtnsWrapper\r\n{\r\n        flex-direction: column;\r\n        margin-right: 0.32rem;\r\n    }\r\n    .socialLogin\r\n{\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        margin-right: 0.32rem;\r\n    }\r\n\r\n    /*  ==================================================\r\n                        Logo View\r\n    ==================================================*/\r\n    .headingLogoView\r\n{\r\n        min-width: 5.25rem;\r\n    }\r\n}\r\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 276 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26054,13 +27745,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _headingNavDisplay = __webpack_require__(277);
+	var _headingNavDisplay = __webpack_require__(278);
 
 	var _headingNavDisplay2 = _interopRequireDefault(_headingNavDisplay);
 
 	var _styleCollector = __webpack_require__(212);
 
-	var _headingNav = __webpack_require__(278);
+	var _headingNav = __webpack_require__(279);
 
 	var _headingNav2 = _interopRequireDefault(_headingNav);
 
@@ -26110,7 +27801,7 @@
 	exports.default = HeadingNavView;
 
 /***/ },
-/* 277 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26191,11 +27882,11 @@
 	exports.default = HeadingNavDisplay;
 
 /***/ },
-/* 278 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var content = __webpack_require__(279);
+	    var content = __webpack_require__(280);
 	    var insertCss = __webpack_require__(216);
 
 	    if (typeof content === 'string') {
@@ -26208,7 +27899,7 @@
 	  
 
 /***/ },
-/* 279 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(215)();
@@ -26216,13 +27907,13 @@
 
 
 	// module
-	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Height Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.headingNavView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    width: 100%;\r\n    height: 30%;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n}\r\n\r\n.navPanel\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.navPanel > ul\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    height: 100%;\r\n    width: 100%;\r\n    background: rgb(180, 213, 242);\r\n    background: -webkit-radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));\r\n    background: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));\r\n    list-style: none;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n.navPanel > ul > li\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 100%;\r\n    width: 32%;\r\n    background: rgb(0, 17, 109);\r\n}\r\n\r\n.navPanel > ul > li > a\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: bold;\r\n    font-size: 1.125rem;\r\n    text-decoration: none;\r\n    color: rgb(180, 213, 242);\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.navPanel > ul > li > a:hover\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: bold;\r\n    font-size: 1.125rem;\r\n    background: rgb(0, 125, 241);\r\n\tcolor: rgb(255, 255, 255);\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n", ""]);
+	exports.push([module.id, "/*  ==================================================\r\n     The following CSS will be imported into the rest\r\n      of the project's top level components to avoid\r\n                 repetition and clutter.\r\n\r\n           CSS Variable Definitions with PreCSS\r\n    ==================================================*/\r\n/*  ==================================================\r\n            Mobile Device Media Query Variables\r\n    ==================================================*/\r\n/*  ==================================================\r\n                       Global CSS\r\n    ==================================================*/\r\n\r\nbody\r\n{\r\n    background-color: rgb(0, 17, 109);\r\n    font-family: Verdana, Arial, Helvetica, sans-serif;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    text-decoration: none;\r\n}\r\n/*  ==================================================\r\n                       Global Mixins\r\n    ==================================================*/\r\n\r\n.headingNavView\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    width: 100%;\r\n    max-width: 61.25rem;\r\n    height: 30%;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n}\r\n\r\n.navPanel\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.navPanel > ul\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    height: 100%;\r\n    width: 100%;\r\n    background: rgb(180, 213, 242);\r\n    background: -webkit-radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));\r\n    background: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));\r\n    list-style: none;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n.navPanel > ul > li\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: row;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 100%;\r\n    width: 32%;\r\n    background: rgb(0, 17, 109);\r\n}\r\n\r\n.navPanel > ul > li > a\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: bold;\r\n    font-size: 1.125rem;\r\n    text-decoration: none;\r\n    color: rgb(180, 213, 242);\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.navPanel > ul > li > a:hover\r\n{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: bold;\r\n    font-size: 1.125rem;\r\n    background: rgb(0, 125, 241);\r\n\tcolor: rgb(255, 255, 255);\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 280 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -26398,6 +28089,253 @@
 	exports['default'] = createBrowserHistory;
 	module.exports = exports['default'];
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function() {
+	    function mrFactory(mobx, React, ReactDOM) {
+	        if (!mobx)
+	            throw new Error("mobx-react requires the MobX package")
+	        if (!React)
+	            throw new Error("mobx-react requires React to be available");
+
+	        var isDevtoolsEnabled = false;
+
+	        // WeakMap<Node, Object>;
+	        var componentByNodeRegistery = typeof WeakMap !== "undefined" ? new WeakMap() : undefined;
+	        var renderReporter = new mobx.SimpleEventEmitter();
+
+	        function findDOMNode(component) {
+	            if (ReactDOM)
+	                return ReactDOM.findDOMNode(component);
+	            return null;
+	        }
+
+	        function reportRendering(component) {
+	            var node = findDOMNode(component);
+	            if (node)
+	                componentByNodeRegistery.set(node, component);
+
+	            renderReporter.emit({
+	                event: 'render',
+	                renderTime: component.__$mobRenderEnd - component.__$mobRenderStart,
+	                totalTime: Date.now() - component.__$mobRenderStart,
+	                component: component,
+	                node: node
+	            });
+	        }
+
+	        var reactiveMixin = {
+	            componentWillMount: function() {
+	                // Generate friendly name for debugging
+	                var name = [
+	                    this.displayName || this.name || (this.constructor && this.constructor.name) || "<component>",
+	                    "#", this._reactInternalInstance && this._reactInternalInstance._rootNodeID,
+	                    ".render()"
+	                ].join("");
+
+	                var baseRender = this.render.bind(this);
+	                var self = this;
+	                var reaction = null;
+	                var isRenderingPending = false;
+	                function initialRender() {
+	                    reaction = new mobx.Reaction(name, function() {
+	                        if (!isRenderingPending) {
+	                            isRenderingPending = true;
+	                            React.Component.prototype.forceUpdate.call(self)
+	                        }
+	                    });
+	                    reactiveRender.$mobx = reaction;
+	                    self.render = reactiveRender;
+	                    return reactiveRender();
+	                }
+
+	                function reactiveRender() {
+	                    isRenderingPending = false;
+	                    var rendering;
+	                    reaction.track(function() {
+	                        if (isDevtoolsEnabled)
+	                            self.__$mobRenderStart = Date.now();
+	                        rendering = mobx.extras.allowStateChanges(false, baseRender);
+	                        if (isDevtoolsEnabled)
+	                            self.__$mobRenderEnd = Date.now();
+	                    });
+	                    return rendering;
+	                }
+
+	                this.render = initialRender;
+	            },
+
+	            componentWillUnmount: function() {
+	                this.render.$mobx && this.render.$mobx.dispose();
+	                if (isDevtoolsEnabled) {
+	                    var node = findDOMNode(this);
+	                    if (node) {
+	                        componentByNodeRegistery.delete(node);
+	                    }
+	                    renderReporter.emit({
+	                        event: 'destroy',
+	                        component: this,
+	                        node: node
+	                    });
+	                }
+	            },
+
+	            componentDidMount: function() {
+	                if (isDevtoolsEnabled)
+	                    reportRendering(this);
+	            },
+
+	            componentDidUpdate: function() {
+	                if (isDevtoolsEnabled)
+	                    reportRendering(this);
+	            },
+
+	            shouldComponentUpdate: function(nextProps, nextState) {
+	                // TODO: if context changed, return true.., see #18
+	                
+	                // if props or state did change, but a render was scheduled already, no additional render needs to be scheduled
+	                if (this.render.$mobx && this.render.$mobx.isScheduled() === true)
+	                    return false;
+	                
+	                // update on any state changes (as is the default)
+	                if (this.state !== nextState)
+	                    return true;
+	                // update if props are shallowly not equal, inspired by PureRenderMixin
+	                var keys = Object.keys(this.props);
+	                var key;
+	                if (keys.length !== Object.keys(nextProps).length)
+	                    return true;
+	                for(var i = keys.length -1; i >= 0, key = keys[i]; i--) {
+	                    var newValue = nextProps[key];
+	                    if (newValue !== this.props[key]) {
+	                        return true;
+	                    } else if (newValue && typeof newValue === "object" && !mobx.isObservable(newValue)) {
+	                        /**
+	                         * If the newValue is still the same object, but that object is not observable,
+	                         * fallback to the default React behavior: update, because the object *might* have changed.
+	                         * If you need the non default behavior, just use the React pure render mixin, as that one
+	                         * will work fine with mobx as well, instead of the default implementation of
+	                         * observer.
+	                         */
+	                        return true;
+	                    }
+	                }
+	                return false;
+	            }
+	        }
+
+	        function patch(target, funcName) {
+	            var base = target[funcName];
+	            var mixinFunc = reactiveMixin[funcName];
+	            target[funcName] = function() {
+	                base && base.apply(this, arguments);
+	                mixinFunc.apply(this, arguments);
+	            }
+	        }
+
+	        function observer(componentClass) {
+	            // If it is function but doesn't seem to be a react class constructor,
+	            // wrap it to a react class automatically
+	            if (typeof componentClass === "function" && !componentClass.prototype.render && !componentClass.isReactClass && !React.Component.isPrototypeOf(componentClass)) {
+	                return observer(React.createClass({
+	                    displayName:     componentClass.displayName || componentClass.name,
+	                    propTypes:       componentClass.propTypes,
+	                    contextTypes:    componentClass.contextTypes,
+	                    getDefaultProps: function() { return componentClass.defaultProps; },
+	                    render:          function() { return componentClass.call(this, this.props, this.context); }
+	                }));
+	            }
+
+	            if (!componentClass)
+	                throw new Error("Please pass a valid component to 'observer'");
+	            var target = componentClass.prototype || componentClass;
+
+	            [
+	                "componentWillMount",
+	                "componentWillUnmount",
+	                "componentDidMount",
+	                "componentDidUpdate"
+	            ].forEach(function(funcName) {
+	                patch(target, funcName)
+	            });
+
+	            if (!target.shouldComponentUpdate)
+	                target.shouldComponentUpdate = reactiveMixin.shouldComponentUpdate;
+	            componentClass.isMobXReactObserver = true;
+	            return componentClass;
+	        }
+
+	        function trackComponents() {
+	            if (typeof WeakMap === "undefined")
+	                throw new Error("[mobx-react] tracking components is not supported in this browser.");
+	            if (!isDevtoolsEnabled)
+	                isDevtoolsEnabled = true;
+	        }
+
+	        return ({
+	            observer: observer,
+	            reactiveComponent: function() {
+	                console.warn("[mobx-react] `reactiveComponent` has been renamed to `observer` and will be removed in 1.1.");
+	                return observer.apply(null, arguments);
+	            },
+	            renderReporter: renderReporter,
+	            componentByNodeRegistery: componentByNodeRegistery,
+	            trackComponents: trackComponents
+	        });
+	    }
+
+	    // UMD
+	    if (true) {
+	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(268), __webpack_require__(1), __webpack_require__(158)], __WEBPACK_AMD_DEFINE_FACTORY__ = (mrFactory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	    } else if (typeof exports === 'object') {
+	        module.exports = mrFactory(require('mobx'), require('react'), require('react-dom'));
+	    } else {
+	        this.mobxReact = mrFactory(this['mobx'], this['React'], this['ReactDOM']);
+	    }
+	})();
+
+
+/***/ },
+/* 283 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _mobx = __webpack_require__(268);
+
+	var store = (0, _mobx.observable)({});
+
+	exports.default = store;
+
+/***/ },
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.registerTestMsg = undefined;
+
+	var _mobx = __webpack_require__(268);
+
+	var _store = __webpack_require__(283);
+
+	var _store2 = _interopRequireDefault(_store);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var registerTestMsg = exports.registerTestMsg = function registerTestMsg() {
+	    (0, _mobx.extendObservable)(_store2.default, { testMsg: 1 });
+	};
 
 /***/ }
 /******/ ]);
